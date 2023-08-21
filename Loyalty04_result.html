@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redeem Rewards</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <h1>Create Redeem</h1>
+  <p>Create redeem rewards to award the customer discounts.</p>
+  <fw-label value="Rewards rule *"></fw-label>
+  <fw-input
+    label="Free Shipping Reward"
+    required
+    clear-input
+  >
+  </fw-input>
+  <fw-label value="Points *"></fw-label>
+  <fw-input
+    label="50"
+    required
+    clear-input
+  >
+  </fw-input>
+  <p>Available points: 500</p>
+  <fw-button color="secondary">Cancel</fw-button>
+  <fw-button color="primary">Create Redeem</fw-button>
+</body>
+</html><img src="../images/Loyalty04.png" />

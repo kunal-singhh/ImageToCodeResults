@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Sign Up</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-label value="Task"></fw-label>
+  <fw-input
+    label="Subject"
+    placeholder="Send follow up email for product sign up"
+  ></fw-input>
+
+  <fw-label value="Due Date"></fw-label>
+  <fw-datepicker
+    id="due-date"
+  ></fw-datepicker>
+
+  <fw-label value="Contact Name"></fw-label>
+  <fw-input
+    label="V"
+    placeholder="Jennifer Goodwin"
+  ></fw-input>
+
+  <fw-label value="Account"></fw-label>
+  <fw-input
+    label="Solara"
+    placeholder="Solara"
+  ></fw-input>
+
+  <fw-label value="Assigned to"></fw-label>
+  <fw-select
+    label="Status"
+    required="true"
+    placeholder="Select agent"
+  >
+    <fw-select-option value="open">Open</fw-select-option>
+    <fw-select-option value="closed">Closed</fw-select-option>
+  </fw-select>
+
+  <fw-button color="primary">Create</fw-button>
+  <fw-button color="secondary">Cancel</fw-button>
+</body>
+</html><img src="../images/Salesforce7.png" />

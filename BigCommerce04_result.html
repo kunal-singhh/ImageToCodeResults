@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancel Order</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <section>
+    <h1>Cancel order</h1>
+    <p>Order #235643</p>
+    <p>Order placed on</p>
+    <p>Thu, 12 Oct 2022</p>
+    <p>Shipping address</p>
+    <p>Block Block 6, Kingston, New York N2401</p>
+    <p>Item details (5)</p>
+    <h2>Choose reason for cancellation</h2>
+    <fw-select label="Reason for cancellation" required="true" placeholder="Select a reason">
+      <fw-select-option value="expensive">Product is too expensive</fw-select-option>
+      <fw-select-option value="accident">This was created by accident</fw-select-option>
+      <fw-select-option value="more_than_needed">I already have more than I need.</fw-select-option>
+      <fw-select-option value="sooner">I need it sooner</fw-select-option>
+      <fw-select-option value="no_longer_use">I no longer use this product</fw-select-option>
+      <fw-select-option value="different_product">I want a different product or variety</fw-select-option>
+      <fw-select-option value="not_now">I don't want it right now</fw-select-option>
+      <fw-select-option value="other">Other reason</fw-select-option>
+    </fw-select>
+    <fw-input label="Describe the reason (optional)" placeholder="Eg. the user has shifted to a new place"></fw-input>
+    <fw-checkbox label="Notify customer X via email that this order was cancelled"></fw-checkbox>
+    <h2>Refund customer</h2>
+    <p>Amount to be refunded: 480.00 USD</p>
+    <fw-button color="primary">Cancel this order</fw-button>
+  </section>
+  <section>
+    <img src="../images/BigCommerce04.png" />
+  </section>
+</body>
+
+</html>

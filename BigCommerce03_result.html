@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Cancellation</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <section>
+    <fw-label value="Order placed on"></fw-label>
+    <p>Thu, 12 Oct 2022</p>
+    <fw-button color="secondary">Cancel order</fw-button>
+    <fw-label value="Order #235643"></fw-label>
+    <fw-label value="Shipping address"></fw-label>
+    <p>Block Block 6, Kingston, New York N2401</p>
+    <fw-label value="Item details"></fw-label>
+    <fw-badge color="primary">3</fw-badge>
+    <fw-progress-bar value="46"></fw-progress-bar>
+    <p>Odonil Room Freshener... $100 | Qty x 5</p>
+    <p>Odonil Room Freshener... $100 | Qty x 5</p>
+    <p>Odonil Room Freshener... $100 | Qty x 5</p>
+    <p>Odonil Room Freshener... $100 | Qty x 5</p>
+    <fw-label value="Choose reason for cancellation"></fw-label>
+    <fw-radio-group>
+      <fw-radio value="expensive">Product is too expensive</fw-radio>
+      <fw-radio value="accident">This was created by accident</fw-radio>
+      <fw-radio value="more">I already have more than I need</fw-radio>
+      <fw-radio value="sooner">I need it sooner</fw-radio>
+      <fw-radio value="no-use">I no longer use this product</fw-radio>
+      <fw-radio value="different">I want a different product or variety</fw-radio>
+      <fw-radio value="not-now">I don't want it right now</fw-radio>
+      <fw-radio value="other">Other reason</fw-radio>
+    </fw-radio-group>
+    <fw-label value="Describe the reason (optional)"></fw-label>
+    <fw-input placeholder="Eg. the user has shifted to a new place"></fw-input>
+    <fw-button color="primary">Cancel this order</fw-button>
+  </section>
+  <section>
+    <img src="../images/BigCommerce03.png" />
+  </section>
+</body>
+
+</html>

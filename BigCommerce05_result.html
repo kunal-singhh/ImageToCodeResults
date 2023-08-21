@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund Page</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <section>
+    <fw-button color="primary" onclick="window.history.back();">&larr;</fw-button>
+    <fw-heading level="2">Initiate Refund</fw-heading>
+    <fw-label value="Order #235643"></fw-label>
+    <fw-label value="Order placed on"></fw-label>
+    <fw-label value="Thu, 12 Oct 2022"></fw-label>
+    <fw-label value="Shipping address"></fw-label>
+    <fw-label value="Block Block 6, Kingston, New York N2401"></fw-label>
+    <fw-label value="Refund items"></fw-label>
+    <fw-label value="Tax"></fw-label>
+    <fw-label value="Digestive enzyme blend"></fw-label>
+    <fw-label value="3 of 3 x $30"></fw-label>
+    <fw-label value="Digestive enzyme blend"></fw-label>
+    <fw-label value="3 of 3 x $30"></fw-label>
+    <fw-label value="Items subtotal (3 items)"></fw-label>
+    <fw-label value="Digestive enzyme blend"></fw-label>
+    <fw-label value="3 of 3 x $30"></fw-label>
+    <fw-label value="Refund shipping of $20"></fw-label>
+    <fw-label value="Refund total"></fw-label>
+    <fw-label value="Refund options"></fw-label>
+    <fw-radio-group>
+      <fw-radio value="full_refund" checked>Full refund $480.00</fw-radio>
+      <fw-radio value="custom_refund">Enter the amount ($400 available)</fw-radio>
+    </fw-radio-group>
+    <fw-input
+      label="Refund Amount"
+      placeholder="Enter refund amount"
+      required
+      clear-input
+    >
+    </fw-input>
+    <fw-label value="The amount you're refunding is different from the suggested refund total."></fw-label>
+    <fw-input
+      label="Reason for refund (optional)"
+      placeholder="Eg. the user has shifted to a new place"
+      required
+      clear-input
+    >
+    </fw-input>
+    <fw-button color="secondary" onclick="window.close();">Close</fw-button>
+    <fw-label value="$128"></fw-label>
+    <fw-label value="$128"></fw-label>
+    <fw-label value="$128"></fw-label>
+    <fw-label value="$480"></fw-label>
+    <fw-label value="$0"></fw-label>
+    <fw-label value="$0"></fw-label>
+    <fw-label value="$480"></fw-label>
+    <fw-checkbox>Notify customer X via email that this order was cancelled</fw-checkbox>
+    <fw-button color="primary">Refund $80.00</fw-button>
+  </section>
+  <section>
+    <img src="../images/BigCommerce05.png" />
+  </section>
+</body>
+</html>

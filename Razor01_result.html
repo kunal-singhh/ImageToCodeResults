@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancel Subscription</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Cancel subscription</h1>
+  <p>For product</p>
+  <p>N</p>
+  <p>Annual Gold</p>
+  <p>$200 / Yearly</p>
+  <fw-select label="Choose a reason" required="true" placeholder="Select a reason">
+    <fw-select-option value="expensive">Product is too expensive</fw-select-option>
+    <fw-select-option value="accident">This was created by accident</fw-select-option>
+    <fw-select-option value="more">I already have more than I need</fw-select-option>
+    <fw-select-option value="sooner">I need it sooner</fw-select-option>
+    <fw-select-option value="no-use">I no longer use this product</fw-select-option>
+    <fw-select-option value="different">I want a different product or variety</fw-select-option>
+    <fw-select-option value="not-now">I don't want it right now</fw-select-option>
+    <fw-select-option value="other">Other reason</fw-select-option>
+  </fw-select>
+  <p>Describe the reason (optional)</p>
+  <fw-input
+    label="Enter reason"
+    placeholder="Enter your reason"
+    maxlength="1024"
+  >
+  </fw-input>
+  <fw-button color="primary">Cancel subscription</fw-button>
+</body>
+</html><img src="../images/Razor01.png" />

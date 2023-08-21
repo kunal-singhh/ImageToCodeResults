@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Lead</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <h1>Create a lead</h1>
+  <fw-input label="First Name" placeholder="Jennifer" required clear-input></fw-input>
+  <fw-input label="Last Name *" placeholder="Goodwin" required clear-input></fw-input>
+  <fw-input label="Topic" placeholder="Enter company name" required clear-input></fw-input>
+  <p>Mandatory fields cannot be empty</p>
+  <fw-select label="Lead Source*" required>
+    <fw-select-option value="whatsapp">What's app</fw-select-option>
+  </fw-select>
+  <fw-input label="Lead website link*" placeholder="www.samplelink.com" required clear-input></fw-input>
+  <fw-input label="Email ID" placeholder="jennifer.goodwin@samplemail.com" required clear-input></fw-input>
+  <fw-input label="Phone" placeholder="Enter phone" required clear-input></fw-input>
+  <fw-button color="primary">+ Add more information</fw-button>
+  <br>
+  <fw-button color="secondary">Cancel</fw-button>
+  <fw-button color="primary">Create</fw-button>
+</body>
+</html><img src="../images/DynamicCRM05.png" />

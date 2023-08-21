@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Opportunity</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<body>
+  <h1>Create a Opportunity</h1>
+  <form>
+    <fw-input label="First Name" placeholder="Jenny" required clear-input></fw-input>
+    <fw-input label="Last Name" placeholder="Wilson" required clear-input></fw-input>
+    <fw-input label="Topic*" placeholder="Product plans" required clear-input></fw-input>
+    <fw-input label="Email ID" placeholder="jenny.wilson@sample.com" required clear-input></fw-input>
+    <fw-input label="Phone" placeholder="(480) 555-0103" required clear-input></fw-input>
+    <fw-input label="Amount" placeholder="$23447" required clear-input></fw-input>
+    <fw-input label="State" placeholder="Engaged Prospect" required clear-input></fw-input>
+    <fw-input label="Account name" placeholder="ACME" required clear-input></fw-input>
+    <fw-datepicker label="Close date" placeholder="16 may 23" required></fw-datepicker>
+    <fw-input label="Account ID" placeholder="7698692" required clear-input></fw-input>
+    <fw-button color="secondary">Cancel</fw-button>
+    <fw-button color="primary">Create</fw-button>
+  </form>
+</body>
+</html><img src="../images/DynamicCRM07.png" />
