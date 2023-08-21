@@ -18,6 +18,16 @@ function generateIndexFile() {
 <head>
   <title>HTML File Index</title>
 </head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+section{
+ border:1px solid;
+}
+</style>
 <body>
   <h1>HTML File Index</h1>
   <ul>

@@ -16,8 +16,19 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
 </head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+section{
+ border:1px solid;
+}
+</style>
 <body>
-  <h1>Create a lead</h1>
+  <section>
+    <h1>Create a lead</h1>
   <fw-input label="First Name" placeholder="Jennifer" required clear-input></fw-input>
   <fw-input label="Last Name *" placeholder="Goodwin" required clear-input></fw-input>
   <fw-input label="Topic" placeholder="Enter company name" required clear-input></fw-input>
@@ -32,5 +43,9 @@
   <br>
   <fw-button color="secondary">Cancel</fw-button>
   <fw-button color="primary">Create</fw-button>
+  </section>
+  <section>
+    <img src="./images/DynamicCRM05.png" />
+  </section>
 </body>
-</html><img src="./images/DynamicCRM05.png" />
+</html>

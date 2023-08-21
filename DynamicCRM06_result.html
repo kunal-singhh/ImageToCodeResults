@@ -16,28 +16,43 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
 </head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+section{
+ border:1px solid;
+}
+</style>
 <body>
-  <h1>Create a contact</h1>
-  <form>
-    <fw-input label="First Name" placeholder="Jane" required clear-input></fw-input>
-    <fw-input label="Last Name*" placeholder="Cooper" required clear-input></fw-input>
-    <fw-input label="Email ID" placeholder="jane.cooper@gmail.com" required clear-input></fw-input>
-    <fw-input label="Phone" placeholder="(406) 555-0120" required clear-input></fw-input>
-    <fw-input label="Account" placeholder="Enter account name" required clear-input></fw-input>
-    <fw-input label="Title" placeholder="Enter title" required clear-input></fw-input>
-    <fw-select label="Preferred language" required placeholder="Select preferred language">
-      <fw-select-option value="english">English</fw-select-option>
-      <fw-select-option value="spanish">Spanish</fw-select-option>
-    </fw-select>
-    <fw-input label="LinkedIn" placeholder="Enter linkedIn ID" required clear-input></fw-input>
-    <fw-select label="Contact role" required placeholder="Select role">
-      <fw-select-option value="manager">Manager</fw-select-option>
-      <fw-select-option value="employee">Employee</fw-select-option>
-    </fw-select>
-    <div>
-      <fw-button color="secondary">Cancel</fw-button>
-      <fw-button color="primary">Create</fw-button>
-    </div>
-  </form>
+  <section>
+    <h1>Create a contact</h1>
+    <form>
+      <fw-input label="First Name" placeholder="Jane" required clear-input></fw-input>
+      <fw-input label="Last Name*" placeholder="Cooper" required clear-input></fw-input>
+      <fw-input label="Email ID" placeholder="jane.cooper@gmail.com" required clear-input></fw-input>
+      <fw-input label="Phone" placeholder="(406) 555-0120" required clear-input></fw-input>
+      <fw-input label="Account" placeholder="Enter account name" required clear-input></fw-input>
+      <fw-input label="Title" placeholder="Enter title" required clear-input></fw-input>
+      <fw-select label="Preferred language" required placeholder="Select preferred language">
+        <fw-select-option value="english">English</fw-select-option>
+        <fw-select-option value="spanish">Spanish</fw-select-option>
+      </fw-select>
+      <fw-input label="LinkedIn" placeholder="Enter linkedIn ID" required clear-input></fw-input>
+      <fw-select label="Contact role" required placeholder="Select role">
+        <fw-select-option value="manager">Manager</fw-select-option>
+        <fw-select-option value="employee">Employee</fw-select-option>
+      </fw-select>
+      <div>
+        <fw-button color="secondary">Cancel</fw-button>
+        <fw-button color="primary">Create</fw-button>
+      </div>
+    </form>
+  </section>
+  <section>
+    <img src="./images/DynamicCRM06.png" />
+  </section>
 </body>
-</html><img src="./images/DynamicCRM06.png" />
+</html>

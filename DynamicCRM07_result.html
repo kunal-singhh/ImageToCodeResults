@@ -16,8 +16,19 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
 </head>
+<style>
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+section{
+ border:1px solid;
+}
+</style>
 <body>
-  <h1>Create a Opportunity</h1>
+  <section>
+    <h1>Create a Opportunity</h1>
   <form>
     <fw-input label="First Name" placeholder="Jenny" required clear-input></fw-input>
     <fw-input label="Last Name" placeholder="Wilson" required clear-input></fw-input>
@@ -32,5 +43,9 @@
     <fw-button color="secondary">Cancel</fw-button>
     <fw-button color="primary">Create</fw-button>
   </form>
+  </section>
+  <section>
+    <img src="./images/DynamicCRM07.png" />
+  </section>
 </body>
-</html><img src="./images/DynamicCRM07.png" />
+</html>
