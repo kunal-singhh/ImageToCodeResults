@@ -26,6 +26,7 @@ function generateIndexFile() {
 
 section{
  border:1px solid;
+ min-width:300px;
 }
 </style>
 <body>
