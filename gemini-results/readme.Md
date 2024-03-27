@@ -32,7 +32,9 @@ const imageData = [
 ```
 
 
-3. Commit and check github pages URL 
+3. Commit and check github pages [URL](https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/) 
+
+
 
 
 
