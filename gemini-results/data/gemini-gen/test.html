@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Management System</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-data-table id="invoiceTable" is-selectable="true" label="Invoice Management System">
+  </fw-data-table>
+
+  <script type="application/javascript">
+    var data = {
+      columns: [
+        { "key": "invoiceNumber", "text": "Invoice Number" },
+        { "key": "company", "text": "Company" },
+        { "key": "invoiceDate", "text": "Invoice Date" },
+        { "key": "dueDate", "text": "Due Date" },
+        { "key": "status", "text": "Status" },
+        { "key": "amount", "text": "Amount" },
+        { "key": "updateStatus", "text": "Update Status" }
+      ],
+      invoices: [
+        {
+          "invoiceNumber": "INV-001",
+          "company": "Company A",
+          "invoiceDate": "2022-01-01",
+          "dueDate": "2022-01-15",
+          "status": "Paid",
+          "amount": "$1000",
+          "updateStatus": "<fw-button color='primary'>Update status</fw-button>"
+        },
+        {
+          "invoiceNumber": "INV-002",
+          "company": "Company B",
+          "invoiceDate": "2022-01-05",
+          "dueDate": "2022-01-20",
+          "status": "Pending",
+          "amount": "$1500",
+          "updateStatus": "<fw-button color='primary'>Update status</fw-button>"
+        }
+      ]
+    }
+
+    var invoiceTable = document.getElementById('invoiceTable');
+    invoiceTable.columns = data.columns;
+    invoiceTable.rows = data.invoices;
+  </script>
+</body>
+</html>

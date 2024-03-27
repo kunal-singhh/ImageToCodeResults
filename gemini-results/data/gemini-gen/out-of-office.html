@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOO Settings Modal</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-modal>
+    <fw-modal-header>Edit OOO Settings</fw-modal-header>
+    <fw-modal-content>
+      <fw-toggle label="Enable OOO Notification"></fw-toggle>
+      <fw-textarea label="Compose OOO Message" placeholder="Type your OOO message here..."></fw-textarea>
+    </fw-modal-content>
+    <fw-modal-footer>
+      <fw-button color="secondary" onclick="closeModal()">Cancel</fw-button>
+      <fw-button color="primary" onclick="saveChanges()">Save</fw-button>
+    </fw-modal-footer>
+  </fw-modal>
+
+  <script>
+    function closeModal() {
+      // Close the modal without saving changes
+    }
+
+    function saveChanges() {
+      // Save changes to the database and close the modal
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <div>
+    <header>
+      <fw-label value="Store Name"></fw-label>
+      <a href="order-details.html"><fw-label value="Order Number"></fw-label></a>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shoes</td>
+          <td>1</td>
+          <td>5000</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <fw-label value="Total Price"></fw-label>
+      <fw-label value="Shipping Address"></fw-label>
+      <fw-button color="primary" onclick="cancelOrder()">Cancel Order</fw-button>
+      <fw-button color="primary" onclick="refundOrder()">Refund Order</fw-button>
+    </footer>
+  </div>
+
+  <script>
+    function cancelOrder() {
+      // Cancel order logic
+    }
+
+    function refundOrder() {
+      // Refund order logic
+    }
+  </script>
+</body>
+</html>
