@@ -32,7 +32,9 @@ const imageData = [
 ```
 
 
-3. Commit and check github pages [URL](https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/) 
+3. Commit and check either of the 2 URLs
+  - [https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/](https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/) 
+  - [https://image-to-code-results.vercel.app/](https://image-to-code-results.vercel.app/)
 
 
 
