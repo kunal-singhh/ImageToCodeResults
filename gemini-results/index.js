@@ -10,9 +10,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Image data - Add more images as needed
   const imageData = [
+    "attachment-viewer",
+    "clone-ticket",
+    "form_charge",
+    "linkedjiras",
+    "mailchimp",
     "out-of-office",
+    "out-of-office-agent",
+    "pagerduty",
     "shopify",
-    'test'
+    "shopify-modal",
+    "team-viewer",
+    'test',
+    "test-image-calender",
+    "test-image-multi-button",
+    "test-image-scroll"
     // Add more images here
   ];
 
