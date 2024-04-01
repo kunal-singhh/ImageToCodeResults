@@ -35,7 +35,7 @@ const imageData = [
 ```bash
 npx http-server -p 3002
 ```
-This will open a server on port 3002 and you can access the page by navigating to `http://localhost:3002/gemini-results/index.html`
+This will open a server on port 3002 and you can access the page by navigating to `http://127.0.0.1:3002/results/gemini-results/`
 
 
 ![data/preview.png](data/preview.png)
