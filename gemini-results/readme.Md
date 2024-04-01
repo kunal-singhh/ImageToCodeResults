@@ -37,7 +37,12 @@ const imageData = [
   - [https://image-to-code-results.vercel.app/](https://image-to-code-results.vercel.app/)
 
 
+4. Check by locally runnning the index.html file
+```bash
+npx http-server -p 3002
+```
+This will open a server on port 3002 and you can access the page by navigating to `http://localhost:3002/gemini-results/index.html`
 
 
-
+![data/preview.png](data/preview.png)
 
