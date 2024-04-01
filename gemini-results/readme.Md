@@ -31,13 +31,7 @@ const imageData = [
 ];
 ```
 
-
-3. Commit and check either of the 2 URLs
-  - [https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/](https://kunal-singhh.github.io/ImageToCodeResults/gemini-results/) 
-  - [https://image-to-code-results.vercel.app/](https://image-to-code-results.vercel.app/)
-
-
-4. Check by locally runnning the index.html file
+3. Check by locally runnning the index.html file
 ```bash
 npx http-server -p 3002
 ```
