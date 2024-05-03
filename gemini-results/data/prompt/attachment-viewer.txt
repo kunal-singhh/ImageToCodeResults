@@ -1,1 +1,1 @@
-attachment-viewer
+ The design is of an attachments viewer. It has a list of attachments with checkboxes, a select all checkbox, and a download button. The attachments are listed in a table with the following columns: name, size, and type. The checkboxes are used to select the attachments to be downloaded. The select all checkbox is used to select all of the attachments. The download button is used to download the selected attachments.

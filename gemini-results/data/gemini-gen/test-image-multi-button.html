@@ -1,1 +1,68 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Field Mapping</title>  <script    type="module"    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"  ></script>  <script    nomodule    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"  ></script>  <link    rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"></head><body>  <h1>Freshsales, Freshservice, Map fields, One time Synchronization</h1>  <fw-select label="Contacts to Requesters" style="float: left;">    <fw-select-option>Select an option</fw-select-option>  </fw-select>  <fw-label value="Select the data you want to sync:" style="float: left; margin-left: 10px;"></fw-label>  <fw-button color="primary" style="float: right;">Refresh fields</fw-button>  <div style="clear: both;"></div>  <div style="display: flex; justify-content: space-between; margin-top: 20px;">    <div>      <fw-label value="Freshworks CRM fields"></fw-label>      <fw-select>        <fw-select-option>Select field</fw-select-option>      </fw-select>    </div>    <fw-button color="primary" style="align-self: center;">Add</fw-button>    <div>      <fw-label value="Freshservice fields"></fw-label>      <fw-select>        <fw-select-option>Select field</fw-select-option>      </fw-select>    </div>  </div>  <fw-data-table>    <fw-data-table-header>      <fw-data-table-row>        <fw-data-table-cell>Freshworks CRM field</fw-data-table-cell>        <fw-data-table-cell>Freshservice Fields</fw-data-table-cell>        <fw-data-table-cell>Actions</fw-data-table-cell>      </fw-data-table-row>    </fw-data-table-header>    <fw-data-table-body>      <fw-data-table-row>        <fw-data-table-cell>First name</fw-data-table-cell>        <fw-data-table-cell>First Name</fw-data-table-cell>        <fw-data-table-cell><fw-icon name="delete" size="18" color="red"></fw-icon></fw-data-table-cell>      </fw-data-table-row>      <!-- Add more rows for other fields -->    </fw-data-table-body>  </fw-data-table></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crayons HTML</title>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+
+<body>
+    <h1>Freshsales, Freshservice, Map fields, One time Synchronization</h1> <fw-select label="Contacts to Requesters">
+        <fw-select-option value="option1">Option 1</fw-select-option> <fw-select-option value="option2">Option
+            2</fw-select-option> </fw-select>
+    <div> <fw-label value="Freshworks CRM fields"></fw-label> <fw-label value="Freshservice fields"></fw-label> </div>
+    <div> <fw-select label="Select field"> <fw-select-option value="option1">Option 1</fw-select-option>
+            <fw-select-option value="option2">Option 2</fw-select-option> </fw-select> <fw-button
+            color="primary">Add</fw-button> <fw-select label="Select field"> <fw-select-option value="option1">Option
+                1</fw-select-option> <fw-select-option value="option2">Option 2</fw-select-option> </fw-select> </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Freshworks CRM field</th>
+                <th>Freshservice Fields</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First name</td>
+                <td>First Name</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td>Last Name</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>Mobile Phone</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Emails</td>
+                <td>Email</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Address</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>Work Phone</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>Original source</td>
+                <td>Reporting Manager</td>
+                <td><fw-icon name="delete" size="18" color="red"></fw-icon></td>
+            </tr>
+            <tr>
+                <td>External ID</td>

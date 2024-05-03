@@ -1,1 +1,1 @@
-pagerduty
+ The image contains a PagerDuty incident viewer. It has a button to fetch PagerDuty incidents. Below the button, there are three incident cards. Each incident card contains an incident ID, title, and status. The incident ID is a unique identifier for the incident. The title is a brief description of the incident. The status indicates the current state of the incident.

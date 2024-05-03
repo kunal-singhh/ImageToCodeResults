@@ -1,1 +1,26 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Clone Ticket Demo</title>  <script    type="module"    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"  ></script>  <script    nomodule    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"  ></script>  <link    rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"></head><body>  <h1 style="text-align: center;">Clone Ticket Demo</h1>  <div style="display: flex; justify-content: center; align-items: center;">    <fw-button color="primary" id="decrease">-</fw-button>    <fw-input      label="Enter clone count"      placeholder="Enter number of clones"      required      clear-input      style="margin: 0 10px;"    >    </fw-input>    <fw-button color="primary" id="increase">+</fw-button>  </div>  <div style="margin: 20px 0; text-align: center;">    <p>Select additional items to clone (optional)</p>    <fw-checkbox description="Tasks">Tasks</fw-checkbox>    <fw-checkbox description="Assets">Assets</fw-checkbox>    <fw-checkbox description="Attachments">Attachments</fw-checkbox>  </div>  <div style="text-align: center;">    <fw-button color="primary">Clone Ticket</fw-button>  </div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Ticket Demo</title>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Clone Ticket Demo</h1>
+    </div>
+    <div style="width: 50%; margin: 0 auto;"> <fw-input label="Enter clone count" type="number" min="1"
+            value="5"></fw-input> <br> <fw-label value="Select additional items to clone (optional)"></fw-label> <br>
+        <fw-checkbox>Tasks</fw-checkbox> <br> <fw-checkbox>Assets</fw-checkbox> <br>
+        <fw-checkbox>Attachments</fw-checkbox> <br>
+        <div style="text-align: right;"> <fw-button color="primary">Clone Ticket</fw-button> </div>
+    </div>
+</body>
+
+</html>

@@ -1,1 +1,4 @@
-clone-ticket
+ 1. The design has a **Heading** "Clone Ticket Demo" at the top center
+2. Below the heading, there is a field to enter the number of clones. The field has a label "Enter clone count" and a spinner to increase or decrease the value. The default value is 5.
+3. Below the clone count field, there is a section to select additional items to clone. The section has a label "Select additional items to clone (optional)" and three checkboxes. The checkboxes are labeled "Tasks", "Assets", and "Attachments".
+4. Below the checkboxes, there is a button to clone the ticket. The button is labeled "Clone Ticket" and is located at the bottom right of the design.

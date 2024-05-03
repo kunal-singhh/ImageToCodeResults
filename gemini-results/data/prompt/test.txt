@@ -1,1 +1,25 @@
-test
+ INVOICE MANAGEMENT SYSTEM
+
+The image contains a table with 10 rows and 6 columns. 
+The header of the table contains the following columns:
+
+- Invoice
+- Company
+- Invoice date
+- Due date
+- Status
+- Amount
+
+Each row in the table represents an invoice. 
+The first column contains the invoice number, 
+the second column contains the name of the company that the invoice was issued to, 
+the third column contains the date the invoice was issued, 
+the fourth column contains the date the invoice is due, 
+the fifth column contains the status of the invoice, 
+and the sixth column contains the amount of the invoice.
+
+There is a filter option above the table.
+
+The user can click on the "Update status" button to update the status of the invoice.
+The user can click on the "Invoice" link to view the invoice.
+The user can click on the "Company" link to view the company's profile.

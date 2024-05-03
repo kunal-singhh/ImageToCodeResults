@@ -1,1 +1,17 @@
-test-image-calender
+ ### The image contains the following components:
+
+1. A Google Calendar logo at the top left corner.
+2. A text field to add an event.
+3. A drop-down menu to change the calendar.
+4. A calendar grid with the current date highlighted.
+5. An event title, date, and time.
+6. Two buttons: Edit and Remove.
+7. A link to view the event on Google Calendar.
+
+### The following actions can be performed on the components:
+
+1. The user can type in the text field to add an event.
+2. The user can select a different calendar from the drop-down menu.
+3. The user can click on the calendar grid to select a date.
+4. The user can click on the event title to edit or remove the event.
+5. The user can click on the link to view the event on Google Calendar.

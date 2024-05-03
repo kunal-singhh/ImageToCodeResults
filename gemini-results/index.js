@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "clone-ticket",
     "form_charge",
     "linkedjiras",
-    "mailchimp",
     "out-of-office",
     "out-of-office-agent",
     "pagerduty",

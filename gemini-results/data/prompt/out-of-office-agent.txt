@@ -1,1 +1,21 @@
-out-of-office-agent
+ The image contains a web page with a form to apply for an agent. The form has three fields: email, from date, and to date. There is a button next to each date field to open a calendar and select a date. There is a button below the form to apply for an agent.
+
+The text on the page is as follows:
+
+- Agent Availability
+- Apply OOO
+- Apply for an agent
+- Settings
+- Apply Out of Office
+- Email
+- From
+- To
+- Apply
+
+The actions that can be performed are as follows:
+
+- Click on the "Apply for an agent" button to open the form
+- Enter the email address of the agent in the "Email" field
+- Select the start date of the OOO period in the "From" field
+- Select the end date of the OOO period in the "To" field
+- Click on the "Apply" button to submit the form
