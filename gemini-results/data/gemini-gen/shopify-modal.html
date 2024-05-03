@@ -1,1 +1,29 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Order Cancellation</title>  <script    type="module"    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"  ></script>  <script    nomodule    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"  ></script>  <link    rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"></head><body>  <h3>주문 정보</h3>  <p>주문번호: #1010</p>  <p>주문 상태: 결제됨, 이행되지 않음</p>  <p>주문 날짜: 2021년 12월 6일</p>  <p>배송지: 2136 Lightning Point Drive.</p>  <p>상품 정보: Training Shoes, 1개, $35.00</p>  <p>할인: $0.00</p>  <p>세금: $0.00</p>  <p>배송료: $0.00</p>  <p>총액: $35.00</p>  <h3>취소 요약</h3>  <p>고객이 변경/취소한 주문</p>  <p>환불액: $35.00</p>  <fw-checkbox>고객에게 알림 보내기</fw-checkbox>  <fw-checkbox>고객에게 $35.00 환불하기</fw-checkbox>  <fw-input label="취소 사유" placeholder="취소 사유를 입력하세요"></fw-input>  <div>    <fw-button color="primary">주문 유지</fw-button>    <fw-button color="secondary">주문 취소</fw-button>  </div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Order Modal</title>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+
+<body> <fw-modal> <fw-modal-header> Cancel Order #1010 <fw-icon name="close" slot="modal-header-icon"></fw-icon>
+        </fw-modal-header> <fw-modal-body>
+            <h3>Order Details</h3>
+            <p>Order Number: 1010</p>
+            <p>Date: 2022-07-31</p>
+            <p>Shipping Address: 123 Main St, New York, NY 10001</p>
+            <p>Item Details: Example Item</p>
+            <h3>Cancellation Summary</h3>
+            <p>Reason for cancellation: Customer request</p> <fw-checkbox
+                description="Send a notification to the customer">Notify Customer</fw-checkbox>
+            <h3>Refund Amount</h3>
+            <p>$100.00</p> <fw-checkbox description="Refund the customer">Refund Customer</fw-checkbox>
+        </fw-modal-body> <fw-modal-footer> <fw-button color="secondary">Keep order</fw-button> <fw-button
+                color="primary">Cancel order</fw-button> </fw-modal-footer> </fw-modal></body>
+
+</html>

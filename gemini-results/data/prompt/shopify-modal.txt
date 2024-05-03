@@ -1,37 +1,13 @@
- ### 디자인 설명
-**텍스트**
-- 주문번호: #1010
-- 주문 상태: 결제됨, 이행되지 않음
-- 주문 날짜: 2021년 12월 6일
-- 배송지: 2136 Lightning Point Drive.
-- 상품 정보: Training Shoes, 1개, $35.00
-- 할인: $0.00
-- 세금: $0.00
-- 배송료: $0.00
-- 총액: $35.00
-- 취소 요약: 고객이 변경/취소한 주문
-- 환불액: $35.00
+ The design is a modal dialog for canceling an order. It contains the following components:
 
-**버튼**
-- 주문 유지
-- 주문 취소
+- A header with the title "Cancel Order #1010" and a close button.
+- A body with the order details, including the order number, date, shipping address, and item details.
+- A section for the cancellation summary, including the reason for cancellation and the option to send a notification to the customer.
+- A section for the refund amount and the option to refund the customer.
+- A footer with two buttons: "Keep order" and "Cancel order".
 
-**체크박스**
-- 고객에게 알림 보내기
-- 고객에게 $35.00 환불하기
+The actions that can be performed are:
 
-**입력란**
-- 취소 사유
-
-**레이아웃**
-- 주문 정보가 상단에 표시되고 취소 요약이 하단에 표시됩니다.
-- 버튼은 하단 오른쪽에 있습니다.
-- 체크박스는 취소 요약 아래에 있습니다.
-- 입력란은 취소 사유 아래에 있습니다.
-
-**기능**
-- '주문 유지' 버튼을 클릭하면 주문이 취소되지 않습니다.
-- '주문 취소' 버튼을 클릭하면 주문이 취소됩니다.
-- '고객에게 알림 보내기' 체크박스를 선택하면 고객에게 주문이 취소되었다는 알림이 전송됩니다.
-- '고객에게 $35.00 환불하기' 체크박스를 선택하면 고객에게 $35.00이 환불됩니다.
-- '취소 사유' 입력란에 취소 사유를 입력합니다.
+- Clicking the close button will close the dialog without canceling the order.
+- Clicking the "Keep order" button will close the dialog and keep the order active.
+- Clicking the "Cancel order" button will cancel the order and refund the customer.
