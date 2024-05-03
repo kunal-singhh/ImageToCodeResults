@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Preview</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <div class="sidebar">
@@ -16,23 +18,28 @@
       </div>
       <ul id="image-options"></ul>
     </div>
-    <!-- <h1>Preview</h1>  -->
-    <div class="main">
-      <div class="image-container">
-        <h2>Original Image</h2>
-        <img width="500" id="original-image" src="" alt="Original Image">
-      </div>
-      <div class="preview-container">
-        <h2>Google Vision Preview</h2>
-        <iframe id="google-vision-preview" src="" frameborder="0"></iframe>
-      </div>
-      <div class="preview-container">
-        <h2>Gemini Preview</h2>
-        <iframe id="gemini-preview" src="" frameborder="0"></iframe>
+    <!-- <h1>Preview</h1> -->
+    <div class="prompt-container">
+      <strong>Prompt: </strong>
+      <p class="prompt" id="prompt"></p> <br>
+      <div class="main">
+        <div class="image-container">
+          <h2>Original Image</h2>
+          <img width="500" id="original-image" src="" alt="Original Image">
+        </div>
+        <div class="preview-container">
+          <h2>Google Vision Preview</h2>
+          <iframe id="google-vision-preview" src="" frameborder="0"></iframe>
+        </div>
+        <div class="preview-container">
+          <h2>Gemini Preview</h2>
+          <iframe id="gemini-preview" src="" frameborder="0"></iframe>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="index.js"></script>
 </body>
+
 </html>

@@ -81,3 +81,11 @@ iframe {
 .navigation-buttons button:hover {
   background-color: #ddd;
 }
+
+.prompt-container{
+  padding: 20px;
+}
+
+.prompt {
+  font-style: italic;
+}

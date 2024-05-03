@@ -1,10 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const originalImage = document.getElementById("original-image");
   const googleVisionPreview = document.getElementById("google-vision-preview");
   const geminiPreview = document.getElementById("gemini-preview");
   const imageOptionsContainer = document.getElementById("image-options");
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
+  const promptNode = document.getElementById("prompt");
 
   let currentIndex = 0;
 
@@ -30,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to initialize the list of image options
   function initializeImageOptions() {
-    imageData.forEach(function(imageName) {
+    imageData.forEach(function (imageName) {
       const option = document.createElement("li");
       option.setAttribute("data-image", imageName);
       option.textContent = imageName;
-      option.addEventListener("click", function() {
+      option.addEventListener("click", function () {
         currentIndex = imageData.indexOf(imageName);
         showImageByIndex(currentIndex);
       });
@@ -47,12 +48,20 @@ document.addEventListener("DOMContentLoaded", function() {
     originalImage.src = `./data/design-images/${imageName}.png`;
     googleVisionPreview.src = `./data/prod-gen/${imageName}.html`;
     geminiPreview.src = `./data/gemini-gen/${imageName}.html`;
+
+    fetch(`./data/prompt/${imageName}.txt`)
+      .then((res) => res.text())
+      .then((text) => {
+        console.log({ text });
+        promptNode.innerText = text;
+      })
+      .catch((e) => console.error(e));
   }
 
   // Function to highlight the currently selected image option
   function highlightCurrentOption() {
     const imageOptions = document.querySelectorAll("#image-options li");
-    imageOptions.forEach(function(option, index) {
+    imageOptions.forEach(function (option, index) {
       if (index === currentIndex) {
         option.classList.add("active");
       } else {
@@ -69,12 +78,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Event listeners for navigation buttons
-  prevButton.addEventListener("click", function() {
+  prevButton.addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + imageData.length) % imageData.length;
     showImageByIndex(currentIndex);
   });
 
-  nextButton.addEventListener("click", function() {
+  nextButton.addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % imageData.length;
     showImageByIndex(currentIndex);
   });
