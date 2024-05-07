@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     'test',
     "test-image-calender",
     "test-image-multi-button",
-    "test-image-scroll"
+    "test-image-scroll",
+    "components-combined"
     // Add more images here
   ];
 

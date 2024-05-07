@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+</head>
+
+<body>
+  <main class="fw-container">
+    <div class="fw-card-1 fw-p-24">
+      <h2>Accordion (fw-accordion)</h2>
+
+      <fw-accordion expanded>
+        <fw-accordion-title>Header Text</fw-accordion-title>
+        <fw-accordion-body>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also
+          the leap into electronic typesetting, remaining essentially unchanged. It
+          was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software
+          like Aldus PageMaker including versions of Lorem Ipsum
+        </fw-accordion-body>
+      </fw-accordion>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Avatar (fw-avatar)</h2>
+
+      <section>
+        <fw-avatar size="medium"
+          image="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"></fw-avatar>
+        <fw-avatar initials="PT"></fw-avatar>
+        <fw-avatar name="Patrick Goodwin"></fw-avatar>
+      </section>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Button (fw-button)</h2>
+
+      <section>
+        <fw-label value="Try themes"></fw-label>
+        <fw-button color="primary"> OK </fw-button>
+        <fw-button color="secondary"> Secondary </fw-button>
+        <fw-button color="danger"> Don't Click </fw-button>
+        <fw-button color="link"> Link Button </fw-button>
+        <fw-button color="text"> Plain Text Button </fw-button>
+      </section>
+
+      <br />
+
+      <section>
+        <fw-label value="Try sizes"></fw-label>
+        <fw-button size="small"> Small </fw-button>
+        <fw-button> Default </fw-button>
+      </section>
+      <br />
+
+      <section>
+        <fw-label value="Try icon buttons"></fw-label>
+        <fw-button size="icon"><fw-icon name="agent" size="20" color="white"></fw-icon>
+        </fw-button>
+        <fw-button size="icon" color="secondary"><fw-icon name="phone" size="20"></fw-icon>
+        </fw-button>
+      </section>
+      <br />
+
+      <section>
+        <fw-label value="Caret with icon"></fw-label>
+        <fw-button show-caret-icon>
+          <fw-icon name="calendar-time" size="16" slot="before-label"></fw-icon>
+          Select date
+        </fw-button>
+
+        <fw-button color="link" show-caret-icon>
+          <fw-icon name="calendar-time" size="16" slot="before-label"></fw-icon>
+          Select date
+        </fw-button>
+      </section>
+      <br />
+
+      <section>
+        <fw-label value="Loading state"></fw-label>
+        <fw-button loading> Loading </fw-button>
+        <fw-button loading color="secondary"> OK </fw-button>
+        <fw-button loading color="danger"> Don't Click </fw-button>
+      </section>
+      <br />
+
+      <section>
+        <fw-label value="Disabled"></fw-label>
+        <fw-button disabled color="primary"> OK </fw-button>
+        <fw-button disabled color="secondary"> OK </fw-button>
+        <fw-button disabled color="danger"> Don't Click </fw-button>
+      </section>
+
+      <section>
+        <fw-label value="Try icon + text buttons Buttons with before-label and after-label"></fw-label>
+        <fw-button color="secondary">
+          <fw-icon slot="before-label" size="16" name="delete"></fw-icon>
+          <span>Delete</span>
+        </fw-button>
+        <fw-button color="primary">
+          <span>Copy</span>
+          <fw-icon name="code" size="16" slot="after-label"></fw-icon>
+        </fw-button>
+      </section>
+      <br />
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Button Group (fw-button-group)</h2>
+
+      <section>
+        <fw-button-group label="Test">
+          <fw-button color="secondary">Replace</fw-button>
+          <fw-button color="secondary">Modify</fw-button>
+          <fw-button color="secondary">Cancel</fw-button>
+        </fw-button-group>
+      </section>
+      <br />
+
+      <section>
+        <fw-button-group label="Test">
+          <fw-button id="b1" size="icon" color="secondary"><fw-icon name="reply" color="black"></fw-icon>
+          </fw-button>
+          <fw-button id="b2" size="icon" color="secondary"><fw-icon name="chat-online" color="black"></fw-icon>
+          </fw-button>
+          <fw-button id="b3" size="icon" color="secondary"><fw-icon name="more-horizontal" color="black"></fw-icon>
+          </fw-button>
+        </fw-button-group>
+      </section>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Checkbox (fw-checkbox)</h2>
+
+      <fw-checkbox checked description="Agree or Disagree">Select to agree</fw-checkbox><br><br>
+      <fw-checkbox checked disabled value="dcb">Disabled check box</fw-checkbox>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>CountryPhone(fw-country-phone)</h2>
+
+      <fw-country-phone value="" name="country-code" clear-input select-placeholder="select country code"
+        input-placeholder="Enter phone number" required input-label="Support phone number" select-label="Country Code"
+        error-text="Error message text" warning-text="Please use numbers for user ID" state="normal"></fw-country-phone>
+      <fw-country-phone value="+919999999999" name="country-code" clear-input select-placeholder="select country code"
+        input-placeholder="Enter phone number" required input-label="Support phone number" select-label="Country Code"
+        error-text="Error message text" warning-text="Please use numbers for user ID" state="normal"></fw-country-phone>
+      <fw-country-phone value="+919999999999" name="country-code" clear-input select-placeholder="select country code"
+        input-placeholder="Enter phone number" required input-label="Support phone number" select-label="Country Code"
+        hint-text="select country code to get valid phonenumber" warning-text="Please use numbers for user ID"
+        state="normal"></fw-country-phone>
+      <fw-country-phone
+        value="+1264497275926449727599878978789798798789798798789787897987897897897878978978787897989878"
+        name="country-code" clear-input select-placeholder="select country code" input-placeholder="Enter phone number"
+        required input-label="Support phone number" select-label="Country Code" hint-text="Input hint text"
+        warning-text="select country code to get valid phonenumber" state="warning"></fw-country-phone>
+      <fw-country-phone
+        value="+1264497275926449727599878978789798798789798798789787897987897897897878978978787897989878"
+        name="country-code" clear-input select-placeholder="select country code" input-placeholder="Enter phone number"
+        required input-label="Support phone number" select-label="Country Code" hint-text="Input hint text"
+        error-text="Invalid Country Phone Number" state="error"></fw-country-phone>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Datepicker (fw-datepicker)</h2>
+
+      <fw-label value="Single date picker" color="yellow"></fw-label><br />
+      <fw-datepicker id="date1" value="2021-12-02" display-format="dd-MM-yyyy"></fw-datepicker>
+      <fw-label value="A date range picker" color="yellow"></fw-label><br />
+      <fw-datepicker mode="range" from-date="2022-01-02" to-date="2022-01-04"
+        display-format="dd-MM-yyyy"></fw-datepicker>
+      <fw-label value="Date picker with readonly attribute" color="yellow"></fw-label><br />
+      <fw-datepicker readonly></fw-datepicker>
+      <fw-label value="Date picker with show-footer and clear-input attributes" color="yellow"></fw-label><br />
+      <fw-datepicker show-footer="false" clear-input></fw-datepicker>
+      <fw-label value="Date picker with locale" color="yellow"></fw-label><br />
+      <fw-datepicker locale="fr"></fw-datepicker>
+      <script type="text/javascript">
+        // Get the selected date using fwChange listener.
+        document
+          .querySelector('#date1')
+          .addEventListener('fwChange', (e) => console.log(e.detail.value));
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Drag Container (fw-drag-container)</h2>
+
+      <template>
+        <div>
+          <fw-label value="Sort items within a container"></fw-label>
+          <fw-drag-container class="drag-container" id="defaultSort">
+            <fw-drag-item>Item 1</fw-drag-item>
+            <fw-drag-item>Item 2</fw-drag-item>
+            <fw-drag-item>Item 3</fw-drag-item>
+            <fw-drag-item>Item 4 <fw-icon slot="suffix" name="bulb"></fw-icon>
+            </fw-drag-item>
+          </fw-drag-container>
+          <br />
+          <fw-label value="Pinned items within a container"></fw-label>
+          <fw-drag-container class="drag-container" id="pinnedSort">
+            <fw-drag-item pinned="top">Item 1</fw-drag-item>
+            <fw-drag-item>Item 2</fw-drag-item>
+            <fw-drag-item>Item 3</fw-drag-item>
+            <fw-drag-item>Item 4</fw-drag-item>
+            <fw-drag-item pinned="bottom">Item 5</fw-drag-item>
+          </fw-drag-container>
+        </div>
+      </template>
+      <style>
+        .drag-container {
+          width: 300px;
+          padding: 20px;
+          border: 1px solid black;
+        }
+
+        fw-drag-item {
+          margin-bottom: 8px;
+        }
+      </style>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Drag Item (fw-drag-item)</h2>
+
+      <fw-drag-item>
+        <span>Drag Me via the drag icon</span>
+      </fw-drag-item>
+      <fw-drag-item>
+        <span>Drag Me via the drag icon</span>
+      </fw-drag-item>
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Form (fw-form)</h2>
+
+      <div id="form-container">
+        <fw-button id="submit">Submit</fw-button>
+        <fw-button id="reset">Reset</fw-button>
+      </div>
+      <script type="application/javascript">
+        var form = document.createElement('fw-form');
+        var formContainer = document.querySelector('#form-container');
+        document.querySelector('#submit').addEventListener('click', async (e) => {
+          const { values, isValid } = await form.doSubmit(e);
+          console.log({ values, isValid });
+
+          if (isValid) {
+            // make ajax post end point with values
+            // fetch("/post",values);
+
+            // if error from backend , set Errors - passing key value pair
+            form.setFieldErrors({
+              first_name: 'First Name must be unique <<Server Error>>',
+            });
+
+            // reset the form if required if success
+            // formRef.current.doReset(e);
+          }
+        });
+        document.querySelector('#reset').addEventListener('click', (e) => {
+          form.doReset(e);
+        });
+        var formSchema = {
+          name: 'Test Form',
+          fields: [
+            {
+              id: '2978f820-704b-46c7-9f88-110e14e34a8c',
+              name: 'first_name',
+              label: 'First Name',
+              type: 'TEXT',
+              position: 3,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Please provide a text of at max 100 characters',
+              choices: [],
+            },
+
+            {
+              id: '3978f820-704b-46c7-9f88-110e14e34a8c',
+              name: 'last_name',
+              label: 'Last Name',
+              type: 'TEXT',
+              position: 3,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Please provide a text of at max 100 characters',
+              choices: [],
+              maxlength: 10, // pass any crayons input control related properties
+            },
+
+            {
+              id: '42aecb8f-25cf-47ce-89c6-5410fe3d4315',
+              name: 'languages_known',
+              label: 'Languages Known',
+              type: 'MULTI_SELECT',
+              position: 13,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Select one or more values',
+              choices: [
+                {
+                  id: 1,
+                  value: 'English',
+                  position: 1,
+                  dependent_ids: {},
+                },
+                {
+                  id: 2,
+                  value: 'Hindi',
+                  position: 2,
+                  dependent_ids: {},
+                },
+                {
+                  id: 3,
+                  value: 'Tamil',
+                  position: 3,
+                  dependent_ids: {},
+                },
+              ],
+            },
+
+            {
+              id: '6978f820-704b-46c7-9f88-110e14e34a8c',
+              name: 'email',
+              label: 'Email',
+              type: 'EMAIL',
+              position: 3,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Please provide an email Id',
+              choices: [],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf487be94595',
+              name: 'date_of_birth',
+              label: 'Date Of Birth',
+              type: 'DATE',
+              position: 11,
+              required: true,
+              Placeholder: 'Enter…',
+              hint: 'Please enter your date of birth',
+              choices: [],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf487be94595',
+              name: 'landmark',
+              label: 'Landmark',
+              type: 'PARAGRAPH',
+              position: 7,
+              required: true,
+              Placeholder: 'Enter some text…',
+              hint: 'Please enter the nearest landmark',
+              choices: [],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf487be94595',
+              name: 'is_indian_citizen',
+              label: 'Indian Citizen?',
+              type: 'CHECKBOX',
+              position: 7,
+              required: true,
+              placeholder: null,
+              hint: 'Check or Uncheck the box',
+              choices: [],
+            },
+
+            {
+              id: '8978f820-704b-46c7-9f88-110e14e34a8c',
+              name: 'phone_number',
+              label: 'Phone number',
+              type: 'TEXT',
+              position: 3,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Please provide your phone number',
+              choices: [],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf487be94595',
+              name: 'pincode',
+              label: 'Pincode',
+              type: 'NUMBER',
+              position: 8,
+              required: false,
+              Placeholder: 'Enter…',
+              hint: 'Please enter your Pincode',
+              choices: [],
+            },
+
+            {
+              id: 'ba53775e-2948-4065-8a59-d99d4494e845',
+              name: 'gender',
+              label: 'Gender',
+              type: 'RADIO',
+              position: 5,
+              required: true,
+              placeholder: null,
+              hint: 'Please specify your gender',
+              choices: [
+                {
+                  id: 1,
+                  value: 'Female',
+                  position: 1,
+                  dependent_ids: {},
+                },
+                {
+                  id: 2,
+                  value: 'Male',
+                  position: 2,
+                  dependent_ids: {},
+                },
+              ],
+            },
+
+            {
+              id: '42aecb8f-25cf-47ce-89c6-5410fe3d4315',
+              name: 'order_status',
+              label: 'Order Status',
+              type: 'DROPDOWN',
+              position: 4,
+              required: true,
+              placeholder: 'Enter…',
+              hint: 'Select a value',
+              choices: [
+                {
+                  id: 1,
+                  value: 'open',
+                  position: 1,
+                  dependent_ids: {},
+                },
+                {
+                  id: 2,
+                  value: 'pending',
+                  position: 2,
+                  dependent_ids: {},
+                },
+                {
+                  id: 3,
+                  value: 'closed',
+                  position: 3,
+                  dependent_ids: {},
+                },
+              ],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf487be94595',
+              name: 'amount_paid',
+              label: 'Amount Paid',
+              type: 'DECIMAL',
+              position: 10,
+              required: true,
+              Placeholder: 'Enter…',
+              hint: 'Please enter the amount paid',
+              choices: [],
+            },
+
+            {
+              id: 'f319f86f-1b6a-49cb-b4b6-cf4873674595',
+              name: 'profile_pic',
+              label: 'Profile picture',
+              type: 'FILES',
+              position: 11,
+              required: true,
+              placeholder: '',
+              multiple: true,
+            },
+          ],
+        };
+        var initialValues = {
+          is_indian_citizen: true,
+        };
+        formContainer.prepend(form);
+        // do any customisation on the field schema to match the props of crayons components.
+        var fields = formSchema.fields.map((field) => {
+          // select expects `text` and `value` prop
+          if (field.type === 'DROPDOWN' || field.type === 'MULTI_SELECT') {
+            return {
+              ...field,
+              choices: field.choices?.map((f) => {
+                return {
+                  ...f,
+                  text: f.value,
+                  value: f.id,
+                };
+              }),
+            };
+          } else return field;
+        });
+
+        var formSchema1 = {
+          ...formSchema,
+          fields: fields,
+        };
+        form.formSchema = formSchema1;
+        form.initialValues = initialValues;
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Format Date (fw-format-date)</h2>
+
+      <fw-format-date date="2021-11-30T09:17:00-04:00"></fw-format-date><br />
+
+      <fw-format-date month="long" day="numeric" year="numeric"></fw-format-date>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Format Number (fw-format-number)</h2>
+
+      <div>
+        English: <fw-format-number value="2000" locale="en" minimum-fraction-digits="2"></fw-format-number><br />
+      </div>
+      <div>
+        German: <fw-format-number value="2000" locale="de" minimum-fraction-digits="2"></fw-format-number><br />
+      </div>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Inline Message (fw-inline-message)</h2>
+
+      <section>
+        <fw-label value="Try types"></fw-label>
+        <fw-inline-message open type="error">This is an error alert message.</fw-inline-message>
+        <fw-inline-message open type="info">This is an info alert message.</fw-inline-message>
+        <fw-inline-message open type="warning">This is a warning alert message.</fw-inline-message>
+        <fw-inline-message open type="success">This is a success alert message.</fw-inline-message>
+      </section>
+      <br />
+      <section>
+        <fw-label value="Try types with closable alerts"></fw-label>
+        <fw-inline-message open closable type="error">This is an error alert message with close
+          option.</fw-inline-message>
+        <fw-inline-message open closable type="info">This is an info alert message with close
+          option.</fw-inline-message>
+        <fw-inline-message open closable type="warning">This is a warning alert message with close
+          option.</fw-inline-message>
+        <fw-inline-message open closable type="success">This is a success alert message with close
+          option.</fw-inline-message>
+      </section>
+      <br />
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Input (fw-input)</h2>
+
+      <fw-input label="Name" icon-left="add-contact" hint-text="Do not enter your user ID"
+        warning-text="Please use numbers for user ID" error-text="Invalid user ID" state="warning"
+        placeholder="Enter your official name" required clear-input>
+      </fw-input>
+      <fw-input label="Password" error-text="Password is incorrect" state="error" required clear-input>
+      </fw-input>
+      <h3>`hint-text`, `warning-text`, `error-text` can be passed as slots</h3>
+      <fw-input label="Verification Code" placeholder="Enter the verification code sent to the registered email address"
+        state="normal" clear-input>
+        <div slot="hint-text">
+          use the verification code sent to your email address
+        </div>
+      </fw-input>
+      <fw-input label="Deprecated Field" disabled state="normal" clear-input>
+      </fw-input>
+      <fw-input label="Do Not Modify" value="Not applicable" readonly state="normal" clear-input>
+      </fw-input>
+      <fw-input value="123" type="number" label="Number Input"></fw-input>
+      <fw-input type="number" min="0" max="10" label="Number Input with min and max"></fw-input>
+      <fw-input value="3.001" type="number" step="0.1" max="5" label="Decimal Input with step and max"></fw-input>
+
+      <h5>You can use group inputs together like below</h5>
+      <div style="
+        display: flex;
+        --fw-input-border-radius: 4px 0px 0px 4px;
+        --fw-select-border-radius: 0px 4px 4px 0px;
+      ">
+        <fw-input label="House Input" required="true" placeholder="Your input" hint-text="enter input"></fw-input>
+        <fw-select style="margin-left: -1px" label="House Name" required="true" value="1" placeholder="Your choice"
+          hint-text="Select singluar option">
+          <fw-select-option value="1">Starks</fw-select-option>
+          <fw-select-option value="2">Lannisters</fw-select-option>
+        </fw-select>
+      </div>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Kebab Menu (fw-kebab-menu)</h2>
+
+      <fw-label value="Standard variant"></fw-label>
+      <fw-kebab-menu id="standard-kebab-menu"></fw-kebab-menu>
+      <br /><br />
+      <fw-label value="Icon variant"></fw-label>
+      <fw-kebab-menu id="icon-kebab-menu" variant="icon"></fw-kebab-menu>
+      <br />
+
+      <script type="application/javascript">
+        var standardDataSource = [
+          {
+            value: 'move_up',
+            text: 'Move Up',
+          },
+          {
+            value: 'move_down',
+            text: 'Move Down',
+          },
+          {
+            value: 'remove',
+            text: 'Remove',
+          },
+        ];
+        var iconDataSource = [
+          {
+            value: 'move_up',
+            text: 'Move Up',
+            graphicsProps: { name: 'arrow-up' },
+          },
+          {
+            value: 'move_down',
+            text: 'Move Down',
+            graphicsProps: { name: 'arrow-down' },
+          },
+          {
+            value: 'remove',
+            text: 'Remove',
+            graphicsProps: { name: 'delete' },
+          },
+        ];
+        var standardVariant = document.getElementById('standard-kebab-menu');
+        standardVariant.options = iconDataSource;
+        standardVariant.addEventListener('fwSelect', (e) => {
+          console.log('standard variant fwSelect event', e.detail);
+        })
+        var iconVariant = document.getElementById('icon-kebab-menu');
+        iconVariant.options = iconDataSource;
+        iconVariant.addEventListener('fwSelect', (e) => {
+          console.log('icon variant fwSelect event', e.detail);
+        })
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Label (fw-label)</h2>
+
+      <fw-label value="Meta Information"></fw-label>
+      <fw-label value="Response Received" color="blue"></fw-label>
+      <fw-label value="Overdue" color="red"></fw-label>
+      <fw-label value="New" color="green"></fw-label>
+      <fw-label value="Pending" color="yellow"></fw-label>
+      <fw-label value="Archived" color="grey"></fw-label>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Modal (fw-modal)</h2>
+
+      <fw-button modal-trigger-id='welcome'> Open Modal </fw-button>
+      <fw-modal id='welcome' title-text="Welcome">
+        Hello, Welcome to Crayons
+      </fw-modal>
+
+      <fw-button modal-trigger-id='welcome-large'> Open Large Modal </fw-button>
+      <fw-modal id='welcome-large' title-text="Welcome" size="large" submit-disabled="true">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec vulputate erat. Nulla eu sagittis
+        felis. Sed vel porta felis, vitae sollicitudin enim. Mauris id tellus vel elit tincidunt cursus eu eget nisl.
+        Nunc fringilla massa ac magna dapibus accumsan. Aliquam vehicula lacinia ipsum sed vehicula. Aenean pharetra
+        suscipit nibh, ac sollicitudin justo. Suspendisse vulputate nisl auctor ornare mattis. Morbi vitae tellus ac
+        purus faucibus aliquet ac nec purus.
+        Etiam nec dolor vitae mi tincidunt ultricies nec eu augue. Donec eget odio auctor, accumsan eros et, tristique
+        diam. In lacinia neque a laoreet scelerisque. Suspendisse est ipsum, varius eget consequat a, varius vel nunc.
+        Pellentesque posuere ipsum sapien, non consectetur massa pellentesque eu. In hac habitasse platea dictumst.
+        Nulla quis tincidunt arcu, ac lacinia arcu. Donec ac tellus eu velit auctor rhoncus.
+        Aenean at eros nibh. Duis a nibh sed eros elementum sagittis. Sed erat tellus, mattis vitae mi id, condimentum
+        bibendum purus. Nulla eget accumsan ipsum. Aenean dolor odio, tristique vel aliquam vel, faucibus eu ligula.
+        Nulla sodales nisl pretium purus finibus, non ultricies dolor tempus. Cras felis arcu, varius a ipsum sed,
+        laoreet laoreet diam. Donec accumsan tortor sed aliquet tempus. Pellentesque maximus, dolor sed imperdiet
+        faucibus, neque dolor viverra lorem, ac vulputate odio purus vitae erat. Sed mollis ac orci et viverra.
+        Curabitur sagittis, leo placerat vestibulum rutrum, leo diam ornare ligula, id sodales nisi augue vitae sapien.
+        In hac habitasse platea dictumst. Vestibulum suscipit metus sed risus placerat, sit amet pretium lectus
+        malesuada. Pellentesque pellentesque, mi et hendrerit elementum, augue lectus lobortis risus, ornare commodo ex
+        odio vitae lectus.
+        Phasellus ut purus felis. Proin et turpis ac leo lacinia pulvinar ut et diam. Donec elit enim, semper sed
+        maximus non, tristique quis turpis. Donec venenatis ante dapibus elementum sagittis. Maecenas consequat lectus
+        sit amet ipsum tempor tincidunt. Praesent velit est, volutpat sed malesuada sed, molestie efficitur sem. Vivamus
+        tellus risus, feugiat eu sagittis sed, eleifend vel elit. Vivamus semper porta tempor. Maecenas ut nulla mauris.
+        Sed pulvinar orci in lacus semper, nec volutpat lectus pellentesque. Aliquam dictum suscipit tellus, eu rutrum
+        nulla tincidunt vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam egestas, diam eu
+        tincidunt ullamcorper, dui libero lacinia augue, non fermentum augue libero eget diam. Quisque at interdum erat.
+        Sed lobortis sit amet mauris nec rutrum. Aliquam sit amet risus iaculis, tempor lectus commodo, varius ipsum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec vulputate erat. Nulla eu sagittis
+        felis. Sed vel porta felis, vitae sollicitudin enim. Mauris id tellus vel elit tincidunt cursus eu eget nisl.
+        Nunc fringilla massa ac magna dapibus accumsan. Aliquam vehicula lacinia ipsum sed vehicula. Aenean pharetra
+        suscipit nibh, ac sollicitudin justo. Suspendisse vulputate nisl auctor ornare mattis. Morbi vitae tellus ac
+        purus faucibus aliquet ac nec purus.
+        Etiam nec dolor vitae mi tincidunt ultricies nec eu augue. Donec eget odio auctor, accumsan eros et, tristique
+        diam. In lacinia neque a laoreet scelerisque. Suspendisse est ipsum, varius eget consequat a, varius vel nunc.
+        Pellentesque posuere ipsum sapien, non consectetur massa pellentesque eu. In hac habitasse platea dictumst.
+        Nulla quis tincidunt arcu, ac lacinia arcu. Donec ac tellus eu velit auctor rhoncus.
+        Aenean at eros nibh. Duis a nibh sed eros elementum sagittis. Sed erat tellus, mattis vitae mi id, condimentum
+        bibendum purus. Nulla eget accumsan ipsum. Aenean dolor odio, tristique vel aliquam vel, faucibus eu ligula.
+        Nulla sodales nisl pretium purus finibus, non ultricies dolor tempus. Cras felis arcu, varius a ipsum sed,
+        laoreet laoreet diam. Donec accumsan tortor sed aliquet tempus. Pellentesque maximus, dolor sed imperdiet
+        faucibus, neque dolor viverra lorem, ac vulputate odio purus vitae erat. Sed mollis ac orci et viverra.
+        Curabitur sagittis, leo placerat vestibulum rutrum, leo diam ornare ligula, id sodales nisi augue vitae sapien.
+        In hac habitasse platea dictumst. Vestibulum suscipit metus sed risus placerat, sit amet pretium lectus
+        malesuada. Pellentesque pellentesque, mi et hendrerit elementum, augue lectus lobortis risus, ornare commodo ex
+        odio vitae lectus.
+        Phasellus ut purus felis. Proin et turpis ac leo lacinia pulvinar ut et diam. Donec elit enim, semper sed
+        maximus non, tristique quis turpis. Donec venenatis ante dapibus elementum sagittis. Maecenas consequat lectus
+        sit amet ipsum tempor tincidunt. Praesent velit est, volutpat sed malesuada sed, molestie efficitur sem. Vivamus
+        tellus risus, feugiat eu sagittis sed, eleifend vel elit. Vivamus semper porta tempor. Maecenas ut nulla mauris.
+        Sed pulvinar orci in lacus semper, nec volutpat lectus pellentesque. Aliquam dictum suscipit tellus, eu rutrum
+        nulla tincidunt vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam egestas, diam eu
+        tincidunt ullamcorper, dui libero lacinia augue, non fermentum augue libero eget diam. Quisque at interdum erat.
+        Sed lobortis sit amet mauris nec rutrum. Aliquam sit amet risus iaculis, tempor lectus commodo, varius ipsum.
+      </fw-modal>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>List Options (fw-list-options)</h2>
+
+      <fw-label value="With predefined options" color="blue"></fw-label>
+      <fw-popover same-width="false">
+        <fw-button slot="popover-trigger">Click Me!</fw-button>
+        <fw-list-options variant="icon" id="predefinedOptions" slot="popover-content" option-label-path="name"
+          option-value-path="id"></fw-list-options>
+      </fw-popover>
+      <br />
+      <br />
+      <fw-label value="With search" color="blue"></fw-label>
+      <fw-popover same-width="false">
+        <fw-button slot="popover-trigger">Click Me!</fw-button>
+        <fw-list-options variant="avatar" searchable="true" id="searchVariant" slot="popover-content"
+          no-data-text="Type to search.." not-found-text="Not available in this universe" search-text="Search Pirate"
+          multiple option-label-path="label" option-value-path="id"></fw-list-options>
+      </fw-popover>
+
+      <script type="application/javascript">
+        var iconDataSource = [
+          {
+            id: '1',
+            name: 'Luffy',
+            subText: 'Pirate King',
+            graphicsProps: { name: 'verified' },
+          },
+          {
+            id: '2',
+            name: 'Zorro',
+            subText: 'Best Swordsman',
+            graphicsProps: { name: 'magic-wand' },
+          },
+          {
+            id: '3',
+            name: 'Sanji',
+            subText: 'Best Chef',
+            graphicsProps: { name: 'ecommerce' },
+          },
+        ];
+        var predefinedOptions = document.getElementById('predefinedOptions');
+        predefinedOptions.options = iconDataSource;
+        predefinedOptions.setSelectedOptions([
+          {
+            id: '2',
+            name: 'Zorro',
+            subText: 'Best Swordsman',
+            graphicsProps: { name: 'magic-wand' },
+          },
+        ]);
+        predefinedOptions.addEventListener('fwChange', (e) => {
+          console.log(e.detail);
+        });
+
+        var searchVariant = document.getElementById('searchVariant');
+        baseURL = 'https://api.sampleapis.com/rickandmorty/characters';
+        searchVariant.selectedOptions = [
+          {
+            label: 'Rick Sanchez',
+            subText: 'Human',
+            id: '1',
+            graphicsProps: {
+              image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
+            },
+          },
+        ];
+        searchVariant.search = (value, source) => {
+          // Sample function to mimic the dynamic filter over network
+          return fetch(baseURL)
+            .then((resp) => resp.json())
+            .then((data) => {
+              const result = data.filter((x) =>
+                x.name.toLowerCase().includes(value.toLowerCase())
+              );
+              return result.map((x) => {
+                return {
+                  label: x.name,
+                  subText: x.type,
+                  id: x.id.toString(),
+                  graphicsProps: { image: x.image },
+                };
+              });
+            });
+        };
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Pagination (fw-pagination)</h2>
+
+      <fw-pagination per-page="20" total="50"></fw-pagination><br />
+      <fw-pagination total="50"></fw-pagination><br />
+      <fw-pagination page="2" per-page="10" total="50"></fw-pagination>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Pill (fw-pill)</h2>
+
+      <fw-pill color="blue">
+        <fw-icon name="info" slot="icon"></fw-icon>
+        Response Received
+      </fw-pill>
+      <fw-pill color="red">
+        <fw-icon name="alert" slot="icon"></fw-icon>
+        Overdue
+      </fw-pill>
+      <fw-pill color="green">
+        <fw-icon name="add-contact" slot="icon"></fw-icon>
+        New
+      </fw-pill>
+      <fw-pill color="yellow">
+        <fw-icon name="help" slot="icon"></fw-icon>
+        Pending
+      </fw-pill>
+      <fw-pill color="grey">
+        <fw-icon name="add-note" slot="icon"></fw-icon>
+        Archived
+      </fw-pill>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Progress Loader (fw-progress-loader)</h2>
+
+      <fw-progress-loader id="root" show></fw-progress-loader>
+
+      <br /><br /><br />
+      <fw-progress-loader parent="#container2" id="progress-container"></fw-progress-loader>
+
+
+      <div id="container2">
+        <p> You can have multiple progress loaders in the page. Pass a `selector` as a `parent` prop to the component.
+          The progress loader will be displayed in the provided selector</p>
+      </div>
+
+      <br>
+      <br />
+      <br />
+      <fw-button onclick="document.querySelector('#progress-container').start()">Start custom selector progress
+        bar</fw-button> <br /><br />
+      <fw-button onclick="document.querySelector('#progress-container').done()">Stop custom selector progress
+        bar</fw-button>
+
+      <script type="application/javascript">
+        document.querySelector('#progress-container').start();
+        setTimeout(() => {
+          document.querySelector('#root').done();
+        }, 10000)
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Radio (fw-radio)</h2>
+
+      <fw-radio checked description="Select to agree">Agree or Disagree</fw-radio><br><br>
+      <fw-radio checked disabled value="dr">Disabled radio</fw-radio>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Radio Group (fw-radio-group)</h2>
+
+      <fw-radio-group name="Profile" value="au" allow-empty>
+        <fw-radio value="au">Auditory</fw-radio>
+        <fw-radio value="vi">Visual</fw-radio>
+        <fw-radio value="re">Restless</fw-radio>
+      </fw-radio-group>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Select (fw-select)</h2>
+
+      <fw-select label="House Name" required="true" value="1" placeholder="Your choice"
+        hint-text="Select singluar option">
+        <fw-select-option value="1">Starks</fw-select-option>
+        <fw-select-option value="2">Lannisters</fw-select-option>
+      </fw-select>
+      <fw-select label="Names" placeholder="Your choices" hint-text="Select multiple options" multiple>
+        <fw-select-option value="1" selected>Starks</fw-select-option>
+        <fw-select-option value="2">Lannisters</fw-select-option>
+        <fw-select-option value="3">Sand</fw-select-option>
+        <fw-select-option value="4">Greyjoys</fw-select-option>
+        <fw-select-option value="5">Tyrell</fw-select-option>
+      </fw-select>
+
+      <fw-select label="House Name" required="true" value="1" placeholder="Your choice"
+        error-text="Select singluar option" state="error">
+        <fw-select-option value="1">Starks</fw-select-option>
+        <fw-select-option value="2">Lannisters</fw-select-option>
+      </fw-select>
+      <h3>`hint-text`, `warning-text`, `error-text` can be passed as slots</h3>
+      <fw-select label="House Name" required="true" value="1" placeholder="Your choice" state="error">
+        <div slot="error-text">Select singluar option</div>
+        <fw-select-option value="1">Starks</fw-select-option>
+        <fw-select-option value="2">Lannisters</fw-select-option>
+      </fw-select>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Select Option (fw-select-option)</h2>
+
+      <fw-select-option selected="true">I am the chosen one</fw-select-option>
+      <fw-select-option html html-content="<b>Me, nein</b>"></fw-select-option>
+      <fw-select-option>I am another option</fw-select-option>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Skeleton (fw-skeleton)</h2>
+
+      <label>Default text variant</label> <fw-skeleton></fw-skeleton> <br />
+      <label>Circle variant</label>
+      <fw-skeleton variant="circle"></fw-skeleton> <br />
+      <label>Rectangle variant with custom height</label>
+      <fw-skeleton variant="rect" height="200px"></fw-skeleton> <br />
+      <label>Pass count to repeat the item</label>
+      <fw-skeleton variant="rect" height="30px" count="3"></fw-skeleton> <br />
+
+      <label>Pass Custom styles as props</label>
+      <fw-skeleton id="custom-skeleton"></fw-skeleton>
+
+      <script type="application/javascript">
+        const el = document.querySelector('#custom-skeleton');
+        el.customStyles = {
+          'display': 'inline-block',
+          'box-shadow': '0 2px 4px #ccc',
+          'background-color': '#1b2b34de',
+          'width': '33%',
+        };
+        el.count = 2;
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Spinner (fw-spinner)</h2>
+
+      <fw-label value="A small loader" color="yellow"></fw-label><br />
+      <fw-spinner size="small"></fw-spinner><br /><br />
+      <fw-label value="A medium sized loader" color="yellow"></fw-label><br />
+      <fw-spinner size="medium" color="green"></fw-spinner>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Tab (fw-tab)</h2>
+
+      <fw-tab>Personal</fw-tab>
+      <fw-tab>Official</fw-tab>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Tab Panel (fw-tab-panel)</h2>
+
+      <fw-tab-panel active>This is sample panel content</fw-tab-panel>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Tabs (fw-tabs)</h2>
+
+      <fw-tabs>
+        <fw-tab slot="tab" panel="personal">Personal</fw-tab>
+        <fw-tab slot="tab" panel="official">Official</fw-tab>
+
+        <fw-tab-panel name="personal">
+          <fw-input label="Name" icon-left="add-contact" warning-text="Do not enter your user ID" state="warning"
+            placeholder="Enter your official name" required clear-input>
+          </fw-input>
+          <fw-button color="secondary">Submit</fw-button>
+          <fw-button color="secondary">Save</fw-button>
+        </fw-tab-panel>
+
+        <fw-tab-panel name="official">
+          <fw-select multiple label="Select location of preference" required="true">
+            <fw-select-option value="1">Chennai</fw-select-option>
+            <fw-select-option value="2">Bangalore</fw-select-option>
+            <fw-select-option value="3">Hyderabad</fw-select-option>
+          </fw-select>
+          <fw-button color="secondary">Submit</fw-button>
+          <fw-button color="secondary">Save</fw-button>
+        </fw-tab-panel>
+      </fw-tabs>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Tag (fw-tag)</h2>
+
+      <fw-tag text="Option"></fw-tag>
+
+      <fw-tag id="avatarTag" variant="avatar" text="Option"></fw-tag>
+
+      <fw-tag id="avatarTagError" variant="avatar" text="Option" state="error"></fw-tag>
+
+      <fw-tag id="avatarTagFocused" variant="avatar" text="Option" is-focused></fw-tag>
+
+      <fw-tag id="avatarTagWithSubText" variant="avatar" text="Option" sub-text='<sub-text>'></fw-tag>
+
+      <fw-tag id="avatarTagTransparent" variant="avatar" text="Option" state="transparent"></fw-tag>
+
+      <div style="max-width: 200px; padding-top: 10px">
+        <fw-tag id="avatarTagWithEllipsis" variant="avatar" text="Option With Longest Text" sub-text='<sub-text>'
+          show-ellipsis-on-overflow></fw-tag>
+      </div>
+
+      <script type="application/javascript">
+        avatarTag = document.getElementById('avatarTag');
+        avatarTagError = document.getElementById('avatarTagError');
+        avatarTagFocused = document.getElementById('avatarTagFocused');
+        avatarTagWithSubText = document.getElementById('avatarTagWithSubText');
+        avatarTagWithEllipsis = document.getElementById('avatarTagWithEllipsis');
+        avatarTag.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+        avatarTagError.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+        avatarTagFocused.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+        avatarTagWithSubText.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+        avatarTagTransparent.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+        avatarTagWithEllipsis.graphicsProps = {
+          image:
+            'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80',
+        };
+      </script>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Textarea (fw-textarea)</h2>
+
+      <fw-textarea cols="75" rows="5" maxlength="190" minlength="5" label="Address"
+        warning-text="Do not enter your temporary address" state="warning" placeholder="Enter your permanent address"
+        required>
+      </fw-textarea>
+      <fw-textarea cols="75" rows="5" label="Passcode" error-text="Passcode is incorrect" state="error" required>
+      </fw-textarea>
+      <h3>`hint-text`, `warning-text`, `error-text` can be passed as slots</h3>
+      <fw-textarea cols="75" rows="5" label="Location identifier" placeholder="Enter landmark details" state="normal">
+        <div slot="hint-text">Enter location details</div>
+      </fw-textarea>
+      <fw-textarea cols="75" rows="1" label="Plot number" value="not applicable" disabled state="normal">
+      </fw-textarea>
+      <fw-textarea cols="75" rows="4" max-rows="10" label="Description">
+      </fw-textarea>
+      <fw-textarea cols="75" rows="4" max-rows="10" max-rows-debounce-timer="300" label="Description">
+      </fw-textarea>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Timepicker (fw-timepicker)</h2>
+
+      <fw-label value="An interval based picker" color="yellow"></fw-label><br />
+      <fw-timepicker interval="45" format="hh:mm a"></fw-timepicker>
+      <fw-label value="A range based picker" color="yellow"></fw-label><br />
+      <fw-timepicker min-time="04:30 PM" max-time="08:30 PM"></fw-timepicker>
+      <fw-label value="Time picker with locale support" color="yellow"></fw-label><br />
+      <fw-timepicker locale="ar"></fw-timepicker>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Toast (fw-toast)</h2>
+
+      <fw-toast id="type_toast"></fw-toast>
+      <fw-toast id="type_toast_right" position="top-right"></fw-toast>
+      <fw-toast id="type_toast_left" position="top-left"></fw-toast>
+
+      <fw-toast-message type="success" id="custom-toast" timeout="6000">
+        <div>
+          <span class="custom-text">Custom content</span>
+          <h4>custom html contents can be added</h4>
+          <button onclick="alert('clicked')">custom btn</button>
+        </div>
+      </fw-toast-message>
+
+      <fw-toast-message type="success" id="custom-toast1" sticky action-link-text="Click me">
+        <div style="display: flex;
+    flex-direction: column;
+    gap: 4px;">
+          <span style="font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #12344D;">Test content</span>
+          <span style="font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;">custom html contents can be added</span>
+        </div>
+      </fw-toast-message>
+
+      <fw-button
+        onclick="document.querySelector('#type_toast').trigger({type:'success', content: 'Successfullly triggered'})">Success</fw-button>
+      <fw-button
+        onclick="document.querySelector('#type_toast_right').trigger({type:'error', content:'something went wrong!'})">Error</fw-button>
+      <fw-button
+        onclick="document.querySelector('#type_toast_left').trigger({type:'warning', content:'This is a warning!'})">Warning</fw-button>
+      <fw-button
+        onclick="document.querySelector('#type_toast').trigger({type:'inprogress', content:'Request is in progress'})">Inprogress</fw-button>
+      <fw-button
+        onclick="document.querySelector('#type_toast').trigger({type:'success', contentref:'#custom-toast'})">Custom
+        Toast Content</fw-button>
+
+      <fw-button
+        onclick="document.querySelector('#type_toast').trigger({type:'success', contentref:'#custom-toast1'})">Custom
+        Toast Content 1</fw-button>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Toast Message (fw-toast-message)</h2>
+
+      <fw-toast-message open id="type_toast" sticky="true" type="success" content="success"></fw-toast-message>
+      <fw-toast-message open id="type_toast" sticky="true" type="error" content="error"></fw-toast-message>
+      <fw-toast-message open id="type_toast" type="warning" content="warning"></fw-toast-message>
+      <fw-toast-message open id="type_toast" type="inprogress" content="inprogress"></fw-toast-message>
+      <fw-toast-message type="success" id="custom-toast" sticky open action-link-text="Click me">
+        <div style="display: flex;
+    flex-direction: column;
+    gap: 4px;">
+          <span style="font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #12344D;">Test content</span>
+          <span style="font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;">custom html contents can be added</span>
+        </div>
+      </fw-toast-message>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Toggle (fw-toggle)</h2>
+
+      <fw-toggle size="small"></fw-toggle><br><br>
+      <fw-toggle size="medium" checked></fw-toggle>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Toggle Group (fw-toggle-group)</h2>
+
+      <fw-toggle-group name="Test toggle group" selected-values="bb,cc" multiple="true">
+        <fw-toggle-group-button header="Header A" description="This is a sample description of the card component."
+          value="aa"></fw-toggle-group-button>
+        <fw-toggle-group-button header="Header B" description="This is a sample description of the card component."
+          value="bb"></fw-toggle-group-button>
+        <fw-toggle-group-button header="Header C" description="This is a sample description of the card component."
+          value="cc"></fw-toggle-group-button>
+        <fw-toggle-group-button header="Header D" value="dd"></fw-toggle-group-button>
+        <fw-toggle-group-button header="Header E" value="ee"></fw-toggle-group-button>
+        <fw-toggle-group-button header="Header F" value="ff"></fw-toggle-group-button>
+      </fw-toggle-group>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Toggle Group Button (fw-toggle-group-button)</h2>
+
+      <section>
+        <fw-label value="Icon button"></fw-label>
+        <fw-toggle-group-button value="aa" type="icon">
+          <fw-icon slot="toggle-icon" size="16" name="phone" />
+        </fw-toggle-group-button>
+        <fw-toggle-group-button value="dd" type="icon">
+          <fw-icon slot="toggle-icon" size="16" name="delete" />
+        </fw-toggle-group-button>
+      </section>
+
+      <br />
+
+      <section>
+        <fw-label value="Card button"></fw-label>
+        <fw-toggle-group-button header="Header A" description="This is a sample description of the card component."
+          value="aa" is-checkbox></fw-toggle-group-button>
+      </section>
+
+    </div>
+
+    <div class="fw-card-1 fw-p-24">
+      <h2>Tooltip (fw-tooltip)</h2>
+
+      <fw-tooltip content="This is the first tooltip example">
+        <fw-button> Show tooltip </fw-button>
+      </fw-tooltip>
+
+    </div>
