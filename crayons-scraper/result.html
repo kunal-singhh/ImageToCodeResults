@@ -1251,3 +1251,51 @@
       </fw-tooltip>
 
     </div>
+  </main>
+
+  <!-- Script to take inidvidual cards for screenshots -->
+  <script defer>
+    document.querySelectorAll('main > div').forEach(function (card, index) {
+      // set a data attribute to the card with the value of the innertext of the h2 in the card
+      let component = card.querySelector('h2').innerText.trim();
+      card.dataset.index = index + 1;
+      card.dataset.component = component;
+    })
+    document.querySelectorAll('main > div')[0].dataset.active = true
+
+    function moveNext() {
+      const active = document.querySelector('main > div[data-active]')
+      captureScreenshot(active);
+      active.removeAttribute('data-active');
+      const next = active.nextElementSibling
+      if (next) {
+        next.dataset.active = true;
+      } else {
+        alert('No more cards to show')
+      }
+    }
+
+    function captureScreenshot(card) {
+      const screenshotTarget = card;
+
+      html2canvas(screenshotTarget).then((canvas) => {
+        const base64image = canvas.toDataURL("image/png");
+        const downloadLink = document.createElement('a');
+        downloadLink.href = base64image;
+        downloadLink.download = card.dataset.component + '.png';
+        downloadLink.click();
+      });
+    }
+
+
+  </script>
+  <style>
+    main>div {
+      display: none;
+    }
+
+    main>div[data-active] {
+      display: block;
+    }
+  </style>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
