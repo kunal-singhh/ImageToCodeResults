@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Manager App</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-checkbox>Select All</fw-checkbox>
+  <fw-data-table id="file-table" is-selectable="true">
+  </fw-data-table>
+  <fw-pagination></fw-pagination>
+  <fw-button color="primary" position="bottom-right">Download</fw-button>
+
+  <script type="application/javascript">
+    const fileTable = document.getElementById('file-table');
+    fileTable.columns = [
+      { key: 'checkbox', text: '', type: 'checkbox' },
+      { key: 'icon', text: 'Icon', type: 'icon', icon: 'paperclip' },
+      { key: 'filename', text: 'File Name' },
+      { key: 'filesize', text: 'File Size' }
+    ];
+    fileTable.rows = [
+      { filename: 'File1.txt', filesize: '10 KB' },
+      { filename: 'File2.txt', filesize: '20 KB' },
+      { filename: 'File3.txt', filesize: '30 KB' }
+    ];
+  </script>
+</body>
+</html>

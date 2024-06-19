@@ -8,11 +8,11 @@ data
     - image1.jpg
     - image2.jpg
     - ...
-  - prod-gen
+  - gemini-1.0
     - image1.html
     - image2.html
     - ...
-  - gemini-gen
+  - gemini-1.5
     - image1.html
     - image2.html
 

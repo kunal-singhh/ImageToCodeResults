@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagerDuty Incident Viewer</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>PagerDuty Incident Viewer</h1>
+  <p>The PagerDuty Incident Viewer is a tool that allows you to view a list of your current PagerDuty incidents.</p>
+
+  <fw-button color="primary" id="fetch-incidents">Fetch PagerDuty Incidents</fw-button>
+
+  <fw-accordion open>
+    <fw-accordion-title>Incidents</fw-accordion-title>
+    <fw-accordion-body>
+      <ul id="incident-list">
+        <!-- Incident list will be populated here -->
+      </ul>
+    </fw-accordion-body>
+  </fw-accordion>
+
+  <script>
+    document.getElementById('fetch-incidents').addEventListener('click', () => {
+      // Fetch incidents and populate the incident list
+    });
+  </script>
+</body>
+</html>

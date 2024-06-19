@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Order Details</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <header>
+    <fw-label value="Store Name"></fw-label>
+    <fw-label value="Order Number"></fw-label>
+  </header>
+
+  <main>
+    <fw-label value="Order Details"></fw-label>
+    <fw-label value="Products Ordered"></fw-label>
+    <fw-label value="Quantity"></fw-label>
+    <fw-label value="Price"></fw-label>
+    <fw-label value="Total Price"></fw-label>
+  </main>
+
+  <footer>
+    <fw-label value="Shipping Address"></fw-label>
+    <fw-button color="primary" onclick="cancelOrder()">Cancel Order</fw-button>
+    <fw-button color="primary" onclick="refundOrder()">Refund Order</fw-button>
+    <fw-button color="primary" onclick="viewInShopify()">View in Shopify</fw-button>
+  </footer>
+
+  <script>
+    function cancelOrder() {
+      // Cancel order logic
+    }
+
+    function refundOrder() {
+      // Refund order logic
+    }
+
+    function viewInShopify() {
+      // Open order in Shopify app
+    }
+  </script>
+</body>
+</html>

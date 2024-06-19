@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <img src="google_calendar_logo.png" alt="Google Calendar Logo" style="float: left;">
+
+  <fw-input
+    label="Add an event"
+    placeholder="Enter event name"
+  >
+  </fw-input>
+
+  <fw-input
+    label="techquickshop@gmail.com"
+    placeholder="Enter email address"
+  >
+  </fw-input>
+
+  <fw-button color="primary">Change calendar</fw-button>
+
+  <fw-datepicker
+    value="2022-06-22"
+  ></fw-datepicker>
+
+  <h3>[Ticket: 164] Refund amount is not ...</h3>
+  <p>8:00 pm-8:30 pm</p>
+
+  <fw-button color="primary">Edit</fw-button>
+  <fw-button color="secondary">Remove</fw-button>
+
+  <a href="https://calendar.google.com/" target="_blank">View on Google Calendar</a>
+</body>
+</html>

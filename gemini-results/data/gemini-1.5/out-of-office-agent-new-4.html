@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Office Application</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+  <style>
+    .nav-tabs {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .nav-tab {
+      cursor: pointer;
+    }
+    .nav-tab.active {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-tabs">
+    <span class="nav-tab active">Agent Availability</span>
+    <span class="nav-tab">Apply OOO</span>
+    <span class="nav-tab">Apply for an agent</span>
+    <span class="nav-tab">Settings</span>
+  </div>
+
+  <fw-label value="APPLY OUT OF OFFICE" color="blue" size="18"></fw-label><br />
+
+  <fw-label value="Email" color="black"></fw-label><br />
+  <fw-input label="Email" placeholder="Enter your email" required clear-input></fw-input><br />
+
+  <fw-label value="From" color="black"></fw-label><br />
+  <fw-datepicker label="From" placeholder="Select a date"></fw-datepicker><br />
+
+  <fw-label value="To" color="black"></fw-label><br />
+  <fw-datepicker label="To" placeholder="Select a date"></fw-datepicker><br />
+
+  <fw-button color="primary" style="margin-top: 20px;">Apply</fw-button>
+</body>
+</html>

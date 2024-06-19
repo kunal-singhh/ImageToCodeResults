@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons Webpage</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agentAvailability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="applyOOO">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="applyAgent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+  </fw-tabs>
+
+  <fw-input
+    label="Search"
+    icon-right="search"
+    placeholder="Search"
+  ></fw-input>
+
+  <fw-datepicker
+    id="fromDate"
+    label="From"
+  ></fw-datepicker>
+
+  <fw-datepicker
+    id="toDate"
+    label="To"
+  ></fw-datepicker>
+
+  <fw-button color="primary">Apply</fw-button>
+
+  <fw-button color="primary">Apply for an agent</fw-button>
+</body>
+</html>

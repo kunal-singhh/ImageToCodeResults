@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons Out of Office</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-navbar>
+    <fw-navbar-item>Agent Availability</fw-navbar-item>
+    <fw-navbar-item>Apply OOO</fw-navbar-item>
+    <fw-navbar-item>Apply for an agent</fw-navbar-item>
+    <fw-navbar-item>Settings</fw-navbar-item>
+  </fw-navbar>
+
+  <fw-input
+    label="Email"
+    placeholder="Enter your email address"
+    required
+    clear-input
+  ></fw-input>
+
+  <fw-datepicker
+    id="from-date"
+    label="From date"
+    placeholder="Enter start date"
+  ></fw-datepicker>
+
+  <fw-datepicker
+    id="to-date"
+    label="To date"
+    placeholder="Enter end date"
+  ></fw-datepicker>
+
+  <fw-button color="primary">Apply</fw-button>
+</body>
+</html>

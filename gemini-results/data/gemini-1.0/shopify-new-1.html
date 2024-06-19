@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedFox Shoes Order Details</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <header>
+    <fw-icon name="arrow_left" size="18"></fw-icon>
+    <h1>RedFox Shoes</h1>
+  </header>
+  <section>
+    <h2>Order Details</h2>
+    <p>Order #: 1005</p>
+    <p>Purchased on: 26 Oct, 2021</p>
+    <p>Status: Unpaid, Unfulfilled</p>
+  </section>
+  <section>
+    <h2>Items</h2>
+    <fw-data-table>
+      <fw-data-table-header>Name</fw-data-table-header>
+      <fw-data-table-header>Quantity</fw-data-table-header>
+      <fw-data-table-header>Price</fw-data-table-header>
+      <fw-data-table-header>Refund Status</fw-data-table-header>
+      <!-- Add rows for each item in the order -->
+    </fw-data-table>
+    <p>Total Price: $165.00</p>
+  </section>
+  <section>
+    <h2>Shipping Address</h2>
+    <!-- Add shipping address details here -->
+  </section>
+  <footer>
+    <fw-button color="primary">Cancel order</fw-button>
+    <fw-button color="primary">Refund order</fw-button>
+    <fw-button color="primary">View in Shopify</fw-button>
+  </footer>
+</body>
+</html>

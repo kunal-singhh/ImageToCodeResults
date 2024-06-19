@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagerDuty Incident Viewer</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>PagerDuty Incident Viewer</h1>
+  <p>The PagerDuty Incident Viewer is a tool that allows you to view a list of your current PagerDuty incidents.</p>
+  <fw-button color="primary">PagerDuty Incidents</fw-button>
+  <br><br>
+  <fw-data-table>
+    <fw-data-table-header>
+      <fw-data-table-column>Incident ID</fw-data-table-column>
+      <fw-data-table-column>Title</fw-data-table-column>
+      <fw-data-table-column>Status</fw-data-table-column>
+      <fw-data-table-column>Actions</fw-data-table-column>
+    </fw-data-table-header>
+    <!-- Add rows with incident data here -->
+  </fw-data-table>
+  <br>
+  <p>Actions:</p>
+  <ul>
+    <li>View Incident: This action will open the incident in a new window.</li>
+    <li>Acknowledge Incident: This action will acknowledge the incident.</li>
+    <li>Resolve Incident: This action will resolve the incident.</li>
+  </ul>
+</body>
+</html>

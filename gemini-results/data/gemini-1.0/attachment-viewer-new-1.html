@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-checkbox>Select all attachments</fw-checkbox>
+
+  <div>
+    <fw-checkbox>Attachment 1</fw-checkbox>
+    <fw-label value="Attachment 1 (5MB)"></fw-label>
+  </div>
+
+  <div>
+    <fw-checkbox>Attachment 2</fw-checkbox>
+    <fw-label value="Attachment 2 (3MB)"></fw-label>
+  </div>
+
+  <div>
+    <fw-checkbox>Attachment 3</fw-checkbox>
+    <fw-label value="Attachment 3 (2MB)"></fw-label>
+  </div>
+
+  <fw-button color="primary" style="float: right;">Download</fw-button>
+</body>
+</html>

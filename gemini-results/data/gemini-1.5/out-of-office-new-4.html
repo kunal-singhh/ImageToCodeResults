@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOO Configuration</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings" selected>Settings</fw-tab>
+  </fw-tabs>
+
+  <h2>CONFIGURATION</h2>
+
+  <fw-label value="Send OOO notification when customer replies to ticket"></fw-label>
+  <fw-toggle-switch checked></fw-toggle-switch>
+
+  <h3>Email Body</h3>
+  <fw-textarea cols="50" rows="4" label="Hey there, I am currently OOO..."></fw-textarea>
+
+  <fw-checkbox checked description="Allow agent to edit the notification"></fw-checkbox>
+
+  <fw-button>Agent Name</fw-button>
+  <fw-button>Agent Email</fw-button>
+  <fw-button>Requester Name</fw-button>
+  <fw-button>Ticket Url</fw-button>
+
+  <fw-label value="Reassign ticket to group and agent"></fw-label>
+  <fw-toggle-switch></fw-toggle-switch>
+
+  <fw-label value="Unassign ticket"></fw-label>
+  <fw-toggle-switch></fw-toggle-switch>
+
+  <fw-button color="secondary">Cancel</fw-button>
+  <fw-button color="primary">Save</fw-button>
+</body>
+</html>

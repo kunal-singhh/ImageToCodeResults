@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons Webpage</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-navbar>
+    <fw-navbar-item href="#">Agent Availability</fw-navbar-item>
+    <fw-navbar-item href="#">Apply OOO</fw-navbar-item>
+    <fw-navbar-item href="#">Apply for an agent</fw-navbar-item>
+    <fw-navbar-item href="#">Settings</fw-navbar-item>
+  </fw-navbar>
+
+  <fw-input
+    label="Search"
+    placeholder="Enter an email address"
+    icon-right="magnifying-glass"
+  ></fw-input>
+
+  <div>
+    <fw-datepicker
+      id="start-date"
+      label="Start Date"
+    ></fw-datepicker>
+    <fw-datepicker
+      id="end-date"
+      label="End Date"
+    ></fw-datepicker>
+  </div>
+
+  <fw-button color="primary">Apply</fw-button>
+
+  <fw-icon name="arrow-right" size="18" color="red" style="position: absolute; left: 50%; top: 50%;"></fw-icon>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Mobile Order Details</title>
+    <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"
+    >
+</head>
+<body>
+    <header>
+        <fw-icon name="shopify" size="24" color="green"></fw-icon>
+        <fw-label value="SHOPIFY" color="dark" weight="bold"></fw-label>
+        <fw-icon name="arrow-up" size="24" color="dark" class="right-aligned"></fw-icon>
+    </header>
+    <section>
+        <fw-label value="Store" color="dark"></fw-label>
+        <fw-label value="RedFox Shoes" color="black" weight="bold"></fw-label>
+        <fw-icon name="arrow-down" size="24" color="dark" class="right-aligned"></fw-icon>
+    </section>
+    <section>
+        <a href="#" style="color: blue; text-decoration: underline;">show past orders</a>
+    </section>
+    <section>
+        <fw-label value="LATEST ORDER" color="black" weight="bold"></fw-label>
+        <fw-label value="#1005" color="black" weight="extrabold" size="24"></fw-label>
+        <fw-label value="Purchased on: 26 Oct, 2021" color="dark"></fw-label>
+        <fw-button color="light" style="border-radius: 5px;">Paid</fw-button>
+        <fw-button color="yellow" style="border-radius: 5px;">Unfulfilled</fw-button>
+        <div>
+            <fw-label value="1. RedFox Casual Slippers" color="black"></fw-label>
+            <fw-label value="1 x $80.00" color="black"></fw-label>
+            <fw-label value="$80.00" color="black"></fw-label>
+            <a href="#" style="color: blue; text-decoration: underline;">Refund</a>
+        </div>
+        <fw-label value="Total" color="black" weight="bold"></fw-label>
+        <fw-label value="$165.00" color="black" weight="bold" size="24" class="right-aligned"></fw-label>
+    </section>
+    <section>
+        <fw-label value="Shipping address" color="dark"></fw-label>
+        <fw-label value="4860 Corpening Drive." color="black"></fw-label>
+    </section>
+    <section>
+        <fw-button color="light" style="border-radius: 5px; width: 100%;">
+            <fw-icon name="x-circle" size="24" color="dark"></fw-icon>
+            Cancel order
+        </fw-button>
+        <fw-button color="light" style="border-radius: 5px; width: 100%;">
+            <fw-icon name="arrow-counterclockwise" size="24" color="dark"></fw-icon>
+            Refund order
+        </fw-button>
+        <fw-button color="light" style="border-radius: 5px; width: 100%;">
+            <fw-icon name="cart" size="24" color="dark"></fw-icon>
+            No shipping info available
+        </fw-button>
+    </section>
+    <section>
+        <fw-icon name="box-arrow-up" size="24" color="gray"></fw-icon>
+        <a href="#" style="color: blue; text-decoration: underline;">View in Shopify</a>
+    </section>
+</body>
+</html>
