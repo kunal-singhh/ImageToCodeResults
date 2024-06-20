@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to update the image previews based on the selected index
   function updatePreviews(imageName) {
     originalImage.src = `./data/design-images/${imageName}.png`;
-    geminiPreview.src = `./data/gemini-1.0/${imageName}.html`;
-    geminiNewVersionPreview.src = `./data/gemini-1.5/${imageName}.html`;
+    geminiPreview.src = `./data/gemini-1.0-June-20-2024/${imageName}.html`;
+    geminiNewVersionPreview.src = `./data/gemini-1.5-June-20-2024/${imageName}.html`;
 
-    fetch(`./data/gemini-1.0-prompt/${imageName}.txt`)
+    fetch(`./data/gemini-1.0-prompt-June-20-2024/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((e) => console.error(e));
 
-      fetch(`./data/gemini-1.5-prompt/${imageName}.txt`)
+      fetch(`./data/gemini-1.5-prompt-June-20-2024/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
