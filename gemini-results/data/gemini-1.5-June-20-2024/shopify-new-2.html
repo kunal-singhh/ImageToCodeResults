@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Order</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <header>
+    <fw-icon name="shopify" size="24" color="green"></fw-icon>
+    <fw-label value="SHOPIFY" color="black" style="font-weight: bold;"></fw-label>
+  </header>
+  <fw-select
+    label="Store"
+    required="true"
+    placeholder="RedFox Shoes"
+  >
+    <fw-select-option value="redfox-shoes">RedFox Shoes</fw-select-option>
+  </fw-select>
+  <a href="#" style="text-decoration: underline; color: blue;">show past orders</a>
+  <section>
+    <fw-label value="LATEST ORDER" color="black" style="font-weight: bold;"></fw-label>
+    <fw-label value="#1005" color="black" style="font-size: 24px; font-weight: bold;"></fw-label>
+    <fw-label value="Purchased on: 26 Oct, 2021" color="black"></fw-label>
+    <fw-icon name="check-circle" size="24" color="grey"></fw-icon>
+    <fw-label value="Paid" color="black"></fw-label>
+    <fw-badge color="yellow">Unfulfilled</fw-badge>
+    <!-- Add ordered items list here -->
+    <fw-label value="Total" color="black" style="font-weight: bold;"></fw-label>
+    <fw-label value="$100" color="black" style="font-weight: bold;"></fw-label>
+    <fw-label value="Shipping address" color="black"></fw-label>
+    <fw-label value="4860 Corpening Drive." color="black"></fw-label>
+  </section>
+  <section>
+    <fw-button color="danger">
+      <fw-icon name="x" size="18" color="white"></fw-icon>
+      Cancel order
+    </fw-button>
+    <fw-button color="primary">
+      <fw-icon name="rotate-ccw" size="18" color="white"></fw-icon>
+      Refund order
+    </fw-button>
+    <fw-button color="secondary" disabled>
+      <fw-icon name="shopping-cart" size="18" color="grey"></fw-icon>
+      No shipping info available
+    </fw-button>
+    <fw-button color="primary">
+      <fw-icon name="external-link" size="18" color="white"></fw-icon>
+      View in Shopify
+    </fw-button>
+  </section>
+</body>
+</html>

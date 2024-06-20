@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Office Settings</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings" selected>Settings</fw-tab>
+  </fw-tabs>
+
+  <fw-tab-panel name="settings">
+    <h2>CONFIGURATION</h2>
+    <fw-toggle id="ooo-notification-toggle" label="Send OOO notification when customer replies to ticket"></fw-toggle>
+
+    <h3>Email Body</h3>
+    <!-- Add rich text editor here -->
+
+    <fw-checkbox id="allow-agent-edit" checked>Allow agent to edit the notification</fw-checkbox>
+
+    <p>Placeholder Fields: Agent Name, Agent Email, Requester Name, Ticket Url</p>
+
+    <fw-toggle id="reassign-ticket-toggle" label="Reassign ticket to group and agent"></fw-toggle>
+    <fw-toggle id="unassign-ticket-toggle" label="Unassign ticket"></fw-toggle>
+
+    <fw-button color="secondary">Cancel</fw-button>
+    <fw-button color="primary">Save</fw-button>
+  </fw-tab-panel>
+</body>
+</html>

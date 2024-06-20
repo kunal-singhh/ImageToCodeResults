@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Management System</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Invoices</h1>
+  <div style="display: flex; justify-content: flex-end;">
+    <fw-button color="primary">Update status</fw-button>
+    <fw-button color="primary">...</fw-button>
+  </div>
+  <fw-data-table>
+    <fw-data-table-header>
+      <fw-data-table-row>
+        <fw-data-table-cell type="checkbox"></fw-data-table-cell>
+        <fw-data-table-cell>Invoice</fw-data-table-cell>
+        <fw-data-table-cell>Company</fw-data-table-cell>
+        <fw-data-table-cell>Invoice date</fw-data-table-cell>
+        <fw-data-table-cell>Due date</fw-data-table-cell>
+        <fw-data-table-cell>Status</fw-data-table-cell>
+        <fw-data-table-cell align="right">Amount</fw-data-table-cell>
+      </fw-data-table-row>
+    </fw-data-table-header>
+    <fw-data-table-body>
+      <fw-data-table-row>
+        <fw-data-table-cell type="checkbox"></fw-data-table-cell>
+        <fw-data-table-cell>INV - 1001</fw-data-table-cell>
+        <fw-data-table-cell>Openlane</fw-data-table-cell>
+        <fw-data-table-cell>05/10/2019</fw-data-table-cell>
+        <fw-data-table-cell>05/10/2019</fw-data-table-cell>
+        <fw-data-table-cell>
+          <fw-button color="green">Paid</fw-button>
+        </fw-data-table-cell>
+        <fw-data-table-cell align="right">$2,350.00</fw-data-table-cell>
+      </fw-data-table-row>
+    </fw-data-table-body>
+  </fw-data-table>
+</body>
+</html>

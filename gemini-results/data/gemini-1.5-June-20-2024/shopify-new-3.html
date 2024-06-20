@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <!-- Header -->
+  <div style="background-color: lightgray; display: flex; align-items: center; padding: 8px;">
+    <fw-icon name="shopping-bag" size="18"></fw-icon>
+    <fw-label value="SHOPIFY" style="font-weight: bold; margin-left: 8px;"></fw-label>
+  </div>
+
+  <!-- Store Dropdown -->
+  <fw-select label="Store" required="true" placeholder="RedFox Shoes">
+    <fw-select-option value="redfox">RedFox Shoes</fw-select-option>
+    <!-- Add more options here -->
+  </fw-select>
+
+  <!-- Order Summary -->
+  <div style="background-color: white; padding: 16px;">
+    <a href="#" style="color: blue; text-decoration: underline;">show past orders</a>
+    <h3 style="text-transform: uppercase; font-weight: bold;">LATEST ORDER</h3>
+    <h2 style="font-weight: bold;">#1005</h2>
+    <p>Purchased on: 26 Oct, 2021</p>
+    <div>
+      <fw-badge color="green" shape="circle">Paid</fw-badge>
+      <fw-badge color="yellow" shape="circle">Unfulfilled</fw-badge>
+    </div>
+    <!-- List of purchased items -->
+    <!-- Add your purchased items here -->
+    <h3 style="font-weight: bold;">Total: $165.00</h3>
+    <p>Shipping address</p>
+    <p>4860 Corpening Drive.</p>
+  </div>
+
+  <!-- Action Buttons -->
+  <div style="background-color: white; padding: 16px;">
+    <fw-button color="light" style="width: 100%; margin-bottom: 8px;">
+      <fw-icon name="x" size="18"></fw-icon>
+      Cancel order
+    </fw-button>
+    <fw-button color="light" style="width: 100%; margin-bottom: 8px;">
+      <fw-icon name="rotate-ccw" size="18"></fw-icon>
+      Refund order
+    </fw-button>
+    <fw-button color="light" style="width: 100%; margin-bottom: 8px;">
+      <fw-icon name="shopping-cart" size="18"></fw-icon>
+      No shipping info available
+    </fw-button>
+    <fw-button color="light" style="width: 100%; margin-bottom: 8px;">
+      <fw-icon name="box" size="18"></fw-icon>
+      View in Shopify
+    </fw-button>
+  </div>
+</body>
+</html>

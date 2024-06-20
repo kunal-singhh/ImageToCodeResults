@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Attachments Viewer</h1>
+  <fw-checkbox>Select All</fw-checkbox>
+  <div>
+    <fw-checkbox></fw-checkbox>
+    <fw-icon name="attachment"></fw-icon>
+    <a href="#" style="color: blue; text-decoration: underline;">1.xls</a>
+    <span style="float: right;">8 KB</span>
+  </div>
+  <div>
+    <fw-checkbox></fw-checkbox>
+    <fw-icon name="attachment"></fw-icon>
+    <a href="#" style="color: blue; text-decoration: underline;">2.mp4</a>
+    <span style="float: right;">229 KB</span>
+  </div>
+  <div>
+    <fw-checkbox></fw-checkbox>
+    <fw-icon name="attachment"></fw-icon>
+    <a href="#" style="color: blue; text-decoration: underline;">3.pdf</a>
+    <span style="float: right;">139 KB</span>
+  </div>
+  <div>
+    <fw-checkbox></fw-checkbox>
+    <fw-icon name="attachment"></fw-icon>
+    <a href="#" style="color: blue; text-decoration: underline;">4.doc</a>
+    <span style="float: right;">98 KB</span>
+  </div>
+  <fw-pagination>
+    <fw-button disabled>&amp;lt;&amp;lt;</fw-button>
+    <fw-button>&amp;lt;</fw-button>
+    <fw-button color="primary">1</fw-button>
+    <fw-button>2</fw-button>
+    <fw-button>3</fw-button>
+    <fw-button>&amp;gt;</fw-button>
+    <fw-button>&amp;gt;&amp;gt;</fw-button>
+  </fw-pagination>
+  <fw-button color="primary" style="width: 100%;">
+    <fw-icon name="download" size="18" color="white"></fw-icon> DOWNLOAD
+  </fw-button>
+</body>
+</html>

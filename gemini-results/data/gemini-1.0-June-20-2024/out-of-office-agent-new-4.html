@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons Webpage</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+
+    <fw-tab-panel name="agent-availability"></fw-tab-panel>
+    <fw-tab-panel name="apply-ooo"></fw-tab-panel>
+    <fw-tab-panel name="apply-for-agent">
+      <fw-input
+        label="Search for an agent"
+        placeholder="Enter agent's email address"
+        required
+        clear-input
+      >
+        <fw-icon name="search" slot="icon" size="18"></fw-icon>
+      </fw-input>
+      <br>
+      <fw-datepicker
+        label="From"
+        id="from-date"
+      ></fw-datepicker>
+      <br>
+      <fw-datepicker
+        label="To"
+        id="to-date"
+      ></fw-datepicker>
+      <br>
+      <fw-button color="primary">Apply</fw-button>
+    </fw-tab-panel>
+    <fw-tab-panel name="settings"></fw-tab-panel>
+  </fw-tabs>
+  <fw-icon name="arrow-right" color="red" size="24" style="position: absolute; top: 10px; left: 180px;"></fw-icon>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Mobile Order Details</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <!-- Header -->
+  <div style="background-color: lightgrey; display: flex; align-items: center; padding: 10px;">
+    <fw-icon name="shopping_bag" size="24" color="green"></fw-icon>
+    <fw-label value="SHOPIFY" style="font-weight: bold; margin-left: 10px;"></fw-label>
+  </div>
+
+  <!-- Store Dropdown -->
+  <fw-select label="Store" style="margin: 10px;">
+    <fw-select-option value="redfox_shoes">RedFox Shoes</fw-select-option>
+  </fw-select>
+
+  <!-- Show past orders link -->
+  <a href="#" style="color: blue; text-decoration: underline; margin: 10px;">show past orders</a>
+
+  <!-- Order Summary -->
+  <div style="margin: 10px;">
+    <fw-label value="LATEST ORDER" style="font-weight: bold;"></fw-label>
+    <fw-label value="#1005" style="font-size: 24px; font-weight: bold;"></fw-label>
+    <fw-label value="Purchased on: 26 Oct, 2021"></fw-label>
+    <fw-label value="Paid" color="white" style="background-color: green; border-radius: 50%; padding: 5px;"></fw-label>
+    <fw-label value="Unfulfilled" color="black" style="background-color: yellow; border-radius: 50%; padding: 5px;"></fw-label>
+    <!-- List of ordered items -->
+    <!-- Add ordered items here -->
+    <fw-label value="Total" style="font-weight: bold;"></fw-label>
+    <fw-label value="$165.00" style="font-weight: bold;"></fw-label>
+    <fw-label value="Shipping address"></fw-label>
+    <fw-label value="4860 Corpening Drive."></fw-label>
+  </div>
+
+  <!-- Action Buttons -->
+  <div style="display: flex; flex-direction: column; margin: 10px;">
+    <fw-button color="danger" style="margin-bottom: 10px;">Cancel order</fw-button>
+    <fw-button color="secondary" style="margin-bottom: 10px;">Refund order</fw-button>
+    <fw-button color="secondary" disabled style="margin-bottom: 10px;">No shipping info available</fw-button>
+    <fw-button color="primary" style="margin-bottom: 10px;">View in Shopify</fw-button>
+  </div>
+</body>
+</html>

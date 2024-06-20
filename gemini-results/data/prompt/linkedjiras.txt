@@ -1,8 +1,0 @@
- 1. Jira Integration (Heading, Left Top)
-2. Create Jira Issue (Button, Left Top)
-3. Linked Jira (Heading, Left Top)
-4. FP-51 (Text, Left Bottom)
-5. To Do (Tag, Left Bottom)
-6. Test Jira Ticket (Text, Left Bottom)
-
-User can click on Create Jira Issue button to create a new Jira issue.

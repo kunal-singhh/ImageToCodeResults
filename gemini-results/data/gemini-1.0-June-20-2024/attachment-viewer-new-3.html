@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-checkbox checked description="Select all attachments"></fw-checkbox>
+
+  <ul>
+    <li>
+      <fw-checkbox checked></fw-checkbox>
+      <fw-icon name="paperclip" size="18" color="grey"></fw-icon>
+      <span>attachment1.txt</span>
+    </li>
+    <li>
+      <fw-checkbox checked></fw-checkbox>
+      <fw-icon name="paperclip" size="18" color="grey"></fw-icon>
+      <span>attachment2.txt</span>
+    </li>
+    <li>
+      <fw-checkbox checked></fw-checkbox>
+      <fw-icon name="paperclip" size="18" color="grey"></fw-icon>
+      <span>attachment3.txt</span>
+    </li>
+    <li>
+      <fw-checkbox checked></fw-checkbox>
+      <fw-icon name="paperclip" size="18" color="grey"></fw-icon>
+      <span>attachment4.txt</span>
+    </li>
+  </ul>
+
+  <fw-button color="primary" style="float: right;">Download</fw-button>
+</body>
+</html>

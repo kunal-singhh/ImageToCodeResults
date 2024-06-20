@@ -1,0 +1,24 @@
+### The image contains the following components:
+
+1. A header with the text "Agent Availability" and three buttons: "Apply OOO", "Apply for an agent", and "Settings".
+2. A section with the text "Send OOO notification when customer replies to ticket" and a toggle switch.
+3. A section with the text "Email Body" and a text editor.
+4. A section with the text "Allow agent to edit the notification" and a checkbox.
+5. A section with the text "Agent Name", "Agent Email", "Requester Name", and "Ticket Url" and four text fields.
+6. A section with the text "Reassign ticket to group and agent" and a toggle switch.
+7. A section with the text "Unassign ticket" and a toggle switch.
+8. A "Cancel" button and a "Save" button.
+
+The following actions can be performed for the components identified:
+
+1. The "Apply OOO" button can be clicked to apply an OOO message to the agent's account.
+2. The "Apply for an agent" button can be clicked to apply for an agent to be assigned to the ticket.
+3. The "Settings" button can be clicked to open the settings for the agent's OOO message.
+4. The toggle switch in the "Send OOO notification when customer replies to ticket" section can be toggled on or off to enable or disable the sending of an OOO notification when a customer replies to a ticket.
+5. The text editor in the "Email Body" section can be used to compose the OOO message that will be sent to customers.
+6. The checkbox in the "Allow agent to edit the notification" section can be checked or unchecked to allow or disallow the agent to edit the OOO notification.
+7. The text fields in the "Agent Name", "Agent Email", "Requester Name", and "Ticket Url" section can be used to enter the name, email address, and ticket URL of the agent and customer.
+8. The toggle switch in the "Reassign ticket to group and agent" section can be toggled on or off to enable or disable the reassignment of the ticket to a group and agent.
+9. The toggle switch in the "Unassign ticket" section can be toggled on or off to enable or disable the unassignment of the ticket.
+10. The "Cancel" button can be clicked to cancel the changes and close the settings.
+11. The "Save" button can be clicked to save the changes and close the settings.

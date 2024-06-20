@@ -1,0 +1,19 @@
+### The image contains the following components:
+
+ Navigation bar: The navigation bar is located at the top of the screen and contains the following items:
+     Agent Availability: This button is used to view the availability of agents.
+     Apply OOO: This button is used to apply for out-of-office status.
+     Apply for an agent: This button is used to apply for an agent.
+     Settings: This button is used to view the settings.
+ Email field: The email field is located below the navigation bar and is used to enter the email address of the agent.
+ From date field: The from date field is located next to the email field and is used to select the start date of the out-of-office period.
+ To date field: The to date field is located next to the from date field and is used to select the end date of the out-of-office period.
+ Apply button: The apply button is located at the bottom of the screen and is used to apply the out-of-office settings.
+
+### The following actions can be performed on the components identified:
+
+ Navigation bar: The navigation bar can be used to navigate between the different pages of the application.
+ Email field: The email field can be used to enter the email address of the agent.
+ From date field: The from date field can be used to select the start date of the out-of-office period.
+ To date field: The to date field can be used to select the end date of the out-of-office period.
+ Apply button: The apply button can be used to apply the out-of-office settings.

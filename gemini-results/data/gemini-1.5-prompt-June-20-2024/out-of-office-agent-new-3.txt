@@ -1,0 +1,50 @@
+## UX Component Breakdown and Actions:
+
+1. Navigation Tabs:
+
+ Components: "Agent Availability", "Apply OOO", "Apply for an agent", "Settings"
+ Type: Text buttons
+ Position: Top of the screen, horizontally aligned
+ Style: 
+     Default state: Blue text, white background
+     Active/Selected state:  Potentially a different style (not shown)
+ Actions: Clicking on each tab likely navigates the user to a different section within the application related to agent management.
+
+2. Section Title:
+
+ Component: "APPLY OUT OF OFFICE"
+ Type: Text
+ Position: Below navigation tabs, left aligned
+ Style:  Bold font, larger than body text
+ Action:  Informational, indicates the purpose of the following form.
+
+3. Form Field - Email:
+
+ Component: "Email" (label) and text input field with magnifying glass icon
+ Type: Text input field
+ Position: Below section title, left aligned
+ Style: 
+     Label: Regular font weight
+     Input field: Standard text input box with a potential search functionality indicated by the magnifying glass icon.
+ Actions: 
+     User can type in an email address.
+     Clicking the magnifying glass icon might trigger a search for existing contacts.
+
+4. Form Fields - Date Range:
+
+ Components: "From" (label), date input field with calendar icon, "To" (label), date input field with calendar icon
+ Type: Date input fields
+ Position: Below Email field, left aligned
+ Style: 
+     Labels: Regular font weight
+     Input fields: Standard date input boxes with calendar icons to open a date picker.
+ Actions: 
+     Users can either manually type in a date in the format dd/mm/yyyy or click the calendar icon to select a date from a visual calendar widget.
+
+5. Button - Apply:
+
+ Component: "Apply"
+ Type: Button
+ Position: Below form fields, left aligned
+ Style:  Blue background, white text
+ Action:  Clicking this button likely submits the form data (email, from date, to date) to apply an out-of-office status for the specified period. 

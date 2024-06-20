@@ -1,0 +1,35 @@
+### The image contains the following components:
+
+1. A header with the text "Agent Availability".
+2. A button with the text "Apply OOO".
+3. A button with the text "Apply for an agent".
+4. A button with the text "Settings".
+5. A section with the text "Configuration".
+6. A checkbox with the text "Send OOO notification when customer replies to ticket".
+7. A text box with the label "Email Body".
+8. A checkbox with the text "Allow agent to edit the notification".
+9. A text box with the label "Agent Name".
+10. A text box with the label "Agent Email".
+11. A text box with the label "Requester Name".
+12. A text box with the label "Ticket Url".
+13. A checkbox with the text "Reassign ticket to group and agent".
+14. A checkbox with the text "Unassign ticket".
+15. A button with the text "Cancel".
+16. A button with the text "Save".
+
+The following actions can be performed for the components identified:
+
+1. The "Apply OOO" button can be clicked to apply an OOO message to the agent's account.
+2. The "Apply for an agent" button can be clicked to apply for an agent to be assigned to the ticket.
+3. The "Settings" button can be clicked to open the settings for the agent's OOO message.
+4. The "Send OOO notification when customer replies to ticket" checkbox can be checked to enable or disable the sending of an OOO notification to the customer when they reply to a ticket.
+5. The "Email Body" text box can be used to enter the body of the OOO message that will be sent to customers.
+6. The "Allow agent to edit the notification" checkbox can be checked to allow the agent to edit the OOO notification.
+7. The "Agent Name" text box can be used to enter the name of the agent who is OOO.
+8. The "Agent Email" text box can be used to enter the email address of the agent who is OOO.
+9. The "Requester Name" text box can be used to enter the name of the requester who is OOO.
+10. The "Ticket Url" text box can be used to enter the URL of the ticket that the OOO message is being sent for.
+11. The "Reassign ticket to group and agent" checkbox can be checked to reassign the ticket to a group and agent.
+12. The "Unassign ticket" checkbox can be checked to unassign the ticket from the agent.
+13. The "Cancel" button can be clicked to cancel the changes that have been made.
+14. The "Save" button can be clicked to save the changes that have been made.

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Management System</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Invoice Management System</h1>
+  <fw-input label="Filter" placeholder="Filter invoices"></fw-input>
+  <br>
+  <fw-data-table id="invoiceTable" is-selectable="true" label="Invoices">
+  </fw-data-table>
+  <br>
+  <fw-button color="primary">Update status</fw-button>
+
+  <script type="application/javascript">
+    var data = {
+      columns: [
+        { "key": "invoice", "text": "Invoice" },
+        { "key": "company", "text": "Company" },
+        { "key": "invoiceDate", "text": "Invoice date" },
+        { "key": "dueDate", "text": "Due date" },
+        { "key": "status", "text": "Status" },
+        { "key": "amount", "text": "Amount" }
+      ],
+      invoices: [
+        // Add invoice data here
+      ]
+    }
+
+    var invoiceTable = document.getElementById('invoiceTable');
+    invoiceTable.columns = data.columns;
+    invoiceTable.rows = data.invoices;
+  </script>
+</body>
+</html>

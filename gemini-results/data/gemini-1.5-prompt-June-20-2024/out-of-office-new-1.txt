@@ -1,0 +1,34 @@
+The image appears to be a screenshot of a software interface, likely for managing customer support tickets. Here's a breakdown of the components:
+
+Top Navigation:
+
+ Agent Availability: Text button, likely for setting agent availability status.
+ Apply OOO: Text button, likely for applying an "Out of Office" status.
+ Apply for an agent: Text button, purpose unclear without further context.
+ Settings: Text button, highlighted in blue, likely for accessing settings related to the current view.
+
+Main Content Area:
+
+ CONFIGURATION: Section header, indicating configuration options.
+ Send OOO notification when customer replies to ticket: Checkbox with a toggle switch, currently in the "on" position. This likely controls whether an automatic OOO notification is sent when a customer replies to a ticket while the agent is unavailable.
+ Email Body: Section header for customizing the OOO notification email.
+ Rich Text Editor: A large text box with formatting options (bold, italics, underline, text alignment, lists, links, image insertion, attachments) for composing the email body. The current content reads: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"
+ Allow agent to edit the notification: Checkbox, currently checked. This likely allows agents to modify the default OOO notification message.
+ Agent Name, Agent Email, Requester Name, Ticket Url: Four grayed-out buttons, likely representing placeholders that can be inserted into the email body.
+ Reassign ticket to group and agent: Checkbox with a toggle switch, currently in the "off" position. This likely controls whether tickets are automatically reassigned when an OOO status is applied.
+ Unassign ticket: Checkbox with a toggle switch, currently in the "off" position. This likely controls whether tickets are automatically unassigned when an OOO status is applied.
+
+Bottom Actions:
+
+ Cancel: Text button, likely for discarding any changes and closing the view.
+ Save: Text button, likely for saving any changes made to the configuration.
+
+Possible Actions:
+
+ Clicking on any of the top navigation buttons would likely navigate to the corresponding view or function.
+ Toggling the "Send OOO notification" switch would enable or disable automatic OOO notifications.
+ Editing the text in the rich text editor would change the content of the OOO notification email.
+ Checking or unchecking the "Allow agent to edit the notification" checkbox would enable or disable agents' ability to customize the OOO message.
+ Toggling the "Reassign ticket" and "Unassign ticket" switches would enable or disable automatic ticket reassignment or unassignment when applying OOO.
+ Clicking "Cancel" would discard any unsaved changes and close the view.
+ Clicking "Save" would save any changes made to the configuration. 

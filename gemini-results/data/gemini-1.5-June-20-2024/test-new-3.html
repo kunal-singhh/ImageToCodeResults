@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices</title>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Invoices</h1>
+  <fw-button color="primary" dropdown="true">Update status</fw-button>
+  <fw-data-table id="invoiceTable" is-selectable="true">
+  </fw-data-table>
+  <script type="application/javascript">
+    var data = {
+      columns: [
+        { "key": "invoice", "text": "Invoice" },
+        { "key": "company", "text": "Company" },
+        { "key": "invoice_date", "text": "Invoice date" },
+        { "key": "due_date", "text": "Due date" },
+        { "key": "status", "text": "Status" },
+        { "key": "amount", "text": "Amount" }
+      ],
+      invoices: [
+        {
+          "id": "1",
+          "invoice": "INV-001",
+          "company": "Company A",
+          "invoice_date": "2022-01-01",
+          "due_date": "2022-01-31",
+          "status": "Paid",
+          "amount": "$1000"
+        },
+        {
+          "id": "2",
+          "invoice": "INV-002",
+          "company": "Company B",
+          "invoice_date": "2022-01-15",
+          "due_date": "2022-02-14",
+          "status": "Pending",
+          "amount": "$2000"
+        }
+      ]
+    }
+
+    var invoiceTable = document.getElementById('invoiceTable');
+    invoiceTable.columns = data.columns;
+    invoiceTable.rows = data.invoices;
+  </script>
+</body>
+</html>

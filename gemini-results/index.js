@@ -1,31 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
   const originalImage = document.getElementById("original-image");
-  const googleVisionPreview = document.getElementById("google-vision-preview");
-  const geminiPreview = document.getElementById("gemini-preview");
+  const geminiNewVersionPreview = document.getElementById("gemini-preview-1.5");
+  const geminiPreview = document.getElementById("gemini-preview-1.0");
   const imageOptionsContainer = document.getElementById("image-options");
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
-  const promptNode = document.getElementById("prompt");
+  const promptNodeOldGemini = document.getElementById("prompt-gemini-1.0");
+  const promptNodeNewGemini = document.getElementById("prompt-gemini-1.5");
+
+
 
   let currentIndex = 0;
 
   // Image data - Add more images as needed
   const imageData = [
-    "attachment-viewer",
-    "clone-ticket",
-    "form_charge",
-    "linkedjiras",
-    "out-of-office",
-    "out-of-office-agent",
-    "pagerduty",
-    "shopify",
-    "shopify-modal",
-    "team-viewer",
-    'test',
-    "test-image-calender",
-    "test-image-multi-button",
-    "test-image-scroll",
-    "components-combined"
+    "attachment-viewer-new-1",
+    "attachment-viewer-new-2",
+    "attachment-viewer-new-3",
+    "attachment-viewer-new-4",
+    "out-of-office-agent-new-1",
+    "out-of-office-agent-new-2",
+    "out-of-office-agent-new-3",
+    "out-of-office-agent-new-4",
+    "shopify-new-1",
+    "shopify-new-2",
+    "shopify-new-3",
+    "shopify-new-4",
+    'test-new-1',
+    'test-new-2',
+    'test-new-3',
+    'test-new-4',
+    "test-image-calender-new-1",
+    "test-image-calender-new-2",
+    "test-image-calender-new-3",
+    "test-image-calender-new-4",
+    "pagerduty-new-1",
+    "pagerduty-new-2",
+    "pagerduty-new-3",
+    "pagerduty-new-4",
+    "out-of-office-new-1",
+    "out-of-office-new-2",
+    "out-of-office-new-3",
+    "out-of-office-new-4",
     // Add more images here
   ];
 
@@ -46,14 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to update the image previews based on the selected index
   function updatePreviews(imageName) {
     originalImage.src = `./data/design-images/${imageName}.png`;
-    googleVisionPreview.src = `./data/prod-gen/${imageName}.html`;
-    geminiPreview.src = `./data/gemini-gen/${imageName}.html`;
+    geminiPreview.src = `./data/gemini-1.0-June-20-2024/${imageName}.html`;
+    geminiNewVersionPreview.src = `./data/gemini-1.5-June-20-2024/${imageName}.html`;
 
-    fetch(`./data/prompt/${imageName}.txt`)
+    fetch(`./data/gemini-1.0-prompt-June-20-2024/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
-        promptNode.innerText = text;
+        promptNodeOldGemini.innerText = text;
+      })
+      .catch((e) => console.error(e));
+
+      fetch(`./data/gemini-1.5-prompt-June-20-2024/${imageName}.txt`)
+      .then((res) => res.text())
+      .then((text) => {
+        console.log({ text });
+        promptNodeNewGemini.innerText = text;
       })
       .catch((e) => console.error(e));
   }

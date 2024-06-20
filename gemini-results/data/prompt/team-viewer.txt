@@ -1,7 +1,0 @@
- The design is a notification from Teamviewer. It contains the following components:
-
-1. A blue header with the Teamviewer logo and the text "New Remote Session".
-2. A white box with the session code "s67-351-782" and the text "Generated a few seconds ago".
-3. A blue button with the text "Support Agent link".
-
-The user can click on the "New Remote Session" button to start a new remote session. The user can click on the "Support Agent link" button to open a support agent link.

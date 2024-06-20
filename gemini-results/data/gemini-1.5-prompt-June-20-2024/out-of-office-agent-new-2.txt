@@ -1,0 +1,60 @@
+## UX Component Breakdown and Actions:
+
+1. Navigation Tabs:
+
+ Component Type:  Horizontal Tab Bar
+ Position: Top of the screen
+ Style:  Simple text labels, likely with a visual indicator (underline, color change) for the active tab.
+ Text Labels (from left to right):
+     "Agent Availability" 
+     "Apply OOO"
+     "Apply for an agent" - This tab appears to be selected/active.
+     "Settings"
+ Actions: Clicking on each tab likely navigates the user to a different section or view within the application.
+
+2. Section Heading:
+
+ Component Type: Heading
+ Position: Below the navigation tabs, left-aligned
+ Style:  Plain text, potentially larger font size than body text.
+ Text: "APPLY OUT OF OFFICE"
+
+3. Subsection Heading:
+
+ Component Type: Subheading
+ Position: Below the section heading, left-aligned
+ Style:  Plain text, smaller font size than the section heading.
+ Text: "Email"
+
+4. Search Input Field:
+
+ Component Type: Text Input Field with Search Icon
+ Position: Below the subsection heading
+ Style: 
+     Rectangular input box with a rounded border.
+     Placeholder text: "Email"
+     Magnifying glass icon (uD83DuDD0D) inside the input field, likely on the left side.
+ Actions:
+     Users can type an email address into the field.
+     Clicking the magnifying glass icon may trigger a search action based on the entered email.
+
+5. Date Input Fields:
+
+ Component Type: Date Picker (2 instances)
+ Position:  Below the search field, one labeled "From" and the other "To"
+ Style:
+     Rectangular input box with a rounded border.
+     Placeholder text: "dd/mm/yyyy"
+     Calendar icon (uD83DuDCC5) inside the input field, likely on the right side.
+ Actions:
+     Clicking on the input field or the calendar icon likely opens a calendar widget for date selection.
+
+6. Apply Button:
+
+ Component Type: Button
+ Position: Below the date input fields, centered
+ Style:
+     Rectangular button with rounded corners.
+     Solid background color (likely blue based on common UI patterns).
+     White text label: "Apply"
+ Actions: Clicking the button likely submits the entered information (email, from date, to date) to apply for an out-of-office status or delegate tasks. 

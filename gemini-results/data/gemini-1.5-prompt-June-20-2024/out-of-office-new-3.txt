@@ -1,0 +1,48 @@
+The image shows a form for setting up out-of-office (OOO) notifications. 
+
+Here's a breakdown of the components:
+
+1. Navigation Tabs:
+
+ Agent Availability: This tab is not visible in the image, but it's likely where users manage their availability status.
+ Apply OOO: This tab, also not fully visible, is probably used to set OOO status with specific dates.
+ Apply for an agent: This tab is likely used to request OOO coverage from another agent.
+ Settings: This is the active tab, highlighted in blue, indicating the current section.
+
+2. Configuration Section:
+
+ "Send OOO notification when customer replies to ticket": This is a checkbox option. When enabled (toggle switched to the right), an automatic OOO notification is sent if a customer replies to a ticket while the agent is unavailable. 
+
+3. Email Body Section:
+
+ Text field: A large text field containing a sample OOO message. The message reads: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"
+ Rich Text Editor Toolbar (B I U A TI ...):  Above the text field, this toolbar offers standard formatting options for the OOO message:
+     B: Bold
+     I: Italic
+     U: Underline
+     A: Font color
+     TI: Text alignment
+     Numbered List
+     Bulleted List
+     Insert Link
+     Insert Image
+     Insert Attachment
+
+4. Additional Options:
+
+ "Allow agent to edit the notification": This checkbox, when checked, allows agents to modify the default OOO message.
+ Placeholders: Below the checkbox, there are placeholders for dynamically inserting information into the OOO message:
+     Agent Name: The name of the agent who is OOO.
+     Agent Email: The email address of the OOO agent.
+     Requester Name: The name of the person who sent the ticket.
+     Ticket Url: A direct link to the ticket.
+
+5. Ticket Management:
+
+ "Reassign ticket to group and agent": This option, when enabled, automatically reassigns the ticket to a different group or agent when the OOO status is active.
+ "Unassign ticket": This option, when enabled, automatically unassigns the ticket from the OOO agent, leaving it in the queue.
+
+6. Action Buttons:
+
+ Cancel: Discards any changes made and closes the settings.
+ Save: Saves the configured OOO settings. 
