@@ -1,0 +1,44 @@
+The image shows a form for setting up an out-of-office (OOO) message. 
+
+Here's a breakdown of the components:
+
+1. Navigation Tabs:
+
+ Agent Availability: This tab is not visible in the image, but it likely leads to a section for managing agent availability.
+ Apply OOO: This tab is also not fully visible, but it likely leads to a section for applying OOO status.
+ Apply for an agent: This tab is not fully visible, but it likely leads to a section for requesting an agent.
+ Settings: This is the active tab, highlighted in blue, indicating the current section.
+
+2. Configuration Section:
+
+ "CONFIGURATION" Label: This label, in bold uppercase, indicates the start of the configuration section.
+ "Send OOO notification when customer replies to ticket" Toggle: This toggle switch, currently in the off position, allows enabling or disabling automatic OOO notifications for customer replies.
+
+3. Email Body Section:
+
+ "Email Body" Label: This label indicates the section for customizing the OOO email message.
+ Text Editor: A rich text editor with standard formatting options (bold, italics, underline, text alignment, lists, links, image insertion, attachments) for composing the OOO message. The current message reads: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"
+
+4.  Additional Options:
+
+ "Allow agent to edit the notification" Checkbox: This checkbox, currently checked, allows agents to modify the OOO notification template.
+ Placeholder Fields: Grayed-out fields labeled "Agent Name," "Agent Email," "Requester Name," and "Ticket Url" demonstrate dynamic placeholders that will be populated with relevant information in the actual email.
+
+5. Ticket Management:
+
+ "Reassign ticket to group and agent" Toggle: This toggle switch, currently off, allows enabling or disabling automatic ticket reassignment when OOO is active.
+ "Unassign ticket" Toggle: This toggle switch, currently off, allows enabling or disabling automatic un-assignment of tickets from the OOO agent.
+
+6. Action Buttons:
+
+ "Cancel" Button: This button likely discards any changes made and closes the settings.
+ "Save" Button: This button saves any changes made to the OOO settings.
+
+Possible Actions:
+
+ Clicking on different tabs would navigate to corresponding sections for managing agent availability, applying OOO status, or requesting an agent.
+ Toggling the switches would enable or disable the corresponding features (automatic OOO notifications, ticket reassignment, ticket unassignment).
+ Typing in the text editor would modify the OOO email message.
+ Clicking the checkbox would allow or disallow agents to edit the notification template.
+ Clicking "Cancel" would discard changes and close the settings.
+ Clicking "Save" would save the configured OOO settings. 

@@ -17,30 +17,37 @@
 </head>
 <body>
   <fw-tabs>
-    <fw-tab slot="tab" panel="agentAvailability">Agent Availability</fw-tab>
-    <fw-tab slot="tab" panel="applyOOO">Apply OOO</fw-tab>
-    <fw-tab slot="tab" panel="applyAgent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
     <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+
+    <fw-tab-panel name="agent-availability"></fw-tab-panel>
+    <fw-tab-panel name="apply-ooo"></fw-tab-panel>
+    <fw-tab-panel name="apply-for-agent">
+      <fw-input
+        label="Search for an agent"
+        placeholder="Enter agent's email address"
+        required
+        clear-input
+      >
+        <fw-icon name="search" slot="icon" size="18"></fw-icon>
+      </fw-input>
+      <br>
+      <fw-datepicker
+        label="From"
+        id="from-date"
+      ></fw-datepicker>
+      <br>
+      <fw-datepicker
+        label="To"
+        id="to-date"
+      ></fw-datepicker>
+      <br>
+      <fw-button color="primary">Apply</fw-button>
+    </fw-tab-panel>
+    <fw-tab-panel name="settings"></fw-tab-panel>
   </fw-tabs>
-
-  <fw-input
-    label="Search"
-    icon-right="search"
-    placeholder="Search"
-  ></fw-input>
-
-  <fw-datepicker
-    id="fromDate"
-    label="From"
-  ></fw-datepicker>
-
-  <fw-datepicker
-    id="toDate"
-    label="To"
-  ></fw-datepicker>
-
-  <fw-button color="primary">Apply</fw-button>
-
-  <fw-button color="primary">Apply for an agent</fw-button>
+  <fw-icon name="arrow-right" color="red" size="24" style="position: absolute; top: 10px; left: 180px;"></fw-icon>
 </body>
 </html>

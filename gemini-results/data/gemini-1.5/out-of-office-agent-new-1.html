@@ -1,37 +1,38 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Availability</title>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Office Application</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
 </head>
 <body>
-    <fw-tabs>
-        <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
-        <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
-        <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
-        <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agentAvailability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="applyOOO">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="applyAgent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings">Settings</fw-tab>
 
-        <fw-tab-panel name="agent-availability"></fw-tab-panel>
+    <fw-tab-panel name="agentAvailability">
+      <!-- Agent Availability content -->
+    </fw-tab-panel>
 
-        <fw-tab-panel name="apply-ooo">
-            <h2>APPLY OUT OF OFFICE</h2>
-            <fw-input label="Email" placeholder="Email" icon="search" icon-right="false"></fw-input>
-            <div>
-                <fw-label value="From"></fw-label>
-                <fw-datepicker placeholder="dd/mm/yyyy"></fw-datepicker>
-            </div>
-            <div>
-                <fw-label value="To"></fw-label>
-                <fw-datepicker placeholder="dd/mm/yyyy"></fw-datepicker>
-            </div>
-            <fw-button color="primary">Apply</fw-button>
-        </fw-tab-panel>
+    <fw-tab-panel name="applyOOO">
+      <h2>APPLY OUT OF OFFICE</h2>
+      <fw-input label="Email" placeholder="Email" icon-right="search"></fw-input>
+      <fw-datepicker label="From" placeholder="dd/mm/yyyy"></fw-datepicker>
+      <fw-datepicker label="To" placeholder="dd/mm/yyyy"></fw-datepicker>
+      <fw-button color="primary">Apply</fw-button>
+    </fw-tab-panel>
 
-        <fw-tab-panel name="apply-for-agent"></fw-tab-panel>
-        <fw-tab-panel name="settings"></fw-tab-panel>
-    </fw-tabs>
+    <fw-tab-panel name="applyAgent">
+      <!-- Apply for an agent content -->
+    </fw-tab-panel>
+
+    <fw-tab-panel name="settings">
+      <!-- Settings content -->
+    </fw-tab-panel>
+  </fw-tabs>
 </body>
 </html>

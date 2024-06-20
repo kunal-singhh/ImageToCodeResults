@@ -1,0 +1,13 @@
+The design is a web page with 4 main components:
+
+1. A navigation bar with 5 tabs: Agent Availability, Apply OOO, Apply for an agent, Settings
+2. A search bar with a magnifying glass icon and a text field
+3. A form with 3 fields: From, To and Apply button
+4. A red arrow pointing at the "Apply for an agent" tab
+
+The user can perform the following actions:
+
+1. Click on the "Apply for an agent" tab to open the form
+2. Enter the email address of the agent in the search bar
+3. Select the start and end dates for the OOO period
+4. Click on the "Apply" button to submit the request

@@ -1,0 +1,37 @@
+## Component Inventory and Actions:
+
+1. Navigation Tabs:
+
+ Text & Position: "Agent Availability", "Apply OOO", "Apply for an agent", "Settings" located at the top, horizontally aligned.
+ Style:  Blue text, likely indicating active/clickable state.
+ Actions: Clicking on each tab likely navigates the user to the respective section within the application.
+
+2. Section Heading:
+
+ Text & Position: "APPLY OUT OF OFFICE" located below the navigation tabs, left aligned.
+ Style:  Bold, larger font size than the following text.
+ Actions:  Informational, indicating the purpose of the following form.
+
+3. Form Field - Email:
+
+ Text & Position: "Email" label above the field, left aligned. Placeholder text "Email" within the field.
+ Style: Standard text field with a magnifying glass icon (likely for search functionality).
+ Actions: User can type in an email address. The magnifying glass icon might trigger a search for existing contacts.
+
+4. Form Field - From:
+
+ Text & Position: "From" label above the field, left aligned. Placeholder text "dd/mm/yyyy" within the field.
+ Style: Standard date input field with a calendar icon.
+ Actions: User can either manually type in a date in the specified format or click the calendar icon to select a date from a calendar widget.
+
+5. Form Field - To:
+
+ Text & Position: "To" label above the field, left aligned. Placeholder text "dd/mm/yyyy" within the field.
+ Style: Standard date input field with a calendar icon.
+ Actions: User can either manually type in a date in the specified format or click the calendar icon to select a date from a calendar widget.
+
+6. Button - Apply:
+
+ Text & Position: "Apply" within a button, centered below the form fields.
+ Style:  Blue button, likely indicating a primary action.
+ Actions: Clicking this button likely submits the form data (email, from date, to date) to apply the "Out of Office" settings. 

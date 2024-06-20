@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const imageOptionsContainer = document.getElementById("image-options");
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
-  const promptNode = document.getElementById("prompt");
+  const promptNodeOldGemini = document.getElementById("prompt-gemini-1.0");
+  const promptNodeNewGemini = document.getElementById("prompt-gemini-1.5");
+
+
 
   let currentIndex = 0;
 
@@ -62,11 +65,19 @@ document.addEventListener("DOMContentLoaded", function () {
     geminiPreview.src = `./data/gemini-1.0/${imageName}.html`;
     geminiNewVersionPreview.src = `./data/gemini-1.5/${imageName}.html`;
 
-    fetch(`./data/prompt/${imageName}.txt`)
+    fetch(`./data/gemini-1.0-prompt/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
-        promptNode.innerText = text;
+        promptNodeOldGemini.innerText = text;
+      })
+      .catch((e) => console.error(e));
+
+      fetch(`./data/gemini-1.5-prompt/${imageName}.txt`)
+      .then((res) => res.text())
+      .then((text) => {
+        console.log({ text });
+        promptNodeNewGemini.innerText = text;
       })
       .catch((e) => console.error(e));
   }

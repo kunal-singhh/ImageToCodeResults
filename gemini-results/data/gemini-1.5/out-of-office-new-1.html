@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Out of Office Configuration</title>
+  <title>Customer Support Interface</title>
   <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
@@ -16,35 +16,30 @@
     href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
 </head>
 <body>
-  <fw-tabs>
-    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
-    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
-    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
-    <fw-tab slot="tab" panel="settings" selected>Settings</fw-tab>
-  </fw-tabs>
+  <header>
+    <fw-button>Agent Availability</fw-button>
+    <fw-button>Apply OOO</fw-button>
+    <fw-button>Apply for an agent</fw-button>
+    <fw-button color="blue">Settings</fw-button>
+  </header>
 
-  <h2>CONFIGURATION</h2>
-  <fw-toggle on>Send OOO notification when customer replies to ticket</fw-toggle>
+  <main>
+    <h2>CONFIGURATION</h2>
+    <fw-checkbox checked>Send OOO notification when customer replies to ticket</fw-checkbox>
+    <h3>Email Body</h3>
+    <fw-textarea label="Rich Text Editor" placeholder="Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"></fw-textarea>
+    <fw-checkbox checked>Allow agent to edit the notification</fw-checkbox>
+    <fw-button>Agent Name</fw-button>
+    <fw-button>Agent Email</fw-button>
+    <fw-button>Requester Name</fw-button>
+    <fw-button>Ticket Url</fw-button>
+    <fw-checkbox>Reassign ticket to group and agent</fw-checkbox>
+    <fw-checkbox>Unassign ticket</fw-checkbox>
+  </main>
 
-  <h2>Email Body</h2>
-  <fw-text-editor>
-    Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks
-  </fw-text-editor>
-
-  <fw-checkbox checked>Allow agent to edit the notification</fw-checkbox>
-  <div>
-    <fw-label value="Agent Name"></fw-label>
-    <fw-label value="Agent Email"></fw-label>
-    <fw-label value="Requester Name"></fw-label>
-    <fw-label value="Ticket Url"></fw-label>
-  </div>
-
-  <fw-toggle>Reassign ticket to group and agent</fw-toggle>
-  <fw-toggle>Unassign ticket</fw-toggle>
-
-  <div>
-    <fw-button color="secondary">Cancel</fw-button>
-    <fw-button color="primary">Save</fw-button>
-  </div>
+  <footer>
+    <fw-button>Cancel</fw-button>
+    <fw-button>Save</fw-button>
+  </footer>
 </body>
 </html>

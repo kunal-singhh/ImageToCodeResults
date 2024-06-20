@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OOO Configuration</title>
+  <title>Out of Office Settings</title>
   <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
@@ -23,28 +23,22 @@
     <fw-tab slot="tab" panel="settings" selected>Settings</fw-tab>
   </fw-tabs>
 
-  <h2>CONFIGURATION</h2>
+  <fw-tab-panel name="settings">
+    <h2>CONFIGURATION</h2>
+    <fw-toggle id="ooo-notification-toggle" label="Send OOO notification when customer replies to ticket"></fw-toggle>
 
-  <fw-label value="Send OOO notification when customer replies to ticket"></fw-label>
-  <fw-toggle-switch checked></fw-toggle-switch>
+    <h3>Email Body</h3>
+    <!-- Add rich text editor here -->
 
-  <h3>Email Body</h3>
-  <fw-textarea cols="50" rows="4" label="Hey there, I am currently OOO..."></fw-textarea>
+    <fw-checkbox id="allow-agent-edit" checked>Allow agent to edit the notification</fw-checkbox>
 
-  <fw-checkbox checked description="Allow agent to edit the notification"></fw-checkbox>
+    <p>Placeholder Fields: Agent Name, Agent Email, Requester Name, Ticket Url</p>
 
-  <fw-button>Agent Name</fw-button>
-  <fw-button>Agent Email</fw-button>
-  <fw-button>Requester Name</fw-button>
-  <fw-button>Ticket Url</fw-button>
+    <fw-toggle id="reassign-ticket-toggle" label="Reassign ticket to group and agent"></fw-toggle>
+    <fw-toggle id="unassign-ticket-toggle" label="Unassign ticket"></fw-toggle>
 
-  <fw-label value="Reassign ticket to group and agent"></fw-label>
-  <fw-toggle-switch></fw-toggle-switch>
-
-  <fw-label value="Unassign ticket"></fw-label>
-  <fw-toggle-switch></fw-toggle-switch>
-
-  <fw-button color="secondary">Cancel</fw-button>
-  <fw-button color="primary">Save</fw-button>
+    <fw-button color="secondary">Cancel</fw-button>
+    <fw-button color="primary">Save</fw-button>
+  </fw-tab-panel>
 </body>
 </html>
