@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagerDuty Incident Viewer</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    fw-button {
+      --fw-button-color: blue;
+      --fw-button-text-color: white;
+    }
+    .incident-card {
+      border-bottom: 1px solid #ccc;
+      background-color: lightgrey;
+      padding: 10px;
+      margin: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">PagerDuty Incident Viewer</div>
+  <div class="button-container">
+    <fw-button color="primary" onclick="fetchIncidents()">Fetch PagerDuty Incidents</fw-button>
+  </div>
+  <div id="incident-container">
+    <!-- Incident cards will be populated here -->
+  </div>
+
+  <script>
+    function fetchIncidents() {
+      // Placeholder for API call to fetch incidents
+      // Populate incident cards with the retrieved data
+    }
+  </script>
+</body>
+</html>

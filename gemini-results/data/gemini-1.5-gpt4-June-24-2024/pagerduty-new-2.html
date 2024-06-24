@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagerDuty Incident Viewer</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        .incident-card {
+            background-color: lightgrey;
+            margin: 10px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>PagerDuty Incident Viewer</h1>
+    <fw-button color="primary" onclick="fetchIncidents()">Fetch PagerDuty Incidents</fw-button>
+
+    <div class="incident-card">
+        <div>Incident ID: <span id="incident-id-1">--</span></div>
+        <div>Title: <span id="incident-title-1">--</span></div>
+        <div>Status: <span id="incident-status-1">--</span></div>
+    </div>
+    <div class="incident-card">
+        <div>Incident ID: <span id="incident-id-2">--</span></div>
+        <div>Title: <span id="incident-title-2">--</span></div>
+        <div>Status: <span id="incident-status-2">--</span></div>
+    </div>
+    <div class="incident-card">
+        <div>Incident ID: <span id="incident-id-3">--</span></div>
+        <div>Title: <span id="incident-title-3">--</span></div>
+        <div>Status: <span id="incident-status-3">--</span></div>
+    </div>
+
+    <script>
+        function fetchIncidents() {
+            // Placeholder for fetch API call to PagerDuty
+            console.log('Fetching incidents...');
+            // After fetching, update the incident cards with the fetched data
+            // This is just a placeholder code and should be replaced with actual API call and DOM manipulation logic
+            document.getElementById('incident-id-1').textContent = 'ID001';
+            document.getElementById('incident-title-1').textContent = 'Server Down';
+            document.getElementById('incident-status-1').textContent = 'Resolved';
+
+            document.getElementById('incident-id-2').textContent = 'ID002';
+            document.getElementById('incident-title-2').textContent = 'Database Connectivity Issue';
+            document.getElementById('incident-status-2').textContent = 'Investigating';
+
+            document.getElementById('incident-id-3').textContent = 'ID003';
+            document.getElementById('incident-title-3').textContent = 'API Latency';
+            document.getElementById('incident-status-3').textContent = 'Monitoring';
+        }
+    </script>
+</body>
+</html>

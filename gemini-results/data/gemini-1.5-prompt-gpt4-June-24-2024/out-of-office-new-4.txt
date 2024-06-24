@@ -1,0 +1,51 @@
+The image shows a form for configuring out-of-office (OOO) notifications. 
+
+Components:
+
+1. Navigation Tabs: Located at the top, these tabs allow users to navigate between different sections related to agent availability and OOO settings.
+    - Agent Availability: (Position: Top left) This tab is not selected in the image.
+    - Apply OOO: (Position: Top center) This tab is not selected in the image.
+    - Apply for an agent: (Position: Top center) This tab is not selected in the image.
+    - Settings: (Position: Top right, highlighted in blue) This tab is currently selected.
+
+2. Configuration Section: This section contains settings related to OOO notifications.
+    - Heading: "CONFIGURATION" (Position: Below tabs, left aligned)
+    - Toggle Switch: "Send OOO notification when customer replies to ticket" (Position: Below heading, right aligned) 
+        - State: Currently toggled ON (indicated by the switch being to the right).
+
+3. Email Body Section: This section allows users to customize the OOO notification email.
+    - Heading: "Email Body" (Position: Below toggle switch, left aligned)
+    - Text Editor: (Position: Below heading) A large text box with formatting options (bold, italics, underline, text alignment, etc.) for composing the email body.
+        - Default Content: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"
+
+4. Agent Edit Permission:
+    - Checkbox: "Allow agent to edit the notification" (Position: Below text editor, left aligned)
+        - State: Currently checked (indicated by a tick mark).
+
+5. Placeholders: (Position: Below checkbox, aligned horizontally) These are buttons that, when clicked, insert corresponding placeholders into the email body.
+    - Agent Name: Inserts the agent's name.
+    - Agent Email: Inserts the agent's email address.
+    - Requester Name: Inserts the name of the person who submitted the request.
+    - Ticket Url: Inserts a link to the ticket.
+
+6. Additional Options:
+    - Toggle Switch: "Reassign ticket to group and agent" (Position: Below placeholders, right aligned)
+        - State: Currently toggled OFF (indicated by the switch being to the left).
+    - Toggle Switch: "Unassign ticket" (Position: Below "Reassign ticket" option, right aligned)
+        - State: Currently toggled OFF (indicated by the switch being to the left).
+
+7. Action Buttons: (Position: Bottom right)
+    - Cancel: Discards any changes made and closes the form.
+    - Save: Saves the configured settings and closes the form.
+
+Actions:
+
+- Clicking on a navigation tab will switch to the corresponding section.
+- Toggling the "Send OOO notification..." switch will enable or disable automatic OOO replies.
+- Typing in the text editor will modify the content of the OOO email.
+- Clicking on formatting buttons in the text editor will apply the corresponding formatting to the selected text.
+- Checking/unchecking the "Allow agent to edit..." checkbox will grant or revoke permission for agents to customize their OOO messages.
+- Clicking on a placeholder button will insert the corresponding placeholder into the email body at the cursor's position.
+- Toggling the "Reassign ticket..." and "Unassign ticket" switches will enable or disable those actions when an OOO reply is sent.
+- Clicking "Cancel" will discard any changes and close the form.
+- Clicking "Save" will save the configured settings and close the form. 

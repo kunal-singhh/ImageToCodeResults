@@ -1,0 +1,42 @@
+The image shows a form for setting up an out-of-office (OOO) message. 
+
+Components:
+
+1. Navigation Tabs: Located at the top, these tabs allow users to navigate between different sections related to agent availability and OOO settings.
+    - Agent Availability: (Position: Top left) This tab is inactive, suggesting the user is currently in a different section.
+    - Apply OOO: (Position: Top center) This tab is inactive, suggesting the user is currently in a different section.
+    - Apply for an agent: (Position: Top center) This tab is inactive, suggesting the user is currently in a different section.
+    - Settings: (Position: Top right, highlighted in blue) This tab is active, indicating the user is currently in the settings section.
+
+2. Configuration Section: This section contains settings related to OOO notifications.
+    - "Send OOO notification when customer replies to ticket" Toggle Switch: (Position: Below "CONFIGURATION" heading, right-aligned) This switch is currently toggled ON, indicated by the switch being to the right. This means an OOO notification will be sent when a customer replies to a ticket.
+
+3. Email Body Section: This section allows users to customize the OOO message.
+    - Email Body Text Field: (Position: Below "Email Body" heading) This large text field contains the default OOO message: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks". Users can edit this text to personalize their message.
+    - Rich Text Editor Toolbar: (Position: Above the Email Body Text Field) This toolbar contains buttons for formatting the email body text, including options for bold, italics, underline, text alignment, adding links, and inserting images.
+
+4. "Allow agent to edit the notification" Checkbox: (Position: Below Email Body Section) This checkbox is currently checked, indicated by a tick mark. This means agents can edit the OOO notification before it is sent.
+
+5. Placeholders: (Position: Below "Allow agent to edit the notification" checkbox) These greyed-out buttons represent placeholders that can be included in the OOO notification.
+    - Agent Name: This placeholder will be replaced with the agent's name.
+    - Agent Email: This placeholder will be replaced with the agent's email address.
+    - Requester Name: This placeholder will be replaced with the name of the person who submitted the ticket.
+    - Ticket Url: This placeholder will be replaced with a link to the ticket.
+
+6. Ticket Management Section: This section contains settings related to ticket management during the agent's OOO period.
+    - "Reassign ticket to group and agent" Toggle Switch: (Position: Below Placeholders section) This switch is currently toggled OFF, indicated by the switch being to the left. This means tickets will not be automatically reassigned when the agent is OOO.
+    - "Unassign ticket" Toggle Switch: (Position: Below "Reassign ticket to group and agent" toggle switch) This switch is currently toggled OFF, indicated by the switch being to the left. This means tickets will not be unassigned when the agent is OOO.
+
+7. Action Buttons: Located at the bottom, these buttons allow users to save or discard changes.
+    - Cancel: (Position: Bottom left) Clicking this button will discard any changes made to the OOO settings.
+    - Save: (Position: Bottom right) Clicking this button will save any changes made to the OOO settings.
+
+Actions:
+
+- Clicking on a Navigation Tab: Navigates to the corresponding section.
+- Toggling a Switch ON/OFF: Enables/disables the corresponding feature.
+- Typing in the Email Body Text Field: Customizes the OOO message.
+- Clicking on a Rich Text Editor Toolbar Button: Applies the corresponding formatting to the selected text in the Email Body Text Field.
+- Checking/Unchecking the "Allow agent to edit the notification" Checkbox: Enables/disables agents' ability to edit the OOO notification.
+- Clicking on "Cancel": Discards any changes made to the OOO settings.
+- Clicking on "Save": Saves any changes made to the OOO settings. 

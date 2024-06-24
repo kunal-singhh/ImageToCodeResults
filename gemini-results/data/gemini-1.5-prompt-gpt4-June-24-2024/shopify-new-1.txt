@@ -1,0 +1,55 @@
+The image shows a mobile order details screen for an order placed on the Shopify platform.
+
+Components:
+
+1. Header:
+    - Text: "SHOPIFY" (left-aligned, bold, dark gray)
+    - Icon: Shopify logo (left of "SHOPIFY", green)
+    - Icon: Up arrow (right-aligned, dark gray)
+
+2. Store Selector:
+    - Text: "Store" (left-aligned, regular font weight, dark gray)
+    - Text: "RedFox Shoes" (left-aligned, bold, black)
+    - Icon: Down arrow (right-aligned, black)
+
+3. Order History Link:
+    - Text: "show past orders" (left-aligned, underlined, blue)
+
+4. Order Summary:
+    - Text: "LATEST ORDER" (left-aligned, bold, black)
+    - Text: "#1005" (left-aligned, extra bold, large font size, black)
+    - Text: "Purchased on: 26 Oct, 2021" (left-aligned, regular font weight, dark gray)
+    - Button: "Paid" (left-aligned, light gray background, rounded corners, black text)
+    - Button: "Unfulfilled" (left-aligned, yellow background, rounded corners, black text)
+
+5. Order Items:
+    - For each item (3 in total):
+        - Text: Item name (e.g., "RedFox Casual Slippers") (left-aligned, bold, black)
+        - Text: Quantity x Price (e.g., "1 x $80.00") (right-aligned, regular font weight, black)
+        - Text: "Refund" (left-aligned, underlined, blue)
+        - Text: Item total (e.g., "$80.00") (right-aligned, regular font weight, black)
+
+6. Total:
+    - Text: "Total" (left-aligned, bold, black)
+    - Text: "$165.00" (right-aligned, extra bold, large font size, black)
+
+7. Shipping Address:
+    - Text: "Shipping address" (left-aligned, regular font weight, dark gray)
+    - Text: "4860 Corpening Drive." (left-aligned, regular font weight, black)
+
+8. Actions:
+    - Button: "Cancel order" (centered, white background, rounded corners, black text, red "X" icon)
+    - Button: "Refund order" (centered, white background, rounded corners, black text, counterclockwise arrow icon)
+    - Button: "No shipping info available" (centered, light gray background, rounded corners, black text, shopping cart icon)
+    - Button: "View in Shopify" (centered, white background, rounded corners, blue text, external link icon)
+
+Actions:
+
+- Tapping on "RedFox Shoes" likely opens a dropdown to select a different store.
+- Tapping on "show past orders" likely navigates to a screen displaying previous orders.
+- Tapping on "Paid" or "Unfulfilled" likely does nothing as they appear to be status indicators.
+- Tapping on "Refund" under each item likely initiates a refund for that specific item.
+- Tapping on "Cancel order" likely cancels the entire order.
+- Tapping on "Refund order" likely initiates a refund for the entire order.
+- Tapping on "No shipping info available" likely does nothing or potentially leads to a screen explaining the situation.
+- Tapping on "View in Shopify" likely opens the order details in the Shopify app or website. 

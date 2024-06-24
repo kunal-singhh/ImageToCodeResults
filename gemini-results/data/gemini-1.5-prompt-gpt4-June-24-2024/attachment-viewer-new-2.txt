@@ -1,0 +1,29 @@
+1. Components:
+
+    Title: "Attachments Viewer" (top left, regular font size, potentially bolded)
+    Checkbox: "Select All" (below title, left aligned, regular font size)
+    File List: 
+       Each file entry has:
+          Checkbox: (left aligned, regular font size)
+          Attachment Icon: (right of checkbox)
+          File Name: (right of icon, blue, potentially a hyperlink)
+          File Size: (below file name, right aligned, regular font size)
+    Pagination: 
+       Buttons: "|<", "<", "1", "2", "3", ">", ">|" (centered, regular font size)
+       Active Page: "1" (highlighted in blue)
+    Download Button: "DOWNLOAD" (bottom center, large font size, bold, blue background, white text)
+
+2. Actions:
+
+    Select All Checkbox: Clicking this would select/deselect all files in the list.
+    Individual File Checkboxes: Clicking these would select/deselect individual files.
+    File Names (potential hyperlinks): Clicking a file name might:
+       Open a preview of the file.
+       Download the file directly.
+    Pagination Buttons:
+       "|<": Go to the first page of files.
+       "<": Go to the previous page of files.
+       "1", "2", "3": Go to the corresponding page of files.
+       ">": Go to the next page of files.
+       ">|": Go to the last page of files.
+    Download Button: Clicking this would download all selected files. 

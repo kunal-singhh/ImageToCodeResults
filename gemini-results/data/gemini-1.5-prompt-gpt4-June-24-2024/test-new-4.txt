@@ -1,0 +1,29 @@
+The image shows a digital invoice management system. Here's a breakdown of the components and their potential actions:
+
+Components:
+
+ Title: "Invoices" (Top left, large font, likely a heading)
+ Button: "Update status" (Top right, dropdown menu style, likely allows bulk actions on selected invoices)
+ More Options: "..." (Top right, standard ellipsis menu, likely offers additional settings or actions)
+ Table Header: 
+     "Invoice" (Leftmost, bold text)
+     "Company" (Bold text)
+     "Invoice date" (Bold text)
+     "Due date" (Bold text)
+     "Status" (Bold text)
+     "Amount" (Rightmost, bold text)
+ Table Rows: Each row represents an invoice and contains:
+     Checkbox: (Leftmost, allows selection of individual invoices)
+     Invoice Number: (e.g., "INV - 1001", likely clickable to view invoice details)
+     Company Name: (e.g., "Openlane")
+     Invoice Date: (e.g., "05/10/2019")
+     Due Date: (e.g., "05/10/2019")
+     Status: (Displayed as a button with text like "Paid" or "Pending", color-coded to indicate status)
+     Amount: (e.g., "$2,350.00")
+
+Potential Actions:
+
+ Click "Update status" dropdown: To perform bulk actions (e.g., mark multiple invoices as paid) on selected invoices.
+ Click "..." menu: To access additional settings or options related to the invoice list.
+ Check a checkbox: To select an individual invoice for further action.
+ Click an invoice number: To view the details of a specific invoice. 

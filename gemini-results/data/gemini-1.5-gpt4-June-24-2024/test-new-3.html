@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+  <style>
+    .page-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 16px 0;
+    }
+    .top-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 16px 0;
+    }
+    .ellipsis-icon {
+      margin-left: 8px;
+    }
+    .table-header {
+      font-weight: bold;
+    }
+    .invoice-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .invoice-table th,
+    .invoice-table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .invoice-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .status-paid {
+      color: green;
+    }
+    .status-pending {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-title">Invoices</div>
+  <div class="top-right">
+    <fw-button color="secondary">
+      Update status
+      <fw-icon name="arrow-down" size="12" slot="icon-end"></fw-icon>
+    </fw-button>
+    <fw-icon name="more-vertical" size="18" class="ellipsis-icon"></fw-icon>
+  </div>
+  <table class="invoice-table">
+    <thead class="table-header">
+      <tr>
+        <th>Invoice</th>
+        <th>Company</th>
+        <th>Invoice date</th>
+        <th>Due date</th>
+        <th>Status</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example row -->
+      <tr>
+        <td><fw-checkbox></fw-checkbox> INV - 1001</td>
+        <td>Openlane</td>
+        <td>05/10/2019</td>
+        <td>05/10/2019</td>
+        <td><span class="status-paid">Paid</span></td>
+        <td>$2,350.00</td>
+      </tr>
+      <!-- Additional rows would be added here -->
+    </tbody>
+  </table>
+</body>
+</html>

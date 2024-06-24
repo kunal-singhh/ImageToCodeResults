@@ -1,0 +1,48 @@
+The image shows a mobile order details screen for an order placed with RedFox Shoes on Shopify.
+
+Components:
+
+1. Header:
+    - Text: "SHOPIFY" (left-aligned, bold, dark gray)
+    - Icon: Shopify logo (left of "SHOPIFY", green)
+    - Icon: Upward arrow (right-aligned, dark gray)
+2. Store Dropdown:
+    - Text: "Store" (left-aligned, regular font size, dark gray)
+    - Text: "RedFox Shoes" (left-aligned, bold, black)
+    - Icon: Downward arrow (right-aligned, dark gray)
+3. Order History Link:
+    - Text: "show past orders" (left-aligned, underlined, blue)
+4. Order Summary:
+    - Text: "LATEST ORDER" (left-aligned, bold, black)
+    - Text: "#1005" (left-aligned, extra large font size, bold, black)
+    - Text: "Purchased on: 26 Oct, 2021" (left-aligned, regular font size, dark gray)
+    - Button: "Paid" (left-aligned, light gray background, rounded corners, dark gray text)
+    - Button: "Unfulfilled" (right-aligned, yellow background, rounded corners, black text)
+    - Order Items:
+        - Each item listed with:
+            - Item name (left-aligned, bold, black)
+            - Quantity x Price (right-aligned, regular font size, dark gray)
+            - Total price (right-aligned, regular font size, bold, black)
+            - "Refund" link (left-aligned, underlined, blue) if applicable
+    - Text: "Total" (left-aligned, bold, black)
+    - Total amount (right-aligned, extra large font size, bold, black)
+5. Shipping Address:
+    - Text: "Shipping address" (left-aligned, regular font size, dark gray)
+    - Text: "4860 Corpening Drive." (left-aligned, regular font size, black)
+6. Action Buttons:
+    - Button: "Cancel order" (centered, white background, rounded corners, dark gray text, red "X" icon)
+    - Button: "Refund order" (centered, white background, rounded corners, dark gray text, counterclockwise arrow icon)
+    - Button: "No shipping info available" (centered, light gray background, rounded corners, dark gray text, shopping cart icon)
+7. View in Shopify Link:
+    - Text: "View in Shopify" (centered, underlined, blue)
+    - Icon: External link icon (left of "View in Shopify", blue)
+
+Actions:
+
+- Tap on "Store Dropdown": Expand the dropdown to select a different store.
+- Tap on "show past orders": Navigate to a list of previous orders.
+- Tap on "Paid" or "Unfulfilled":  Filter orders by their fulfillment status.
+- Tap on "Refund" link: Initiate a refund for the specific item.
+- Tap on "Cancel order": Cancel the entire order.
+- Tap on "Refund order": Refund the entire order.
+- Tap on "View in Shopify": Open the order details in the Shopify app or website. 

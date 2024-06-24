@@ -1,0 +1,58 @@
+The image shows a form for configuring out-of-office (OOO) notifications. 
+
+Components:
+
+1. Navigation Tabs: Located at the top, these tabs allow users to navigate between different sections related to agent availability.
+    - Text & Position: "Agent Availability", "Apply OOO", "Apply for an agent", "Settings". These tabs are horizontally placed at the top left.
+    - Style:  Blue background with white text, indicating the currently active tab. The other tabs have a white background with a grey border and dark grey text.
+
+2. Configuration Section: This section contains settings related to OOO notifications.
+    - Text & Position: "CONFIGURATION" is displayed in a slightly larger font size compared to other text elements, indicating a section heading. It is placed below the navigation tabs, aligned to the left.
+    - Style:  Dark grey text.
+
+3. Toggle Switch: This switch enables or disables sending OOO notifications.
+    - Position: Located to the right of the "Send OOO notification when customer replies to ticket" text.
+    - Style:  A standard toggle switch design with a grey background and a white circle that moves to indicate on/off status.
+
+4. Email Body Section: This section allows users to customize the OOO message.
+    - Text & Position: "Email Body" is displayed above the text editor, aligned to the left.
+    - Style:  Dark grey text.
+
+5. Rich Text Editor: This editor allows users to format and write the OOO message.
+    - Position: Located below the "Email Body" text.
+    - Style:  A standard rich text editor with a white background and various formatting options (bold, italics, underline, etc.) represented by icons.
+
+6. Pre-filled Message: This is the default OOO message displayed in the editor.
+    - Text & Position: "Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks" is the default message displayed within the text editor.
+    - Style:  Regular, black text.
+
+7. Checkbox: This checkbox allows agents to edit the OOO notification.
+    - Text & Position: "Allow agent to edit the notification" is displayed to the left of the checkbox.
+    - Style:  A standard checkbox design with a light grey background and a checkmark appearing when selected.
+
+8. Button Group: This group contains buttons for inserting dynamic content into the OOO message.
+    - Text & Position: "Agent Name", "Agent Email", "Requester Name", "Ticket Url" are the labels on the buttons, horizontally arranged.
+    - Style:  Grey buttons with white text.
+
+9. Reassign Ticket Toggle: This toggle enables or disables automatic ticket reassignment.
+    - Text & Position: "Reassign ticket to group and agent" is displayed to the left of the toggle.
+    - Style:  Similar to the "Send OOO notification" toggle.
+
+10. Unassign Ticket Toggle: This toggle enables or disables automatic ticket unassignment.
+    - Text & Position: "Unassign ticket" is displayed to the left of the toggle.
+    - Style:  Similar to other toggle switches.
+
+11. Action Buttons: These buttons allow users to save or discard changes.
+    - Text & Position: "Cancel" and "Save" are the labels on the buttons, horizontally arranged at the bottom right.
+    - Style:  "Cancel" is a grey button with white text, while "Save" is a blue button with white text.
+
+Actions:
+
+- Clicking on navigation tabs will switch between different sections related to agent availability.
+- Toggling the "Send OOO notification" switch will enable or disable sending OOO notifications.
+- Typing in the text editor will modify the OOO message.
+- Clicking on the formatting icons in the text editor will apply formatting to the selected text.
+- Clicking on the buttons in the button group will insert the corresponding dynamic content into the OOO message.
+- Toggling the "Reassign ticket" and "Unassign ticket" switches will enable or disable automatic ticket actions.
+- Clicking "Cancel" will discard any changes made.
+- Clicking "Save" will save the OOO notification settings. 

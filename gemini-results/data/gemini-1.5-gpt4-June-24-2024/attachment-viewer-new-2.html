@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+  <style>
+    .title {
+      font-weight: bold;
+    }
+    .file-entry {
+      display: flex;
+      align-items: center;
+    }
+    .file-name {
+      color: blue;
+      margin-left: 8px;
+    }
+    .file-size {
+      margin-left: auto;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .download-button {
+      display: block;
+      width: max-content;
+      margin: 20px auto;
+      font-size: larger;
+      font-weight: bold;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <fw-label class="title" value="Attachments Viewer"></fw-label>
+  <fw-checkbox>Select All</fw-checkbox>
+
+  <div class="file-list">
+    <!-- Repeat this block for each file entry -->
+    <div class="file-entry">
+      <fw-checkbox></fw-checkbox>
+      <fw-icon name="attachment" size="18"></fw-icon>
+      <a href="#" class="file-name">example-file.pdf</a>
+      <span class="file-size">2 MB</span>
+    </div>
+    <!-- End of file entry block -->
+  </div>
+
+  <div class="pagination">
+    <fw-button color="secondary">|<</fw-button>
+    <fw-button color="secondary"><</fw-button>
+    <fw-button color="secondary">1</fw-button>
+    <fw-button color="secondary">2</fw-button>
+    <fw-button color="secondary">3</fw-button>
+    <fw-button color="secondary">></fw-button>
+    <fw-button color="secondary">>|</fw-button>
+  </div>
+
+  <fw-button class="download-button" color="primary">DOWNLOAD</fw-button>
+</body>
+</html>

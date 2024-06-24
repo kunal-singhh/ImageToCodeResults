@@ -1,0 +1,58 @@
+The image shows a digital invoice management system. Here's a breakdown of the components and their potential actions:
+
+1. Title:
+
+ Text: "Invoices"
+ Position: Top left corner
+ Style: Large, bold font, likely indicating the page title
+
+2. Update Status Dropdown:
+
+ Text: "Update status" with a downward arrow
+ Position: Top right, below the title
+ Style: Button-like appearance with a dropdown arrow
+ Action: Clicking would likely reveal a list of invoice statuses (e.g., Paid, Pending, Overdue) to apply to selected invoices.
+
+3. More Options (Ellipsis):
+
+ Text: "..." (three dots)
+ Position: Top right, next to "Update status"
+ Style: Standard ellipsis icon
+ Action: Clicking would likely reveal additional actions related to the invoice list, such as filtering, sorting, or exporting.
+
+4. Table Header:
+
+ Text: "Invoice", "Company", "Invoice date", "Due date", "Status", "Amount"
+ Position: Below the title, spanning horizontally
+ Style: Bold font, acting as column headers for the invoice data
+
+5. Table Rows:
+
+ Position: Below the table header
+ Style: Alternating light blue background for each row to improve readability
+ Content: Each row represents an invoice and contains the following components:
+     Checkbox:
+         Position:  Leftmost column of each row
+         Action:  Selecting a checkbox would mark that invoice for actions like bulk status updates.
+     Invoice Number:
+         Text: "INV - [number]" (e.g., "INV - 1001")
+         Position: Second column from the left
+         Style:  Likely a unique identifier, potentially clickable to view invoice details.
+     Company Name:
+         Text:  Name of the company (e.g., "Openlane", "Gogozoom")
+         Position: Third column from the left
+     Invoice Date:
+         Text: Date format (e.g., "05/10/2019")
+         Position: Fourth column from the left
+     Due Date:
+         Text: Date format (e.g., "05/10/2019")
+         Position: Fifth column from the left
+     Status:
+         Text: "Paid" or "Pending"
+         Position: Sixth column from the left
+         Style:  Color-coded (green for "Paid", orange for "Pending") for quick visual identification.
+     Amount:
+         Text: Currency format (e.g., "$2,350.00")
+         Position: Rightmost column
+
+This design presents a clear and organized way to manage invoices, allowing users to easily view key information, filter and sort data, and perform actions on individual or multiple invoices. 

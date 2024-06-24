@@ -1,0 +1,22 @@
+1. Components:
+
+ Header: "GOOGLE CALENDAR" in a larger font size, aligned to the left with the Google Calendar icon to its left. An upward arrow is present on the right side of the header.
+ Add an event: A blue, underlined text link, indicating an action to add a new event.
+ techquickshop@gmail.com:  An email address displayed below "Add an event", likely indicating the associated account.
+ Change calendar: A blue, underlined text link, suggesting an action to switch between different calendars.
+ Jun 22: A date displayed within a light grey rectangular box, likely indicating the selected date for the event.
+ [Ticket: 164] Refund amount is not ...: The title of the event, truncated with an ellipsis (...).
+ 8:00 pm-8:30 pm: The time range of the event.
+ Edit/Remove: Two separate blue, underlined text links, offering actions to modify or delete the event.
+ View on Google Calendar: A button with a calendar icon and the text "View on Google Calendar", prompting the user to view the event in the full Google Calendar application.
+
+2. Actions:
+
+ Header: Clicking anywhere on the header might lead to a settings or account management section.
+ Add an event: Clicking this link would likely open a form or interface to create a new calendar event.
+ Change calendar: Clicking this link would likely display a list of available calendars to choose from.
+ Jun 22: Clicking this date might allow the user to change the date of the event.
+ [Ticket: 164] Refund amount is not ...: Clicking the event title might open a detailed view of the event.
+ Edit: Clicking "Edit" would likely open an interface to modify the event details.
+ Remove: Clicking "Remove" would likely prompt the user to confirm the deletion of the event.
+ View on Google Calendar: Clicking this button would open the full Google Calendar application, potentially focusing on the specific event. 

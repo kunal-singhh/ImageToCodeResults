@@ -1,0 +1,24 @@
+The image shows a digital invoice management system. 
+
+Components:
+
+1. Title: "Invoices" is displayed in a larger font at the top left corner, indicating the purpose of the interface.
+2. "Update Status" Dropdown: Located on the top right, this dropdown likely allows users to bulk update the status of selected invoices. 
+3. Ellipsis Menu ("..."):  Next to the "Update Status" dropdown, this menu likely offers additional actions related to the invoice list (e.g., export, settings).
+4. Table Header: The table headers ("Invoice," "Company," "Invoice date," "Due date," "Status," "Amount") are in bold and define the columns of data.
+5. Invoice Rows: Each row represents an individual invoice with the following information:
+    - Checkbox:  A checkbox at the beginning of each row allows users to select one or multiple invoices for bulk actions.
+    - Invoice Number:  A unique identifier for each invoice (e.g., "INV-1001").
+    - Company: The name of the company associated with the invoice.
+    - Invoice Date: The date the invoice was issued.
+    - Due Date: The date the invoice payment is due.
+    - Status: The current status of the invoice, displayed as colored buttons ("Paid," "Pending").
+    - Amount: The total amount due for the invoice.
+
+Actions:
+
+1. Select Invoices: Users can click the checkboxes to select individual invoices.
+2. Sort Invoices: Users can likely click the table headers to sort the invoice list by that column (e.g., by company name, due date).
+3. Update Invoice Status: Users can select one or more invoices and use the "Update status" dropdown to change their status (e.g., mark as paid).
+4. View Invoice Details: Users can likely click on an invoice row to view more details about that specific invoice.
+5. Access Additional Options: Users can click the ellipsis menu ("...") to access additional actions related to the invoice list. 

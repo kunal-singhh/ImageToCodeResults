@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Availability Management</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+    <fw-tabs>
+        <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+        <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+        <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
+        <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+    </fw-tabs>
+
+    <fw-typography variant="heading" size="lg">APPLY OUT OF OFFICE</fw-typography>
+
+    <fw-input
+        label="Email"
+        icon-left="search"
+        placeholder="Enter your email"
+        required
+        clear-input
+    >
+    </fw-input>
+
+    <div style="display: flex; justify-content: space-between;">
+        <fw-datepicker
+            label="From"
+            placeholder="Select start date"
+            required
+        ></fw-datepicker>
+        <fw-datepicker
+            label="To"
+            placeholder="Select end date"
+            required
+        ></fw-datepicker>
+    </div>
+
+    <fw-button color="primary" onClick="applyOOO()">Apply</fw-button>
+
+    <script>
+        function applyOOO() {
+            // Logic to handle the submission of the form
+            console.log('Out of Office applied');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Order Details</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <header style="background-color: lightgrey; padding: 10px; text-align: left;">
+    <img src="shopify-logo.png" alt="Shopify Logo" style="vertical-align: middle;">
+    <span style="font-weight: bold;">SHOPIFY</span>
+  </header>
+
+  <fw-select label="Store" placeholder="RedFox Shoes">
+    <fw-select-option value="redfox-shoes">RedFox Shoes</fw-select-option>
+    <!-- Additional store options would be listed here -->
+  </fw-select>
+
+  <a href="#" style="color: blue; text-decoration: underline;">show past orders</a>
+
+  <div>
+    <div style="font-weight: bold;">LATEST ORDER</div>
+    <div style="font-size: larger; font-weight: bold;">#1005</div>
+    <div>Purchased on: 26 Oct, 2021</div>
+    <fw-button color="secondary">Paid</fw-button>
+    <fw-button color="warning">Unfulfilled</fw-button>
+    <div>
+      <div>1. RedFox Casual Slippers 1 x $80.00</div>
+      <a href="#" style="color: blue;">Refund</a>
+      <div style="text-align: right;">$80.00</div>
+      <!-- Additional items would be listed here in the same format -->
+    </div>
+    <div style="font-weight: bold;">Total</div>
+    <div style="text-align: right; font-size: larger; font-weight: bold;">$165.00</div>
+  </div>
+
+  <div>
+    <div>Shipping address</div>
+    <div>4860 Corpening Drive.</div>
+  </div>
+
+  <div>
+    <fw-button color="secondary">
+      <fw-icon name="x-circle" slot="prefix"></fw-icon>
+      Cancel order
+    </fw-button>
+    <fw-button color="secondary">
+      <fw-icon name="arrow-undo" slot="prefix"></fw-icon>
+      Refund order
+    </fw-button>
+    <fw-button color="secondary" disabled>
+      <fw-icon name="cart" slot="prefix"></fw-icon>
+      No shipping info available
+    </fw-button>
+    <fw-button color="secondary">
+      <fw-icon name="arrow-right" slot="prefix"></fw-icon>
+      View in Shopify
+    </fw-button>
+  </div>
+</body>
+</html>

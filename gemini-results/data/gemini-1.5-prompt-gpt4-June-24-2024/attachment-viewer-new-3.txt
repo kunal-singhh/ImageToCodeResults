@@ -1,0 +1,27 @@
+1. Components:
+
+    Title: "Attachments Viewer" (top left, regular font size, potentially bolded)
+    Checkbox: "Select All" (below title, left aligned, regular font size)
+    File List:  A list of 4 files with checkboxes, file icons, file names, and file sizes. Each file entry follows this structure:
+       Checkbox: (left aligned)
+       File Icon: (right of checkbox)
+       File Name: (right of icon, blue and underlined, potentially clickable)
+          "1.xls" (8 KB)
+          "2.mp4" (229 KB)
+          "3.pdf" (139 KB)
+          "4.doc" (98 KB) 
+    Pagination: (below file list)
+       "<<" Button: (disabled, grayed out)
+       "<" Button: (enabled)
+       Page Number Buttons: "1" (active, blue background), "2", "3" 
+       ">" Button: (enabled)
+       ">>" Button: (disabled, grayed out)
+    Download Button: "DOWNLOAD" (large, blue button, white text, at the bottom)
+
+2. Possible Actions:
+
+    Select All Checkbox: Clicking this would select/deselect all the file checkboxes.
+    File Checkboxes: Clicking these would select/deselect individual files for download.
+    File Names: Clicking a file name might allow previewing the file before download.
+    Pagination Buttons: Used to navigate between pages of attachments if there are more than displayed.
+    Download Button: Clicking this would download all selected files. 

@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const originalImage = document.getElementById("original-image");
-  const geminiNewVersionPreview = document.getElementById("gemini-preview-1.5");
-  const geminiPreview = document.getElementById("gemini-preview-1.0");
+  const geminiPreviewOldGPT = document.getElementById("gemini-preview-1.5-old-gpt");
+  const geminiPreviewNewGPT = document.getElementById("gemini-preview-1.5-new-gpt");
   const imageOptionsContainer = document.getElementById("image-options");
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
-  const promptNodeOldGemini = document.getElementById("prompt-gemini-1.0");
-  const promptNodeNewGemini = document.getElementById("prompt-gemini-1.5");
+  const geminiPromptOldGPT = document.getElementById("prompt-gemini-1.5-old-gpt");
+  const geminiPromptNewGPT = document.getElementById("prompt-gemini-1.5-new-gpt");
 
 
 
@@ -62,22 +62,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to update the image previews based on the selected index
   function updatePreviews(imageName) {
     originalImage.src = `./data/design-images/${imageName}.png`;
-    geminiPreview.src = `./data/gemini-1.0-June-20-2024/${imageName}.html`;
-    geminiNewVersionPreview.src = `./data/gemini-1.5-June-20-2024/${imageName}.html`;
+    geminiPreviewOldGPT.src = `./data/gemini-1.5-June-20-2024/${imageName}.html`;
+    geminiPreviewNewGPT.src = `./data/gemini-1.5-gpt4-June-24-2024/${imageName}.html`;
 
-    fetch(`./data/gemini-1.0-prompt-June-20-2024/${imageName}.txt`)
+    fetch(`./data/gemini-1.5-prompt-June-20-2024/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
-        promptNodeOldGemini.innerText = text;
+        geminiPromptOldGPT.innerText = text;
       })
       .catch((e) => console.error(e));
 
-      fetch(`./data/gemini-1.5-prompt-June-20-2024/${imageName}.txt`)
+      fetch(`./data/gemini-1.5-prompt-gpt4-June-24-2024/${imageName}.txt`)
       .then((res) => res.text())
       .then((text) => {
         console.log({ text });
-        promptNodeNewGemini.innerText = text;
+        geminiPromptNewGPT.innerText = text;
       })
       .catch((e) => console.error(e));
   }

@@ -1,0 +1,19 @@
+1. Components:
+
+ Title: "PagerDuty Incident Viewer"
+     Position: Top left, below the top border 
+     Style: Simple, bold, likely a standard heading font.
+ Button: "Fetch PagerDuty Incidents"
+     Position: Below the title, aligned left.
+     Style: Filled rectangle with a blue background and white text. Suggests an action to be taken.
+ Incident Display Areas: (Three identical areas)
+     Position: Stacked vertically below the button, each separated by a white space.
+     Style: Each area is a light grey rectangle containing three labels:
+         "Incident ID:"  Followed by placeholder text "XXXXXXXX"
+         "Title:" Followed by placeholder text "XXXXXXXX"
+         "Status:" Followed by placeholder text "XXXXXXXX"
+
+2. Actions:
+
+ "Fetch PagerDuty Incidents" Button: Clicking this button would likely trigger a process to retrieve incident data from PagerDuty and populate the "Incident Display Areas" with the retrieved information. 
+ Incident Display Areas:  These areas are designed to display details of fetched incidents. It's unclear from the design alone if these areas are interactive (e.g., clickable to view more details about a specific incident). 

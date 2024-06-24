@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Availability Management</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent" selected>Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings">Settings</fw-tab>
+  </fw-tabs>
+
+  <fw-typography variant="heading" level="3">APPLY OUT OF OFFICE</fw-typography>
+
+  <fw-typography variant="subheading" level="4">Email</fw-typography>
+
+  <fw-input
+    label="Email"
+    placeholder="Enter an email address"
+    icon-left="search"
+    clear-input
+  ></fw-input>
+
+  <fw-label value="From"></fw-label>
+  <fw-datepicker placeholder="Select From Date"></fw-datepicker>
+
+  <fw-label value="To"></fw-label>
+  <fw-datepicker placeholder="Select To Date"></fw-datepicker>
+
+  <fw-button color="primary">Apply</fw-button>
+</body>
+</html>

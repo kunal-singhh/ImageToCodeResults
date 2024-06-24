@@ -1,0 +1,56 @@
+## UX Component Breakdown:
+
+This design showcases a simple form for applying an "out of office" status, likely within a customer service or team collaboration platform.
+
+1. Navigation Tabs:
+
+ Position: Top of the screen, horizontally aligned.
+ Style: Simple text buttons, likely with a visual indicator for the active tab.
+ Text: "Agent Availability", "Apply OOO", "Apply for an agent", "Settings"
+ Action: Clicking on each tab likely navigates the user to a different section within the platform.
+
+2. Form Title:
+
+ Position: Below the navigation tabs, left aligned.
+ Style: Bold text, larger font size than the rest of the form elements.
+ Text: "APPLY OUT OF OFFICE"
+
+3. Form Section Title:
+
+ Position: Below the form title, left aligned.
+ Style: Regular text, smaller font size than the form title.
+ Text: "Email"
+
+4. Email Input Field:
+
+ Position: Below the "Email" section title, spanning the width of the form.
+ Style: Standard text input field with a magnifying glass icon inside, indicating a search functionality.
+ Action: Users can type in an email address to search for a specific contact.
+
+5. Date Range Labels:
+
+ Position: Below the email input field, left aligned for "From" and right aligned for "To".
+ Style: Regular text, smaller font size.
+ Text: "From", "To"
+
+6. Date Input Fields:
+
+ Position: Below the corresponding date range labels.
+ Style: Standard date input fields with a calendar icon, allowing users to select a specific date.
+ Action: Clicking on the calendar icon opens a date picker for easy selection.
+
+7. Apply Button:
+
+ Position: Below the date input fields, centered horizontally.
+ Style: Primary button with a solid background color and contrasting text color.
+ Text: "Apply"
+ Action: Clicking this button submits the form and applies the "out of office" status for the specified date range.
+
+Overall Flow:
+
+The design guides the user through a simple process:
+
+1. Navigate: User selects the "Apply OOO" tab.
+2. Search (Optional): User can optionally search for a specific email contact.
+3. Set Date Range: User selects the "From" and "To" dates for their out-of-office period.
+4. Apply: User clicks the "Apply" button to confirm and activate their out-of-office status. 

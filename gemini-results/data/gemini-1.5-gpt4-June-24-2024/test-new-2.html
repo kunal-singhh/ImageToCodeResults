@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <fw-label value="Invoices" style="font-size: 24px;"></fw-label>
+    <div>
+      <fw-button color="secondary">
+        Update status
+        <fw-icon name="arrow-down" size="12" slot="icon-right"></fw-icon>
+      </fw-button>
+      <fw-button color="secondary">
+        ...
+      </fw-button>
+    </div>
+  </div>
+
+  <fw-data-table id="invoiceTable" is-selectable="true">
+    <fw-data-table-header slot="header">
+      <fw-data-table-column key="checkbox" width="10%">
+        <fw-checkbox></fw-checkbox>
+      </fw-data-table-column>
+      <fw-data-table-column key="invoice" width="15%">Invoice</fw-data-table-column>
+      <fw-data-table-column key="company" width="20%">Company</fw-data-table-column>
+      <fw-data-table-column key="invoiceDate" width="15%">Invoice date</fw-data-table-column>
+      <fw-data-table-column key="dueDate" width="15%">Due date</fw-data-table-column>
+      <fw-data-table-column key="status" width="15%">Status</fw-data-table-column>
+      <fw-data-table-column key="amount" width="10%">Amount</fw-data-table-column>
+    </fw-data-table-header>
+  </fw-data-table>
+
+  <script type="application/javascript">
+    var invoiceData = {
+      columns: [
+        { "key": "checkbox", "text": "" },
+        { "key": "invoice", "text": "Invoice" },
+        { "key": "company", "text": "Company" },
+        { "key": "invoiceDate", "text": "Invoice date" },
+        { "key": "dueDate", "text": "Due date" },
+        { "key": "status", "text": "Status" },
+        { "key": "amount", "text": "Amount" }
+      ],
+      rows: [
+        // Add rows data here
+      ]
+    };
+
+    var invoiceTable = document.getElementById('invoiceTable');
+    invoiceTable.columns = invoiceData.columns;
+    invoiceTable.rows = invoiceData.rows;
+  </script>
+</body>
+</html>

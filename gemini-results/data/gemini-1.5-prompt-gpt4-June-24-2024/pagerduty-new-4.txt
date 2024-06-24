@@ -1,0 +1,24 @@
+1. Components:
+
+    Title: "PagerDuty Incident Viewer" 
+      - Text style: Bold, likely a heading style (e.g., H1, H2)
+      - Position: Top of the page, left aligned
+
+    Button: "Fetch PagerDuty Incidents"
+      - Text style: Regular, likely body text style
+      - Background color: Blue
+      - Text color: White
+      - Position: Below the title, left aligned
+
+    Incident Cards: (Three identical cards are present)
+      - Background: Light grey rectangle
+      - Content:
+          - "Incident ID:"  followed by "XXXXXXXX" (placeholder text)
+          - "Title:" followed by "XXXXXXXX" (placeholder text)
+          - "Status:" followed by "XXXXXXXX" (placeholder text)
+      - Position: Stacked vertically below the button, spanning the width of the content area.
+
+2. Actions:
+
+    "Fetch PagerDuty Incidents" button: Clicking this button would likely trigger an action to retrieve incident data from PagerDuty and populate the "Incident Cards" with the retrieved information. 
+    Incident Cards:  While not explicitly clear from the design, these cards could be clickable or expandable to reveal more details about a specific incident. 

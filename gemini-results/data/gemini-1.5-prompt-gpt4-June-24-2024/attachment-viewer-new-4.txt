@@ -1,0 +1,32 @@
+1. Components:
+
+    Title: "Attachments Viewer" (top left, regular font weight)
+    Select All Checkbox:  (top left, below title, standard checkbox style)
+      Text: "Select All" (right of checkbox, regular font weight)
+    File List: (below "Select All", each item on a new line)
+      Each item has:
+        Selection Checkbox: (leftmost, standard checkbox style)
+        File Icon: (right of checkbox, generic file icon)
+        File Name: (right of icon, blue, underlined, likely a link)
+        File Size: (right of file name, regular font weight)
+    Pagination Controls: (below file list, centered)
+      First Page Button: (leftmost, "|<" icon, standard button style)
+      Previous Page Button: (left of page numbers, "<" icon, standard button style)
+      Page Numbers: (centered, currently on page "1", standard button style)
+      Next Page Button: (right of page numbers, ">" icon, standard button style)
+      Last Page Button: (rightmost, ">|" icon, standard button style)
+    Download Button: (below pagination, centered, blue background, white text, likely a button)
+      Text: "DOWNLOAD" (bold, all caps)
+
+2. Actions:
+
+    Select All Checkbox: Clicking this would select/deselect all files in the list.
+    File List Checkboxes: Clicking a checkbox selects/deselects that specific file.
+    File Names (links): Clicking a file name likely opens a preview or download prompt for that file.
+    Pagination Controls: Used to navigate between pages of files if there are more than can be displayed at once.
+      First Page: Jumps to the first page of files.
+      Previous Page: Goes back one page.
+      Page Numbers: Clicking a number jumps to that specific page.
+      Next Page: Advances one page forward.
+      Last Page: Jumps to the last page of files.
+    Download Button: Initiates a download of all currently selected files. 
