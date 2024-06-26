@@ -1,0 +1,29 @@
+1. Component Identification:
+
+   - Title: "Attachments Viewer" (Text, Top, Regular font weight)
+   - Checkbox: "Select All" (Checkbox with text, Below title, Regular font weight)
+   - File List: 
+      - Each file entry has:
+         - Checkbox (Left aligned)
+         - Attachment Icon (Right of checkbox)
+         - File name (e.g., "1.xls") (Blue, Right of icon)
+         - File size (e.g., "8 KB") (Below file name, Smaller font)
+   - Pagination:
+      - Buttons: "|<", "<", "1", "2", "3", ">", ">|" (Center aligned)
+      - Current page highlighted ("1" in this case)
+   - Download Button: "DOWNLOAD" (Button, Bottom, Blue background, White bold text, Download icon)
+
+2. Component Actions:
+
+   - "Select All" Checkbox:
+      - Clicking toggles selection of all files in the list.
+   - File List Checkboxes:
+      - Clicking selects/deselects individual files for download.
+   - Pagination Buttons:
+      - "|<": Go to first page of attachments.
+      - "<": Go to previous page.
+      - "1", "2", "3": Go to the respective page number.
+      - ">": Go to next page.
+      - ">|": Go to last page.
+   - "DOWNLOAD" Button:
+      - Initiates download of all selected files. 

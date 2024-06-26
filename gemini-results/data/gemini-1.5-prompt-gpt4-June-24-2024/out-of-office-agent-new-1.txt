@@ -1,0 +1,27 @@
+The image shows a form with the title "APPLY OUT OF OFFICE" related to email settings. 
+
+Here's a breakdown of the components:
+
+1. Tabs:
+
+ Agent Availability: Inactive tab, potentially leading to a different section. 
+ Apply OOO: Inactive tab, potentially leading to a different section.
+ Apply for an agent:  Inactive tab, potentially leading to a different section.
+ Settings: Inactive tab, potentially leading to a different section.
+
+2. Form Fields:
+
+ Email: A text input field with a magnifying glass icon, likely for searching or autocompleting email addresses. Placeholder text indicates the field is for entering an email address.
+ From: A date input field with a calendar icon, for selecting the start date. Placeholder text indicates the format as "dd/mm/yyyy".
+ To: A date input field with a calendar icon, for selecting the end date. Placeholder text indicates the format as "dd/mm/yyyy".
+
+3. Buttons:
+
+ Apply: A primary action button, likely to submit the out-of-office request with the provided information.
+
+Actions:
+
+ Clicking on the inactive tabs would likely navigate the user to the corresponding sections.
+ Typing in the "Email" field would allow the user to enter an email address. The magnifying glass icon suggests a potential search or autocomplete functionality.
+ Clicking on the calendar icons next to "From" and "To" would open a calendar widget to choose the start and end dates.
+ Clicking on the "Apply" button would submit the out-of-office request for the specified email address and date range. 

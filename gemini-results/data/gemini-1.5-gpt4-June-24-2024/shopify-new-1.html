@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Order Details</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <header>
+    <fw-icon name="shopify" color="green"></fw-icon>
+    <fw-label value="SHOPIFY" color="dark"></fw-label>
+    <fw-icon name="arrow-up" color="dark"></fw-icon>
+  </header>
+
+  <section>
+    <fw-label value="Store" color="dark"></fw-label>
+    <fw-label value="RedFox Shoes" color="black"></fw-label>
+    <fw-icon name="arrow-down" color="black"></fw-icon>
+  </section>
+
+  <section>
+    <fw-label value="show past orders" color="blue"></fw-label>
+  </section>
+
+  <section>
+    <fw-label value="LATEST ORDER" color="black"></fw-label>
+    <fw-label value="#1005" color="black"></fw-label>
+    <fw-label value="Purchased on: 26 Oct, 2021" color="dark"></fw-label>
+    <fw-button color="secondary">Paid</fw-button>
+    <fw-button color="warning">Unfulfilled</fw-button>
+  </section>
+
+  <section>
+    <!-- Repeat this block for each item -->
+    <div>
+      <fw-label value="RedFox Casual Slippers" color="black"></fw-label>
+      <fw-label value="1 x $80.00" color="black"></fw-label>
+      <fw-label value="Refund" color="blue"></fw-label>
+      <fw-label value="$80.00" color="black"></fw-label>
+    </div>
+    <!-- End of item block -->
+  </section>
+
+  <section>
+    <fw-label value="Total" color="black"></fw-label>
+    <fw-label value="$165.00" color="black"></fw-label>
+  </section>
+
+  <section>
+    <fw-label value="Shipping address" color="dark"></fw-label>
+    <fw-label value="4860 Corpening Drive." color="black"></fw-label>
+  </section>
+
+  <section>
+    <fw-button color="secondary">
+      Cancel order
+      <fw-icon name="x" color="red"></fw-icon>
+    </fw-button>
+    <fw-button color="secondary">
+      Refund order
+      <fw-icon name="arrow-counterclockwise" color="black"></fw-icon>
+    </fw-button>
+    <fw-button color="secondary">
+      No shipping info available
+      <fw-icon name="shopping-cart" color="black"></fw-icon>
+    </fw-button>
+    <fw-button color="secondary">
+      View in Shopify
+      <fw-icon name="external-link" color="blue"></fw-icon>
+    </fw-button>
+  </section>
+</body>
+</html>

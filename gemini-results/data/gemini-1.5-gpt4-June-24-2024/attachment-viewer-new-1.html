@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1>Attachments Viewer</h1>
+  <fw-checkbox>Select All</fw-checkbox>
+
+  <div>
+    <fw-checkbox></fw-checkbox>
+    <fw-icon name="attachment"></fw-icon>
+    <span style="color: blue;">1.xls</span>
+    <div style="font-size: smaller;">8 KB</div>
+  </div>
+
+  <fw-pagination total-items="30" page="1" items-per-page="10">
+    <fw-button slot="start" color="secondary">|&amp;lt;</fw-button>
+    <fw-button slot="previous" color="secondary">&amp;lt;</fw-button>
+    <fw-button slot="page" color="secondary">1</fw-button>
+    <fw-button slot="page" color="secondary">2</fw-button>
+    <fw-button slot="page" color="secondary">3</fw-button>
+    <fw-button slot="next" color="secondary">&amp;gt;</fw-button>
+    <fw-button slot="end" color="secondary">&amp;gt;|</fw-button>
+  </fw-pagination>
+
+  <fw-button color="primary" style="background-color: blue; color: white;">
+    <fw-icon name="download" color="white"></fw-icon> DOWNLOAD
+  </fw-button>
+</body>
+</html>

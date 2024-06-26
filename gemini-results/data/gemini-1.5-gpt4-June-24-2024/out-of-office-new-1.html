@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Office Settings</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-tabs>
+    <fw-tab slot="tab" panel="agent-availability">Agent Availability</fw-tab>
+    <fw-tab slot="tab" panel="apply-ooo">Apply OOO</fw-tab>
+    <fw-tab slot="tab" panel="apply-for-agent">Apply for an agent</fw-tab>
+    <fw-tab slot="tab" panel="settings" selected>Settings</fw-tab>
+  </fw-tabs>
+
+  <div id="configuration-section">
+    <fw-toggle label="Send OOO notification when customer replies to ticket" checked></fw-toggle>
+  </div>
+
+  <div id="email-body-section">
+    <fw-label value="Email Body"></fw-label>
+    <fw-text-editor placeholder="Hey there, I am currently OOO. I will be back on the 14th. Your request will be redirected to another agent to help resolve the issue. Thanks"></fw-text-editor>
+  </div>
+
+  <fw-checkbox checked label="Allow agent to edit the notification"></fw-checkbox>
+
+  <div id="placeholders">
+    <fw-button color="secondary">Agent Name</fw-button>
+    <fw-button color="secondary">Agent Email</fw-button>
+    <fw-button color="secondary">Requester Name</fw-button>
+    <fw-button color="secondary">Ticket Url</fw-button>
+  </div>
+
+  <div id="ticket-management-section">
+    <fw-toggle label="Reassign ticket to group and agent"></fw-toggle>
+    <fw-toggle label="Unassign ticket"></fw-toggle>
+  </div>
+
+  <div id="action-buttons">
+    <fw-button color="secondary">Cancel</fw-button>
+    <fw-button color="primary">Save</fw-button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+## UX Component Breakdown and Actions:
+
+This design showcases a section for managing agent availability, likely within a customer support or similar platform. 
+
+1. Navigation Tabs:
+
+ Component: Four tabs at the top: "Agent Availability", "Apply OOO", "Apply for an agent", "Settings"
+ Position: Top of the section, horizontally aligned.
+ Style: Simple text, likely with a visual indicator (underline, different color) for the active tab.
+ Action: Clicking on a tab would likely navigate to the corresponding section within agent availability management.
+
+2. Section Title:
+
+ Component: Text "APPLY OUT OF OFFICE"
+ Position: Below the navigation tabs, left aligned.
+ Style: Bold text, larger font size than other text elements.
+ Action:  Informational, indicating the purpose of the form below.
+
+3. Email Input Field:
+
+ Component: Textbox with label "Email" and a magnifying glass icon.
+ Position: Below the section title, left aligned.
+ Style: Standard textbox with a light grey background, the label is above the textbox.
+ Action: Allows the user to input an email address. The magnifying glass icon might suggest a search functionality, but without further context, it's unclear.
+
+4. Date Range Picker:
+
+ Component: Two textboxes labeled "From" and "To" with calendar icons.
+ Position: Below the email input field, "From" on the left and "To" on the right.
+ Style: Standard textboxes with light grey background, each with a calendar icon on the right.
+ Action: Clicking on the textboxes or the calendar icons would likely open a calendar widget to select a date range.
+
+5. Apply Button:
+
+ Component: Button labeled "Apply"
+ Position: Below the date range picker, centered.
+ Style:  Button with a solid background color, contrasting with the background of the page.
+ Action:  Clicking this button would likely submit the entered information (email, date range) to apply the out-of-office status. 

@@ -1,0 +1,23 @@
+The image shows a table of invoices. 
+
+Components:
+
+1. Title: "Invoices" is displayed in a larger font at the top left corner of the table. 
+2. "Update status" button: Located at the top right, this button likely allows users to bulk update the status of selected invoices. It features a dropdown arrow indicating further options.
+3. More options button: Represented by three dots ("...") at the top right, this button likely reveals additional actions related to the invoice list.
+4. Table header: The table has the following headers:
+    - Checkbox: An empty square at the beginning of each row allows users to select one or multiple invoices.
+    - "Invoice": This column lists the invoice numbers (e.g., "INV - 1001").
+    - "Company": This column displays the name of the company associated with each invoice.
+    - "Invoice date": This column shows the date when the invoice was issued.
+    - "Due date": This column indicates the payment due date for each invoice.
+    - "Status": This column displays the current status of each invoice (e.g., "Paid", "Pending").
+    - "Amount": This column shows the amount due for each invoice.
+5. Table rows: Each row represents a separate invoice with its corresponding details displayed in the respective columns.
+
+Actions:
+
+1. Select invoices: Users can click the checkbox at the beginning of each row to select one or multiple invoices.
+2. Update invoice status: Users can likely bulk update the status of selected invoices using the "Update status" button.
+3. Access more options: Clicking the three dots ("...") button likely reveals additional actions related to the invoice list, such as filtering, sorting, or exporting.
+4. View invoice details: While not explicitly shown, users can likely click on an invoice row to view its detailed information. 

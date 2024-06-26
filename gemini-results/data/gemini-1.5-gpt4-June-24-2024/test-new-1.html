@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-label value="Invoices" color="blue"></fw-label>
+  <fw-select label="Update Status" placeholder="Select Status">
+    <fw-select-option value="paid">Paid</fw-select-option>
+    <fw-select-option value="pending">Pending</fw-select-option>
+  </fw-select>
+  <fw-icon name="more-vertical" size="18" color="blue"></fw-icon>
+
+  <fw-data-table id="invoice-table" is-selectable="true">
+    <script type="application/javascript">
+      var invoiceData = {
+        columns: [
+          { "key": "checkbox", "text": "" },
+          { "key": "invoice", "text": "Invoice" },
+          { "key": "company", "text": "Company" },
+          { "key": "invoice_date", "text": "Invoice date" },
+          { "key": "due_date", "text": "Due date" },
+          { "key": "status", "text": "Status" },
+          { "key": "amount", "text": "Amount" }
+        ],
+        rows: [
+          // Add invoice rows here
+          // Example:
+          // {
+          //   "id": "INV-1001",
+          //   "checkbox": "<fw-checkbox></fw-checkbox>",
+          //   "invoice": "INV-1001",
+          //   "company": "Company A",
+          //   "invoice_date": "2023-01-01",
+          //   "due_date": "2023-01-15",
+          //   "status": "<fw-button color='secondary'>Pending</fw-button>",
+          //   "amount": "$1000"
+          // }
+        ]
+      }
+
+      var invoiceTable = document.getElementById('invoice-table');
+      invoiceTable.columns = invoiceData.columns;
+      invoiceTable.rows = invoiceData.rows;
+    </script>
+  </fw-data-table>
+
+  <fw-pagination page="1" per-page="10" total="50"></fw-pagination>
+</body>
+</html>

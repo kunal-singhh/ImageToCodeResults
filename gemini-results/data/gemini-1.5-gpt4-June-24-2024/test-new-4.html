@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoices</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <fw-label value="Invoices" color="blue"></fw-label>
+  <fw-button color="secondary">Update status</fw-button>
+  <fw-icon name="more-vertical" size="18" color="blue"></fw-icon>
+
+  <fw-data-table id="invoice-table" is-selectable="true">
+    <fw-data-table-column key="checkbox" width="10%">
+      <fw-checkbox></fw-checkbox>
+    </fw-data-table-column>
+    <fw-data-table-column key="invoice" text="Invoice" width="15%"></fw-data-table-column>
+    <fw-data-table-column key="company" text="Company" width="20%"></fw-data-table-column>
+    <fw-data-table-column key="invoice_date" text="Invoice date" width="15%"></fw-data-table-column>
+    <fw-data-table-column key="due_date" text="Due date" width="15%"></fw-data-table-column>
+    <fw-data-table-column key="status" text="Status" width="15%"></fw-data-table-column>
+    <fw-data-table-column key="amount" text="Amount" width="10%"></fw-data-table-column>
+  </fw-data-table>
+
+  <script type="application/javascript">
+    var invoiceData = {
+      columns: [
+        { key: 'checkbox', text: '', width: '10%' },
+        { key: 'invoice', text: 'Invoice', width: '15%' },
+        { key: 'company', text: 'Company', width: '20%' },
+        { key: 'invoice_date', text: 'Invoice date', width: '15%' },
+        { key: 'due_date', text: 'Due date', width: '15%' },
+        { key: 'status', text: 'Status', width: '15%' },
+        { key: 'amount', text: 'Amount', width: '10%' }
+      ],
+      rows: [
+        {
+          checkbox: '<fw-checkbox></fw-checkbox>',
+          invoice: 'INV - 1001',
+          company: 'Openlane',
+          invoice_date: '05/10/2019',
+          due_date: '05/10/2019',
+          status: '<fw-button color="secondary">Paid</fw-button>',
+          amount: '$2,350.00'
+        },
+        // Add more rows as needed
+      ]
+    };
+
+    var invoiceTable = document.getElementById('invoice-table');
+    invoiceTable.columns = invoiceData.columns;
+    invoiceTable.rows = invoiceData.rows;
+  </script>
+</body>
+</html>

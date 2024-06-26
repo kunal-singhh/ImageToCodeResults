@@ -1,0 +1,62 @@
+The image shows a mobile order details screen for a Shopify order. 
+
+Components:
+
+1. Header:
+    - Text: "SHOPIFY" (uppercase, bold, left-aligned) with Shopify logo on the left.
+    - Position: Top of the screen, spanning the width.
+    - Style: Light grey background, clear visual separation from the content below.
+
+2. Store Dropdown:
+    - Text: "Store" (left-aligned, regular font weight) and "RedFox Shoes" (below "Store", left-aligned, regular font weight).
+    - Position: Below the header, left-aligned.
+    - Style: Dropdown arrow on the right indicating it's clickable to reveal more options.
+
+3. "Show past orders" Link:
+    - Text: "show past orders" (left-aligned, underlined, blue color indicating a hyperlink).
+    - Position: Below the store dropdown.
+    - Style: Standard hyperlink style.
+
+4. Order Summary:
+    - Text: 
+        - "LATEST ORDER" (left-aligned, bold)
+        - "#1005" (below "LATEST ORDER", left-aligned, larger font size, bold)
+        - "Purchased on: 26 Oct, 2021" (below order number, left-aligned, regular font weight)
+        - "Paid" (pill-shaped button, light grey background, rounded corners)
+        - "Unfulfilled" (pill-shaped button, yellow background, rounded corners)
+        - List of ordered items with quantity, price, and refund status:
+            - "1. RedFox Casual Slippers 1 x $80.00" (left-aligned)
+            - "Refund" (below item name, left-aligned, blue color indicating a hyperlink)
+            - "$80.00" (aligned with item price, right-aligned)
+            - Similar format for other items: "Training Shoes" and "Causal Hiking Shoes"
+        - "Total" (left-aligned, bold)
+        - "$165.00" (aligned with item prices, right-aligned, larger font size, bold)
+    - Position: Below the "show past orders" link.
+    - Style: Order details are grouped logically with clear visual hierarchy.
+
+5. Shipping Address:
+    - Text: 
+        - "Shipping address" (left-aligned, regular font weight)
+        - "4860 Corpening Drive." (below "Shipping address", left-aligned, regular font weight)
+    - Position: Below the order summary.
+
+6. Action Buttons:
+    - Buttons:
+        - "Cancel order" (white background, rounded corners, "x" icon in a circle on the left)
+        - "Refund order" (white background, rounded corners, counterclockwise arrow icon on the left)
+        - "No shipping info available" (light grey background, rounded corners, shopping cart icon on the left)
+        - "View in Shopify" (white background, rounded corners, arrow pointing right icon on the left)
+    - Position: Below the shipping address, stacked vertically.
+    - Style: Clear and large buttons for easy interaction.
+
+Actions:
+
+- Store Dropdown: Tapping would likely reveal a list of stores to choose from.
+- "Show past orders" Link: Tapping would navigate to a screen displaying previous orders.
+- "Paid" & "Unfulfilled" Buttons: Likely not directly interactive, but indicate the order's current status.
+- "Refund" Links (under each item): Tapping would likely initiate the refund process for that specific item.
+- Action Buttons:
+    - "Cancel order": Tapping would initiate the order cancellation process.
+    - "Refund order": Tapping would initiate the refund process for the entire order.
+    - "No shipping info available": Currently inactive, likely because the order hasn't been shipped yet.
+    - "View in Shopify": Tapping would open this specific order details page in the Shopify app. 

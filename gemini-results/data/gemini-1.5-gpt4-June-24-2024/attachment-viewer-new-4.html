@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attachments Viewer</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css">
+</head>
+<body>
+  <h1 style="text-align: left;">Attachments Viewer</h1>
+  <fw-checkbox> Select All </fw-checkbox>
+
+  <div>
+    <!-- File List Items -->
+    <!-- Repeat this block for each file in the list -->
+    <div>
+      <fw-checkbox></fw-checkbox>
+      <fw-icon name="file-generic" size="18"></fw-icon>
+      <a href="#" style="color: blue; text-decoration: underline;">File Name</a>
+      <span>File Size</span>
+    </div>
+    <!-- End of File List Items -->
+  </div>
+
+  <div style="text-align: center;">
+    <!-- Pagination Controls -->
+    <fw-button><fw-icon name="first-page" size="18"></fw-icon></fw-button>
+    <fw-button><fw-icon name="chevron-left" size="18"></fw-icon></fw-button>
+    <!-- Page Numbers -->
+    <fw-button>1</fw-button>
+    <fw-button><fw-icon name="chevron-right" size="18"></fw-icon></fw-button>
+    <fw-button><fw-icon name="last-page" size="18"></fw-icon></fw-button>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <fw-button color="primary">DOWNLOAD</fw-button>
+  </div>
+</body>
+</html>

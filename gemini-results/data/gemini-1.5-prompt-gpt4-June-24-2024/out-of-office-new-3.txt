@@ -1,0 +1,33 @@
+1. Component Identification:
+
+     "Agent Availability" Tab: Text, top left, regular font weight. Likely a navigation tab.
+     "Apply OOO" Tab: Text, top center, regular font weight. Likely a navigation tab.
+     "Apply for an agent" Tab: Text, top center-right, regular font weight. Likely a navigation tab.
+     "Settings" Tab: Text, top right, regular font weight, underlined with a blue line.  This tab appears to be currently active.
+     "CONFIGURATION" Heading: Text, below tabs, left aligned, bold font weight. Indicates a section heading.
+     "Send OOO notification when customer replies to ticket" Toggle Label: Text, below "CONFIGURATION", left aligned, regular font weight. Describes the function of the adjacent toggle switch.
+     Toggle Switch:  A switch control, to the right of the "Send OOO notification..." label. Likely toggles the OOO notification feature on or off.
+     "Email Body" Heading: Text, below toggle, left aligned, bold font weight. Indicates a section for editing email content.
+     Rich Text Editor: A large text box with formatting controls (bold, italics, lists, etc.) below the "Email Body" heading. Allows users to compose and style the OOO email message.
+     "Allow agent to edit the notification" Checkbox: A checkbox with label below the rich text editor. Allows control over whether agents can modify the OOO message.
+     "Agent Name" Button:  A button labeled "Agent Name" below the checkbox. Likely inserts the agent's name into the email body.
+     "Agent Email" Button: A button labeled "Agent Email" next to "Agent Name". Likely inserts the agent's email address into the email body.
+     "Requester Name" Button: A button labeled "Requester Name" next to "Agent Email". Likely inserts the ticket requester's name into the email body.
+     "Ticket Url" Button: A button labeled "Ticket Url" next to "Requester Name". Likely inserts a link to the ticket into the email body.
+     "Reassign ticket to group and agent" Toggle Label: Text, below the buttons, left aligned, regular font weight. Describes the function of the adjacent toggle switch.
+     Toggle Switch: A switch control, to the right of the "Reassign ticket..." label. Likely toggles automatic ticket reassignment on or off.
+     "Unassign ticket" Toggle Label: Text, below the previous toggle, left aligned, regular font weight. Describes the function of the adjacent toggle switch.
+     Toggle Switch: A switch control, to the right of the "Unassign ticket" label. Likely toggles automatic ticket unassignment on or off.
+     "Cancel" Button: A button labeled "Cancel" in the bottom right corner. Likely discards any changes and closes the settings.
+     "Save" Button: A button labeled "Save" next to "Cancel". Likely saves any changes made to the OOO settings.
+
+2. Actions:
+
+     Clicking on tabs:  Navigates to different sections related to agent availability or OOO settings.
+     Toggling switches: Enables or disables the corresponding feature (OOO notifications, ticket reassignment, ticket unassignment).
+     Typing in the rich text editor:  Edits the content of the OOO email message.
+     Clicking formatting buttons in the editor: Applies formatting to the selected text in the email body.
+     Checking/unchecking the "Allow agent to edit..." checkbox:  Grants or revokes permission for agents to modify the OOO message.
+     Clicking the "Agent Name", "Agent Email", etc. buttons: Inserts the corresponding information into the email body at the cursor's position.
+     Clicking "Cancel": Discards any unsaved changes and exits the settings.
+     Clicking "Save": Saves all changes made to the OOO settings. 
